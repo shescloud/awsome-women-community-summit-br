@@ -1,1 +1,0 @@
-# awsome-women-community-summit-br
