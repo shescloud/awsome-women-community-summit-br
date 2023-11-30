@@ -2015,8 +2015,8 @@ ul.circle li {
 #page .section-5 .sponsors .cats .flex-itt .f11 {
   flex-grow: unset;
   flex-basis: unset;
-  width: 18.6%;
-  padding: 0 7.5px;
+  width: 27.6%;
+  padding: 0 15.5px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2109,16 +2109,23 @@ ul.circle li {
   background-image: url(../images/spons/awsugfloripa.jpg);
 }
 
-#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).awsuggametech {
-  background-image: url(../images/spons/awsuggametech.jpg);
+#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).nuvemmg {
+  background-image: url(../images/spons/nuvem.png);
+}
+
+#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).nuvemsp {
+  background-image: url(../images/spons/NUVEM-SP.png);
 }
 
 #page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).awsugmg {
   background-image: url(../images/spons/awsugmg.png);
 }
+#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).awsugsp {
+  background-image: url(../images/spons/sp.png);
+}
 
-#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).awsugcri {
-  background-image: url(../images/spons/awsugcri.jpg);
+#page .section-5 .sponsors .cats .flex-itt .f11>div:not(.head).awsugbsb {
+  background-image: url(../images/spons/bsb.png);
 }
 
 @media only screen and (min-width: 992px) {
@@ -2401,8 +2408,8 @@ ul.circle li {
   }
 }
 
-#page .section-6 .volunteers .vl-i .person[data-lname="Santos"] .img {
-  background-image: url(../images/vols/vanessa.jpg);
+#page .section-6 .volunteers .vl-i .person[data-lname="Araújo"] .img {
+  background-image: url(../images/vols/psant.jpg);
 }
 
 #page .section-6 .volunteers .vl-i .person[data-lname="Lataliza"] .img {
@@ -2926,13 +2933,13 @@ i.icon.large {
 
 .f11 a {
   text-decoration: none;
-  color: #007BFF;
+  color: #ebb9db;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .f11 a:hover {
-  color: #0056b3;
+  color: #ebb9db;
 }
 
 
