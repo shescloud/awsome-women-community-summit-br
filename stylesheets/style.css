@@ -2408,6 +2408,78 @@ ul.circle li {
   }
 }
 
+.comunidades {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.lista-comunidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.comunidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.comunidade img {
+  width: 200px; /* Largura padronizada para todas as logos */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+
+        /* Media query para telas menores (ex: dispositivos móveis) */
+        @media (max-width: 600px) {
+          .comunidade {
+              flex-basis: 50%; /* Aumenta o tamanho base para cada item em telas menores */
+          }
+
+      }
+
+
+
+
+.organizadores {
+  text-align: center;
+  background-color: #f6eafa;
+  padding: 50px;
+}
+
+.lista-organizadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.organizador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.organizador img {
+  width: 200px; /* Largura padronizada para todas as logos */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #page .section-6 .volunteers .vl-i .person[data-lname="Araújo"] .img {
   background-image: url(../images/vols/psant.jpg);
 }
