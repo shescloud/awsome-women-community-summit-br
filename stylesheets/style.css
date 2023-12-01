@@ -1171,7 +1171,7 @@ ul.circle li {
 }
 
 #page .section-1 .content .container>div .left_in img {
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto 30px;
   display: block;
 }
@@ -1179,7 +1179,7 @@ ul.circle li {
 @media only screen and (max-width: 991px) {
 
   #page .section-1 .content .container>div .left_in img {
-    max-width: 380px;
+    max-width: 400px;
   }
 }
 
@@ -1198,18 +1198,18 @@ ul.circle li {
   text-align: center;
   padding-top: 0;
   position: relative;
-  color: #BF6C9A;
+  color: #f6eafa;
   font-size: large;
 }
 
 @media only screen and (max-width: 991px) {
 
   #page .section-1 .content .container>div .left_in .txt {
-    font-size: 20px;
+    font-size: 0px;
     margin: auto;
-    padding: 25px;
-    border-radius: 15px;
-    padding-top: 10px;
+    padding: 1px;
+    border-radius: 1px;
+    padding-top: 1px;
     text-align: justify;
   }
 }
@@ -2407,7 +2407,6 @@ ul.circle li {
     font-size: 12px;
   }
 }
-
 .comunidades {
   text-align: center;
   background-color: #ffffff;
@@ -2417,6 +2416,7 @@ ul.circle li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; /* Adicionado para permitir a quebra de linha */
   gap: 28px;
 }
 
@@ -2432,15 +2432,21 @@ ul.circle li {
   height: auto; /* Altura ajustada automaticamente para manter a proporção */
 }
 
+/* Media query para telas menores (ex: dispositivos móveis) */
+@media (max-width: 600px) {
+  .lista-comunidades {
+    justify-content: space-around; /* Ajusta o alinhamento para espaçar de forma uniforme */
+  }
 
-        /* Media query para telas menores (ex: dispositivos móveis) */
-        @media (max-width: 600px) {
-          .comunidade {
-              flex-basis: 50%; /* Aumenta o tamanho base para cada item em telas menores */
-          }
+  .comunidade {
+    flex-basis: 100%; /* Define para 100% para que cada item ocupe a largura total */
+    max-width: 200px; /* Define uma largura máxima para manter o tamanho original da imagem */
+  }
 
-      }
-
+  .comunidade img {
+    width: 100%; /* Permite que a imagem se ajuste ao contêiner */
+  }
+}
 
 
 
