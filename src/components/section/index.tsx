@@ -4,11 +4,12 @@ type Props = {
 	children?: ReactNode;
 	id?: string;
 	title: string;
+	style?: object;
 };
 
-const SectionTitle = ({ title, children, id }: Props) => {
+const SectionTitle = ({ style, title, children, id }: Props) => {
 	return (
-		<section id={id} style={{ textAlign: 'center', marginBottom: '5em' }}>
+		<section id={id} style={{ textAlign: 'center', marginBottom: '5em', ...(style || {}) }}>
 			<p
 				style={{
 					fontSize: '1.5em',

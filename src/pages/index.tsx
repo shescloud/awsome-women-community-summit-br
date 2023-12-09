@@ -1,16 +1,20 @@
+import React from 'react';
 import { Box } from '@mui/system';
 
+import InformationCard from '@/components/information-card';
 import TextPanel from '@/components/text-panel';
 import Reference from '@/components/reference';
+import Section from '@/components/section';
+import Button from '@/components/button';
 
 import style from './style.module.scss';
-import React from 'react';
-import Section from '../components/section';
-import InformationCard from '@/components/information-card';
 
 export default function Home() {
   return (
 		<>
+			<section style={{ margin: '10px 0'}}>
+				<img src="/images/logo.png" />
+			</section>
 			<section className={style.home}>
 				<TextPanel className={style.firstContent} primary={true} title={'Quem somos?'}>
 					<p>
@@ -66,13 +70,21 @@ export default function Home() {
 					</ul>
 				</TextPanel>
 			</section>
-			<Section title="Reserve seu lugar">
+			<Section title="Reserve seu lugar" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
 				<Box style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: 10 }}>
 					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
 					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
 					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
 					<InformationCard image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
 				</Box>
+				<Button link='https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com'>
+					Inscrições Abertas
+				</Button>
+			</Section>
+			<Section title='Submeta sua palestra até 15 de janeiro de 2024'>
+				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
+					Envia sua talk
+				</Button>
 			</Section>
 			<Section title="Comunidades apoiadoras">
 				<Box sx={{
