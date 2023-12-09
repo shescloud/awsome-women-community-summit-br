@@ -40,6 +40,11 @@ body small {
   width: 100%;
 }
 
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 ul {
   list-style-type: none;
@@ -1326,6 +1331,14 @@ ul.circle li {
   top: 0;
   z-index: 9999;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+#page .section-1 #nav-bar ul li {
+    text-align: center;
+}
+
+#page .section-1 #nav-bar ul li a {
+    padding: 5px;
 }
 
 @media only screen and (max-width: 991px) {
