@@ -40,7 +40,7 @@ body small {
   width: 100%;
 }
 
-.container > div {
+.section-1 .container > div {
     display: flex;
     justify-content: center;
     align-content: center;
