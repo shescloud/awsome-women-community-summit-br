@@ -1,17 +1,25 @@
+import { Box } from '@mui/system';
+
+type sizes = 'sm' | 'md' | 'lg' | 'xl';
+
 type Props = {
 	name?: string;
 	image: string;
 	link: string;
-	size?: 'small' | 'medium' | 'large';
+	sm?: sizes;
+	md?: sizes;
+	lg?: sizes;
+	xl?: sizes;
 };
 
 const sizes = {
-	small: 75,
-	medium: 100,
-	large: 150
+	sm: 75,
+	md: 100,
+	lg: 150,
+	xl: 200,
 };
 
-const Reference = ({ name, image, link, size = 'small' }: Props) => {
+const Reference = ({ name, image, link, sm = 'sm', lg, xl, md }: Props) => {
 	const [firstName, lastName] = name?.split(' ') || [];
 
 	return (
@@ -25,16 +33,29 @@ const Reference = ({ name, image, link, size = 'small' }: Props) => {
 				color: 'purple'
 			}}
 		>
-			<div
-				style={{
+			<Box
+				sx={{
 					backgroundPosition: 'center',
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: `url(${image})`,
-					width: sizes[size],
-					height: sizes[size],
-					borderRadius: 10,
-					marginBottom: 10,
+					borderRadius: {
+						sm: 5,
+						lg: 20,
+					},
+					marginBottom: 2,
+					width: {
+						sm: sizes[sm!],
+						md: sizes[md!],
+						lg: sizes[lg!],
+						xl: sizes[xl!],
+					},
+					height: {
+						sm: sizes[sm!],
+						md: sizes[md!],
+						lg: sizes[lg!],
+						xl: sizes[xl!],
+					},
 				}}
 			/>
 			{

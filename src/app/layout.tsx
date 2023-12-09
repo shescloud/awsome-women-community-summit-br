@@ -12,6 +12,15 @@ export default function Layout({ children }: { children: any }) {
 }
 
 const theme = createTheme({
+	breakpoints: {
+		values: {
+			xs: 0,
+			sm: 374,
+			md: 768,
+			lg: 1024,
+			xl: 1280,
+		},
+	},
 	palette: {
 		primary: {
 			main: '#FDD5FA',

@@ -2,18 +2,19 @@ type Props = {
 	title: string;
 	description: string;
 	image: string;
-	size?: 'small' | 'medium' | 'large';
+	size?: 'sm' | 'md' | 'lg' | 'xl';
 };
 
 const sizes = {
-	small: 50,
-	medium: 75,
-	large: 100
+	sm: 50,
+	md: 75,
+	lg: 100,
+	xl: 150,
 };
 
-const InformationCard = ({ title, description, image, size = 'small' }: Props) => {
+const InformationCard = ({ title, description, image, size = 'sm' }: Props) => {
 	return (
-		<div style={{ border: '1px solid lightgray', width: 170, padding: 10, alignContent: 'space-around' }}>
+		<div style={{ border: '1px solid lightgray', padding: 10, alignContent: 'space-around' }}>
 			<span style={{ fontSize: '1.5em', fontWeight: 'bold', lineHeight: 1, margin: '100 0', color: 'purple' }}>{title}</span>
 			<div
 				style={{

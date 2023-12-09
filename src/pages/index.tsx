@@ -7,16 +7,21 @@ import Reference from '@/components/reference';
 import Section from '@/components/section';
 import Button from '@/components/button';
 
-import style from './style.module.scss';
-
 export default function Home() {
   return (
 		<>
 			<section style={{ margin: '10px 0'}}>
 				<img src="/images/logo.png" />
 			</section>
-			<section className={style.home}>
-				<TextPanel className={style.firstContent} primary={true} title={'Quem somos?'}>
+			<section>
+				<TextPanel primary={true} title={'Quem somos?'} sx={{
+					textIndent: '2em',
+					textAlign: 'justify',
+					padding: '1em',
+					'p:not(:first-child)': {
+						margin: '1rem 0',
+					}
+				}}>
 					<p>
 						O AWSome Women Community Summit é um evento que acontece ao redor do mundo e é organizado pela Comunidade
 						ativa (AWS User Groups, AWS Community Builders, AWS Heroes) da Amazon Web Services (AWS). Pela primeira,
@@ -41,7 +46,24 @@ export default function Home() {
 						infinitamente mais AWSome!
 					</p>
 				</TextPanel>
-				<TextPanel className={style.secondContent} primary={false} title={'O que esperar?'}>
+				<TextPanel
+					primary={false}
+					title={'O que esperar?'}
+					sx={{
+						boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
+						padding: '0 2rem',
+						li: {
+							textAlign: 'justify',
+							listStyleType: 'circle',
+							'.content': {
+								textAlign: 'justify',
+							},
+						},
+						'li:not(:first-child)': {
+							margin: '1.5rem 0',
+						}
+					}}
+				>
 					<ul >
 						<li>
 							Renove e revitalize seus conhecimentos em cloud computing, tópicos em altas de tecnologia e muito sobre AWS
@@ -71,7 +93,7 @@ export default function Home() {
 				</TextPanel>
 			</section>
 			<Section title="Reserve seu lugar" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-				<Box style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: 10 }}>
+				<Box style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10, padding: 10 }}>
 					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
 					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
 					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
@@ -88,31 +110,42 @@ export default function Home() {
 			</Section>
 			<Section title="Comunidades apoiadoras">
 				<Box sx={{
-					display: 'grid',
-					gridTemplateColumns: 'repeat(3, 1fr)',
-					rowGap: 5,
-					justifyContent: 'space-around',
+					display: 'flex',
+					justifyContent: {
+						xs: 'center',
+						lg: 'space-around',
+					},
+					flexWrap: 'wrap',
 				}}>
-					<Reference size="medium" link="https://www.linkedin.com/company/mulheres-na-nuvem-mg/" image={'/images/comunidades/mulheresnanuvemmg.png'}/>
-					<Reference size="medium" link="/" image={'/images/comunidades/mulheresnanuvemsp.png'}/>
-					<Reference size="medium" link="https://www.meetup.com/pt-BR/awsusergroupmg/" image={'/images/comunidades/awsugmg.png'}/>
-					<Reference size="medium" link="https://www.meetup.com/pt-BR/awsusergroupsp/" image={'/images/comunidades/awsugsp.png'}/>
-					<Reference size="medium" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
+					<Reference sm="lg" md="xl" link="https://www.linkedin.com/company/mulheres-na-nuvem-mg/" image={'/images/comunidades/mulheresnanuvemmg.png'}/>
+					<Reference sm="lg" md="xl" link="/" image={'/images/comunidades/mulheresnanuvemsp.png'}/>
+					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/awsusergroupmg/" image={'/images/comunidades/awsugmg.png'}/>
+					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/awsusergroupsp/" image={'/images/comunidades/awsugsp.png'}/>
+					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
 				</Box>
 			</Section>
 			<Section title="Organizadoras">
 				<Box sx={{
-					display: 'grid',
-					gridTemplateColumns: 'repeat(3, 1fr)',
-					rowGap: 5,
-					justifyContent: 'space-around',
+					display: 'flex',
+					justifyContent: {
+						xs: 'space-around',
+					},
+					flexWrap: 'wrap',
+					rowGap: {
+						xs: 5,
+						lg: 0,
+					},
+					columnGap: {
+						xs: 0,
+						md: 1,
+					},
 				}}>
-					<Reference link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
-					<Reference link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
-					<Reference link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
-					<Reference link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
-					<Reference link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
-					<Reference link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
+					<Reference sm="lg" md="lg" lg="md" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
 		</Section>
 		</>
