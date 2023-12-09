@@ -4,6 +4,9 @@ import TextPanel from '@/components/text-panel';
 import Reference from '@/components/reference';
 
 import style from './style.module.scss';
+import React from 'react';
+import Section from '../components/section';
+import InformationCard from '@/components/information-card';
 
 export default function Home() {
   return (
@@ -63,45 +66,43 @@ export default function Home() {
 					</ul>
 				</TextPanel>
 			</section>
-			<section>
-				Organizadoras
+			<Section title="Reserve seu lugar">
+				<Box style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: 10 }}>
+					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
+					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
+					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
+					<InformationCard image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
+				</Box>
+			</Section>
+			<Section title="Comunidades apoiadoras">
 				<Box sx={{
 					display: 'grid',
-					gridTemplateColumns: 'repeat(2, 1fr)',
+					gridTemplateColumns: 'repeat(3, 1fr)',
+					rowGap: 5,
+					justifyContent: 'space-around',
 				}}>
-					<Reference image={'/images/vols/psant.jpg'}/>
-					<Reference image={'/images/vols/paloma.jpg'}/>
-					<Reference image={'/images/vols/luisa.jpeg'}/>
-					<Reference image={'/images/vols/rafa.jpeg'}/>
-					<Reference image={'/images/vols/jess.jpeg'}/>
-					<Reference image={'/images/vols/nelly.jpeg'}/>
+					<Reference size="medium" link="https://www.linkedin.com/company/mulheres-na-nuvem-mg/" image={'/images/comunidades/mulheresnanuvemmg.png'}/>
+					<Reference size="medium" link="/" image={'/images/comunidades/mulheresnanuvemsp.png'}/>
+					<Reference size="medium" link="https://www.meetup.com/pt-BR/awsusergroupmg/" image={'/images/comunidades/awsugmg.png'}/>
+					<Reference size="medium" link="https://www.meetup.com/pt-BR/awsusergroupsp/" image={'/images/comunidades/awsugsp.png'}/>
+					<Reference size="medium" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
 				</Box>
-			</section>
+			</Section>
+			<Section title="Organizadoras">
+				<Box sx={{
+					display: 'grid',
+					gridTemplateColumns: 'repeat(3, 1fr)',
+					rowGap: 5,
+					justifyContent: 'space-around',
+				}}>
+					<Reference link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
+					<Reference link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
+					<Reference link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
+					<Reference link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
+					<Reference link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
+					<Reference link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
+				</Box>
+		</Section>
 		</>
 	);
 }
-
-
-// #page .section-6 .volunteers .vl-i .person[data-lname="Araújo"] .img {
-// 	background-image: url(../images/vols/psant.jpg);
-// }
-//
-// #page .section-6 .volunteers .vl-i .person[data-lname="Lataliza"] .img {
-// 	background-image: url(../images/vols/paloma.jpg);
-// }
-//
-// #page .section-6 .volunteers .vl-i .person[data-lname="Brandt"] .img {
-// 	background-image: url(../images/vols/luisa.jpeg);
-// }
-//
-// #page .section-6 .volunteers .vl-i .person[data-lname="Vidotti"] .img {
-// 	background-image: url(../images/vols/rafa.jpeg);
-// }
-// #page .section-6 .volunteers .vl-i .person[data-lname="Coelho"] .img {
-// 	background-image: url(../images/vols/jess.jpeg);
-// }
-//
-//
-// #page .section-6 .volunteers .vl-i .person[data-lname="Andrade"] .img {
-// 	background-image: url(../images/vols/nelly.jpeg);
-// );
