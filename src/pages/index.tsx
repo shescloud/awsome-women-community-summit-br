@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/system';
+import { Box, styled } from '@mui/system';
 
 import InformationCard from '@/components/information-card';
 import TextPanel from '@/components/text-panel';
@@ -7,21 +7,71 @@ import Reference from '@/components/reference';
 import Section from '@/components/section';
 import Button from '@/components/button';
 
+const StyledSection = styled('section')``;
+const StyledDiv = styled('div')``;
+const StyledImg = styled('img')``;
+
 export default function Home() {
   return (
 		<>
-			<section style={{ margin: '10px 0'}}>
-				<img src="/images/logo.png" />
-			</section>
-			<section>
-				<TextPanel primary={true} title={'Quem somos?'} sx={{
-					textIndent: '2em',
-					textAlign: 'justify',
-					padding: '1em',
-					'p:not(:first-child)': {
-						margin: '1rem 0',
-					}
-				}}>
+			<StyledSection>
+				<StyledImg
+					src="/images/logo.png"
+					sx={{
+						maxHeight: '100vh',
+						margin: '0 auto'
+					}}
+				/>
+			</StyledSection>
+			<StyledSection
+				sx={{
+					display: 'flex',
+					flexDirection: {
+						xs: 'column',
+						lg: 'row',
+					},
+					alignItems: 'center',
+					gap: 2,
+					width: {
+						xs: '100%',
+					},
+				}}
+			>
+				<TextPanel
+					primary={true}
+					title={'Quem somos?'}
+					sx={{
+						position: 'relative',
+						textIndent: '2em',
+						textAlign: 'justify',
+						zIndex: 2,
+						padding: {
+							xs: '1rem',
+						},
+						width: {
+							xs: '100%',
+							lg: '40%'
+						},
+						'p:not(:first-child)': {
+							margin: '1rem 0',
+						}
+					}}
+				>
+					<StyledDiv
+						sx={{
+							position: 'absolute',
+							backgroundColor: 'primary.main',
+							height: '100%',
+							width: '150%',
+							zIndex: -1,
+							top: 0,
+							left: 0,
+							display: {
+								xs: 'none',
+								lg: 'inline-flex',
+							},
+						}}
+					/>
 					<p>
 						O AWSome Women Community Summit é um evento que acontece ao redor do mundo e é organizado pela Comunidade
 						ativa (AWS User Groups, AWS Community Builders, AWS Heroes) da Amazon Web Services (AWS). Pela primeira,
@@ -51,7 +101,13 @@ export default function Home() {
 					title={'O que esperar?'}
 					sx={{
 						boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
-						padding: '0 2rem',
+						padding: '2rem',
+						margin: '10rem 0 3rem',
+						zIndex: 2,
+						width: {
+							xs: '100%',
+							lg: '60%'
+						},
 						li: {
 							textAlign: 'justify',
 							listStyleType: 'circle',
@@ -61,7 +117,7 @@ export default function Home() {
 						},
 						'li:not(:first-child)': {
 							margin: '1.5rem 0',
-						}
+						},
 					}}
 				>
 					<ul >
@@ -91,9 +147,22 @@ export default function Home() {
 						</li>
 					</ul>
 				</TextPanel>
-			</section>
+			</StyledSection>
 			<Section title="Reserve seu lugar" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
-				<Box style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10, padding: 10 }}>
+				<Box
+					sx={{
+						display: 'grid',
+						gridTemplateColumns: {
+							xs: 'repeat(2, 1fr)',
+							lg: 'repeat(4, 1fr)',
+						},
+						gap: 1,
+						padding: {
+							xs: '1rem',
+							lg: '2rem',
+						},
+					}}
+				>
 					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
 					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
 					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />

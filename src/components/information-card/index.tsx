@@ -9,7 +9,7 @@ const sizes = {
 	sm: 50,
 	md: 75,
 	lg: 100,
-	xl: 150,
+	xl: 125,
 };
 
 const InformationCard = ({ title, description, image, size = 'sm' }: Props) => {
