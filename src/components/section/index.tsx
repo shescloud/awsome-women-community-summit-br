@@ -1,15 +1,28 @@
 import { ReactNode } from 'react';
+import { SxProps } from '@mui/system/styleFunctionSx';
+import { styled } from '@mui/system';
 
 type Props = {
 	children?: ReactNode;
 	id?: string;
 	title: string;
-	style?: object;
+	sx?: SxProps
+	shadowed?: boolean;
 };
 
-const SectionTitle = ({ style, title, children, id }: Props) => {
+const StyledSection = styled('section')``;
+
+const SectionTitle = ({ title, children, id, sx, shadowed }: Props) => {
 	return (
-		<section id={id} style={{ textAlign: 'center', marginBottom: '5em', ...(style || {}) }}>
+		<StyledSection
+			id={id}
+			sx={{
+				textAlign: 'center',
+				marginBottom: '5em',
+				boxShadow: shadowed ? '1px 1px 20px 0px rgba(0, 0, 0, 0.5)' : 'none',
+				...sx,
+			}}
+		>
 			<p
 				style={{
 					fontSize: '1.5em',
@@ -17,13 +30,13 @@ const SectionTitle = ({ style, title, children, id }: Props) => {
 					color: 'purple',
 					fontWeight: 'bold',
 					padding: 10,
-					marginBottom: 20
+					marginBottom: 20,
 				}}
 			>
 				{title}
 			</p>
 			{children}
-		</section>
+		</StyledSection>
 	);
 };
 

@@ -40,17 +40,19 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md }: Props) => {
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: `url(${image})`,
 					borderRadius: {
-						sm: 5,
+						xs: 5,
 						lg: 20,
 					},
 					marginBottom: 2,
 					width: {
+						xs: sizes[sm!],
 						sm: sizes[sm!],
 						md: sizes[md!],
 						lg: sizes[lg!],
 						xl: sizes[xl!],
 					},
 					height: {
+						xs: sizes[sm!],
 						sm: sizes[sm!],
 						md: sizes[md!],
 						lg: sizes[lg!],

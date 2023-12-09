@@ -31,7 +31,7 @@ export default function Home() {
 						lg: 'row',
 					},
 					alignItems: 'center',
-					gap: 2,
+					// gap: 2,
 					width: {
 						xs: '100%',
 					},
@@ -102,7 +102,10 @@ export default function Home() {
 					sx={{
 						boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
 						padding: '2rem',
-						margin: '10rem 0 3rem',
+						margin: {
+							xs: '1rem 0',
+							lg: '10rem 0 3rem'
+						},
 						zIndex: 2,
 						width: {
 							xs: '100%',
@@ -148,7 +151,7 @@ export default function Home() {
 					</ul>
 				</TextPanel>
 			</StyledSection>
-			<Section title="Reserve seu lugar" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
+			<Section title="Reserve seu lugar" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
 				<Box
 					sx={{
 						display: 'grid',
@@ -172,12 +175,12 @@ export default function Home() {
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section title='Submeta sua palestra até 15 de janeiro de 2024'>
+			<Section title='Submeta sua palestra até 15 de janeiro de 2024' sx={{ backgroundColor: '#EEEEEE', padding: '3rem' }}>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
-					Envia sua talk
+					Envie sua talk
 				</Button>
 			</Section>
-			<Section title="Comunidades apoiadoras">
+			<Section title="Comunidades apoiadoras" shadowed>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
