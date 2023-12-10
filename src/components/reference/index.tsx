@@ -30,7 +30,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md }: Props) => {
 				display: 'flex',
 				alignItems: 'center',
 				flexDirection: 'column',
-				color: 'purple'
+				color: '#BF6C9A'
 			}}
 		>
 			<Box

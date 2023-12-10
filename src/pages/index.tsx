@@ -14,7 +14,7 @@ const StyledImg = styled('img')``;
 export default function Home() {
   return (
 		<>
-			<StyledSection>
+			<Section sectionSx={{ backgroundColor: '#F6EAFA', padding: 0 }}>
 				<StyledImg
 					src="/images/logo.png"
 					sx={{
@@ -22,8 +22,9 @@ export default function Home() {
 						margin: '0 auto'
 					}}
 				/>
-			</StyledSection>
-			<StyledSection
+			</Section>
+			<Section
+				sectionSx={{ backgroundColor: '#EEEEEE' }}
 				sx={{
 					display: 'flex',
 					flexDirection: {
@@ -31,7 +32,6 @@ export default function Home() {
 						lg: 'row',
 					},
 					alignItems: 'center',
-					// gap: 2,
 					width: {
 						xs: '100%',
 					},
@@ -60,7 +60,7 @@ export default function Home() {
 					<StyledDiv
 						sx={{
 							position: 'absolute',
-							backgroundColor: 'primary.main',
+							backgroundColor: 'white',
 							height: '100%',
 							width: '150%',
 							zIndex: -1,
@@ -150,8 +150,8 @@ export default function Home() {
 						</li>
 					</ul>
 				</TextPanel>
-			</StyledSection>
-			<Section title="Reserve seu lugar" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+			</Section>
+			<Section title="Reserve seu lugar"  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 				<Box
 					sx={{
 						display: 'grid',
@@ -175,7 +175,7 @@ export default function Home() {
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section title='Submeta sua palestra até 15 de janeiro de 2024' sx={{ backgroundColor: '#EEEEEE', padding: '3rem' }}>
+			<Section title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
 					Envie sua talk
 				</Button>
@@ -196,7 +196,7 @@ export default function Home() {
 					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
 				</Box>
 			</Section>
-			<Section title="Organizadoras">
+			<Section title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA' }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {

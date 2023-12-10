@@ -15,14 +15,14 @@ const TextPanel = ({ title, primary, children, sx }: Props) => {
 	return (
 		<Box
 			sx={{
-				backgroundColor: primary ? 'primary.main' : 'secondary.main',
-				color: primary ? 'secondary.main' : 'primary.main',
+				backgroundColor: primary ? 'white' : '#C290A9',
+				color: primary ? '#C290A9': 'white',
 				...sx,
 			}}
 		>
 			<H1 sx={{
 				fontWeight: 'bold',
-				textAlign: 'center',
+				textAlign: 'left',
 				fontSize: 25,
 				textTransform: 'uppercase',
 				padding: '1rem 0',

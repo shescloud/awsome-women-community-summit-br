@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: any }) {
 	return (
 		<>
 			<ThemeProvider theme={theme}>
-				<main style={{ maxWidth: 1200, margin: '0 auto' }}>{children}</main>
+				<main>{children}</main>
 			</ThemeProvider>
 		</>
 	)

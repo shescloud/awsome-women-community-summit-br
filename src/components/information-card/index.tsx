@@ -1,3 +1,5 @@
+import { styled } from "@mui/material";
+
 type Props = {
 	title: string;
 	description: string;
@@ -12,10 +14,30 @@ const sizes = {
 	xl: 125,
 };
 
+const StyledP = styled('p')``;
+
 const InformationCard = ({ title, description, image, size = 'sm' }: Props) => {
 	return (
-		<div style={{ border: '1px solid lightgray', padding: 10, alignContent: 'space-around' }}>
-			<span style={{ fontSize: '1.5em', fontWeight: 'bold', lineHeight: 1, margin: '100 0', color: 'purple' }}>{title}</span>
+		<div style={{
+			border: '1px solid lightgray',
+			alignContent: 'space-around',
+			padding: 10,
+		}}>
+			<StyledP
+				sx={{
+					fontSize: '1.5em',
+					fontWeight: 'bold',
+					lineHeight: 1,
+					margin: '100 0',
+					color: '#BF6C9A',
+					minHeight: {
+						xs: '3em',
+						sm: '2em',
+					},
+				}}
+			>
+				{title}
+			</StyledP>
 			<div
 				style={{
 					backgroundImage: `url(${image})`,
