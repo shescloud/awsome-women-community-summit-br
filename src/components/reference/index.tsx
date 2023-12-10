@@ -41,7 +41,6 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md }: Props) => {
 					backgroundImage: `url(${image})`,
 					borderRadius: {
 						xs: 5,
-						lg: 20,
 					},
 					marginBottom: 2,
 					width: {
