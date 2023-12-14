@@ -34,12 +34,12 @@ export default function Home() {
 		<>
 			<Section sectionSx={{ backgroundColor: '#F6EAFA', padding: 0 }}>
 				<StyledDiv
+					style={{ opacity }}
 					sx={{
 						display: {
 							xs: 'none',
 							lg: 'inline-flex',
 						},
-						opacity,
 						position: 'absolute',
 						top: 0,
 						left: 0,
