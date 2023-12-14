@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, styled } from '@mui/system';
 
 import InformationCard from '@/components/information-card';
@@ -12,9 +12,44 @@ const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
 
 export default function Home() {
+	const [opacity, setOpacity] = useState(0);
+	const [menuFixed, setMenuFixed] = useState(false);
+
+	const handleScroll = () => {
+		const newOpacity = Math.min(window.scrollY / window.innerHeight / 1.3, 1);
+		setOpacity(newOpacity);
+
+		// // Verifica se o menu deve ser fixado baseado na posição de scroll
+		// const menuPosition = document.getElementById('menu')!.offsetTop;
+		// setMenuFixed(window.scrollY > menuPosition);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
   return (
 		<>
 			<Section sectionSx={{ backgroundColor: '#F6EAFA', padding: 0 }}>
+				<StyledDiv
+					sx={{
+						display: {
+							xs: 'none',
+							lg: 'inline-flex',
+						},
+						opacity,
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						width: '100%',
+						height: '100%',
+						backgroundColor: 'black',
+						zIndex: 2,
+						// transition: 'opacity 0.5s ease',
+					}}
+				/>
 				<StyledImg
 					src="/images/logo.png"
 					sx={{
@@ -52,7 +87,7 @@ export default function Home() {
 							xs: '100%',
 							lg: '40%'
 						},
-						'p:not(:first-child)': {
+						'p:not(:first-of-type)': {
 							margin: '1rem 0',
 						}
 					}}
@@ -118,7 +153,7 @@ export default function Home() {
 								textAlign: 'justify',
 							},
 						},
-						'li:not(:first-child)': {
+						'li:not(:first-of-type)': {
 							margin: '1.5rem 0',
 						},
 					}}
