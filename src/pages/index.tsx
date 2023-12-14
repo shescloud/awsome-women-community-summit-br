@@ -7,7 +7,6 @@ import Reference from '@/components/reference';
 import Section from '@/components/section';
 import Button from '@/components/button';
 
-const StyledSection = styled('section')``;
 const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
 
@@ -15,13 +14,13 @@ export default function Home() {
 	const [opacity, setOpacity] = useState(0);
 	const [menuFixed, setMenuFixed] = useState(false);
 
+	const headerHeight = 100;
+
 	const handleScroll = () => {
 		const newOpacity = Math.min(window.scrollY / window.innerHeight / 1.3, 1);
 		setOpacity(newOpacity);
 
-		// // Verifica se o menu deve ser fixado baseado na posição de scroll
-		// const menuPosition = document.getElementById('menu')!.offsetTop;
-		// setMenuFixed(window.scrollY > menuPosition);
+		setMenuFixed(window.scrollY > (window.innerHeight - headerHeight));
 	};
 
 	useEffect(() => {
@@ -32,7 +31,20 @@ export default function Home() {
 
   return (
 		<>
-			<Section sectionSx={{ backgroundColor: '#F6EAFA', padding: 0 }}>
+			<Section
+				sectionSx={{
+					backgroundColor: '#F6EAFA',
+					padding: 0,
+					height: {
+						xs: '100vh',
+						lg: `calc(100vh - ${headerHeight}px)`,
+					},
+					marginBottom: {
+						xs: 0,
+						lg: menuFixed ? `${headerHeight}px` : 0,
+					},
+				}}
+			>
 				<StyledDiv
 					style={{ opacity }}
 					sx={{
@@ -47,17 +59,42 @@ export default function Home() {
 						height: '100%',
 						backgroundColor: 'black',
 						zIndex: 2,
-						// transition: 'opacity 0.5s ease',
 					}}
 				/>
 				<StyledImg
 					src="/images/logo.png"
 					sx={{
-						maxHeight: '100vh',
-						margin: '0 auto'
+						maxHeight: 'calc(100vh - 100px)',
+						margin: '0 auto',
+						flex: 1,
 					}}
 				/>
 			</Section>
+			<StyledDiv
+				sx={{
+					display: {
+						xs: 'none',
+						lg: 'inline-flex'
+					},
+					width: '100%',
+					height: headerHeight,
+					backgroundColor: 'black',
+					zIndex: 2,
+					...(
+						menuFixed
+							? {
+								position: 'fixed',
+								top: 0,
+								left: 0,
+								zIndex: 999,
+								marginBottom: '5em'
+							}
+							: {}
+					)
+				}}
+			>
+
+			</StyledDiv>
 			<Section
 				sectionSx={{ backgroundColor: '#EEEEEE' }}
 				sx={{
