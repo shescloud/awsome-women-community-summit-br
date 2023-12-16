@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -35,7 +35,13 @@ const getIcon = (icon: Props['type']) => {
 	};
 
 	const map = {
-		twitter: <TwitterIcon { ...props } />,
+		twitter: <XIcon
+			{ ...props }
+			sx={{
+				...props.sx,
+				padding: { xs: '1.5px', lg: 0 }
+			}}
+		/>,
 		github: <GitHubIcon { ...props } />,
 		linkedin: <LinkedInIcon { ...props } />,
 	};
