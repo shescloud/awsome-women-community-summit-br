@@ -18,13 +18,13 @@ const menuValues: MenuDataItem[] = [
 	},
 	{
 		"title": false,
-		"text": "Comunidades Apoiadoras",
-		"link": "#communities",
+		"text": "Conteúdo",
+		"link": "#content",
 	},
 	{
 		"title": false,
-		"text": "Conteúdo",
-		"link": "#content",
+		"text": "Comunidades Apoiadoras",
+		"link": "#communities",
 	},
 	{
 		"title": false,
