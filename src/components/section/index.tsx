@@ -13,6 +13,7 @@ type Props = {
 
 const StyledSection = styled('section')``;
 const StyledDiv = styled('div')``;
+const StyledP = styled('p')``;
 
 const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) => {
 	return (
@@ -35,9 +36,14 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) =
 			}}>
 				{
 					title && (
-						<p
+						<StyledP
+							sx={{
+								fontSize: {
+									xs: '1.5em',
+									sm: '2em',
+								},
+							}}
 							style={{
-								fontSize: '2em',
 								textTransform: 'uppercase',
 								color: '#BF6C9A',
 								fontWeight: 900,
@@ -46,7 +52,7 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) =
 							}}
 						>
 							{title}
-						</p>
+						</StyledP>
 					)
 				}
 				{children}

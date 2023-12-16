@@ -96,7 +96,7 @@ export default function Home() {
 
 			</StyledDiv>
 			<Section
-				sectionSx={{ backgroundColor: '#EEEEEE' }}
+				sectionSx={{ backgroundColor: '#EEEEEE', padding: { xs: '1em 0', lg: '5em 2em' } }}
 				sx={{
 					display: 'flex',
 					flexDirection: {
