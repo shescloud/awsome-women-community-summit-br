@@ -289,12 +289,12 @@ export default function Home() {
 						md: 1,
 					},
 				}}>
-					<Reference sm="md" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
-					<Reference sm="md" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
-					<Reference sm="md" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
-					<Reference sm="md" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
-					<Reference sm="md" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
-					<Reference sm="md" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
+					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
+					<Reference type="twitter" sm="md" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
+					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
+					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
+					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
+					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
 		</Section>
 		</>
