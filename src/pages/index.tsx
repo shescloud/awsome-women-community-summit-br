@@ -11,6 +11,8 @@ import DesktopMenu from '@/components/desktop-menu';
 
 import menuItems from '@/data/menu';
 
+import communities from '@/data/communities';
+
 const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
 
@@ -241,17 +243,21 @@ export default function Home() {
 			<Section id="communities" title="Comunidades apoiadoras" shadowed>
 				<Box sx={{
 					display: 'flex',
-					justifyContent: {
-						xs: 'center',
-						lg: 'space-around',
-					},
+					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
 				}}>
-					<Reference sm="lg" md="xl" link="https://www.linkedin.com/company/mulheres-na-nuvem-mg/" image={'/images/comunidades/mulheresnanuvemmg.png'}/>
-					<Reference sm="lg" md="xl" link="/" image={'/images/comunidades/mulheresnanuvemsp.png'}/>
-					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/awsusergroupmg/" image={'/images/comunidades/awsugmg.png'}/>
-					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/awsusergroupsp/" image={'/images/comunidades/awsugsp.png'}/>
-					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
+					{
+						communities.map((community, index) => (
+							<Reference
+								key={index}
+								type="link"
+								sm="lg"
+								lg="lg"
+								link={community.link}
+								image={community.image}
+							/>
+						))
+					}
 				</Box>
 			</Section>
 			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
@@ -270,12 +276,12 @@ export default function Home() {
 						md: 1,
 					},
 				}}>
-					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
-					<Reference type="twitter" sm="md" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
-					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
-					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
-					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
-					<Reference type="linkedin" sm="md" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
+					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
+					<Reference type="twitter" sm="md" lg="lg" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
+					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
 		</Section>
 		</>

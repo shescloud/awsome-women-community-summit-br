@@ -2,6 +2,7 @@ import { Box } from '@mui/system';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
 
 type sizes = 'sm' | 'md' | 'lg' | 'xl';
 
@@ -9,7 +10,7 @@ type Props = {
 	name?: string;
 	image: string;
 	link: string;
-	type?: 'twitter' | 'linkedin' | 'github';
+	type?: 'twitter' | 'linkedin' | 'github' | 'link';
 	sm?: sizes;
 	md?: sizes;
 	lg?: sizes;
@@ -24,8 +25,14 @@ const sizes = {
 };
 
 const getIcon = (icon: Props['type']) => {
+	const isLink = icon === 'link';
+
 	const props = {
 		sx: {
+			display: {
+				xs: isLink ? 'none' : 'flex',
+				lg: 'flex',
+			},
 			borderRadius: '30%',
 			color: {
 				xs: '#8c4c65',
@@ -44,6 +51,7 @@ const getIcon = (icon: Props['type']) => {
 		/>,
 		github: <GitHubIcon { ...props } />,
 		linkedin: <LinkedInIcon { ...props } />,
+		link: <LinkIcon { ...props } />,
 	};
 
 	return map[icon!];
@@ -69,8 +77,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: {
-						xs: type ? `linear-gradient(black, black), url(${image})` : `url(${ image })`,
-						lg: `url(${ image })`,
+						xs: `linear-gradient(black, black), url(${image})`,
 					},
 					backgroundBlendMode: 'saturation',
 					borderRadius: {
