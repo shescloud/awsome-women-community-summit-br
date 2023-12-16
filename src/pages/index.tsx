@@ -6,6 +6,7 @@ import TextPanel from '@/components/text-panel';
 import Reference from '@/components/reference';
 import Section from '@/components/section';
 import Button from '@/components/button';
+import MobileMenu from '@/components/mobile-menu';
 
 const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
@@ -14,7 +15,7 @@ export default function Home() {
 	const [opacity, setOpacity] = useState(0);
 	const [menuFixed, setMenuFixed] = useState(false);
 
-	const headerHeight = 100;
+	const headerHeight = 70;
 
 	const handleScroll = () => {
 		const newOpacity = Math.min(window.scrollY / window.innerHeight / 1.3, 1);
@@ -35,9 +36,10 @@ export default function Home() {
 				sectionSx={{
 					backgroundColor: '#F6EAFA',
 					padding: 0,
+					display: 'flex',
+					alignItems: 'center',
 					height: {
-						xs: '100vh',
-						lg: `calc(100vh - ${headerHeight}px)`,
+						xs: `calc(100vh - ${headerHeight}px)`,
 					},
 					marginBottom: {
 						xs: 0,
@@ -49,14 +51,13 @@ export default function Home() {
 					style={{ opacity }}
 					sx={{
 						display: {
-							xs: 'none',
-							lg: 'inline-flex',
+							xs: 'inline-flex',
 						},
 						position: 'absolute',
 						top: 0,
 						left: 0,
 						width: '100%',
-						height: '100%',
+						height: `calc(100vh - ${headerHeight}px)`,
 						backgroundColor: 'black',
 						zIndex: 2,
 					}}
@@ -74,7 +75,7 @@ export default function Home() {
 				sx={{
 					display: {
 						xs: 'none',
-						lg: 'inline-flex'
+						lg: 'flex'
 					},
 					width: '100%',
 					height: headerHeight,
@@ -92,9 +93,8 @@ export default function Home() {
 							: {}
 					)
 				}}
-			>
-
-			</StyledDiv>
+			/>
+			<MobileMenu />
 			<Section
 				sectionSx={{ backgroundColor: '#EEEEEE' }}
 				sx={{
