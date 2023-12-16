@@ -27,9 +27,9 @@ const getIcon = (icon: Props['type']) => {
 	const props = {
 		sx: {
 			borderRadius: '30%',
-			backgroundColor: {
-				xs: 'white',
-				lg: 'transparent',
+			color: {
+				xs: '#8c4c65',
+				lg: '#ff80b0'
 			},
 		},
 	};
@@ -39,7 +39,7 @@ const getIcon = (icon: Props['type']) => {
 			{ ...props }
 			sx={{
 				...props.sx,
-				padding: { xs: '1.5px', lg: 0 }
+				padding: { xs: '1.5px', lg: 0 },
 			}}
 		/>,
 		github: <GitHubIcon { ...props } />,
@@ -68,7 +68,11 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					backgroundPosition: 'center',
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
-					backgroundImage: `url(${image})`,
+					backgroundImage: {
+						xs: `linear-gradient(black, black), url(${image})`,
+						lg: `url(${ image })`,
+					},
+					backgroundBlendMode: 'saturation',
 					borderRadius: {
 						xs: 5,
 					},
@@ -114,13 +118,12 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 									lg: 'center',
 								},
 								'&:hover': {
-									opacity: 0.7,
+									lg: {
+										opacity: 0.7,
+									},
 								},
 								borderRadius: {
 									xs: 5,
-								},
-								color: {
-									xs: 'darkpink',
 								},
 								padding: {
 									xs: 0.75,
