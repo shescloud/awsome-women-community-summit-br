@@ -41,6 +41,7 @@ const Index = ({ text, title, link, onClick }: Props) => {
 					display: 'flex',
 					alignItems: 'center',
 					height: '100%',
+					color: 'white',
 				}}
 			>
 				{text}
