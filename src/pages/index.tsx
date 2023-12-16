@@ -7,6 +7,9 @@ import Reference from '@/components/reference';
 import Section from '@/components/section';
 import Button from '@/components/button';
 import MobileMenu from '@/components/mobile-menu';
+import DesktopMenu from '@/components/desktop-menu';
+
+import menuItems from '@/data/menu';
 
 const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
@@ -71,33 +74,11 @@ export default function Home() {
 					}}
 				/>
 			</Section>
-			<StyledDiv
-				sx={{
-					display: {
-						xs: 'none',
-						lg: 'flex'
-					},
-					width: '100%',
-					height: headerHeight,
-					backgroundColor: 'black',
-					zIndex: 2,
-					...(
-						menuFixed
-							? {
-								position: 'fixed',
-								top: 0,
-								left: 0,
-								zIndex: 999,
-								marginBottom: '5em'
-							}
-							: {}
-					)
-				}}
-			/>
-			<MobileMenu />
+			<DesktopMenu items={menuItems} height={headerHeight} fixed={menuFixed} />
+			<MobileMenu items={menuItems} />
 			<Section
 				id="about"
-				sectionSx={{ backgroundColor: '#EEEEEE', padding: { xs: '1em 0', lg: '5em 2em' } }}
+				sectionSx={{ backgroundColor: '#EEEEEE', padding: { xs: 0, lg: '5em 2em' } }}
 				sx={{
 					display: 'flex',
 					flexDirection: {

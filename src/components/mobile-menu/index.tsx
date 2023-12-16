@@ -4,15 +4,17 @@ import { SxProps } from '@mui/system/styleFunctionSx';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import MenuItem from '@/components/mobile-menu/MenuItem';
-import items from '@/data/menu';
+import MenuItem from '@/components/menu-item';
+
+import defaultItems, { MenuDataItem } from '@/data/menu';
 
 type Props = {
 	menuHeight?: number;
 	sx?: SxProps;
+	items?: MenuDataItem[];
 };
 
-const MobileMenu = ({ menuHeight: menuSize = 70, sx }: Props) => {
+const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Props) => {
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -48,7 +50,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx }: Props) => {
 				>
 					{
 						items.map((item, index) => (
-							<MenuItem title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
+							<MenuItem external={item.external} title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
 						))
 					}
 				</ul>
