@@ -69,7 +69,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: {
-						xs: `linear-gradient(black, black), url(${image})`,
+						xs: type ? `linear-gradient(black, black), url(${image})` : `url(${ image })`,
 						lg: `url(${ image })`,
 					},
 					backgroundBlendMode: 'saturation',
