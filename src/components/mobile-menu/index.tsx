@@ -25,7 +25,7 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 		>
 			<Box
 				style={{
-					width: open ? '100vw' : 0,
+					width: open ? '100%' : 0,
 					height: '100%',
 					backgroundColor: '#BF6C9A',
 					transition: 'all 0.3s',
