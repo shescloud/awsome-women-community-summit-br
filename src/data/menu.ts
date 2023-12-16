@@ -1,10 +1,10 @@
-type MenuValue = {
+export type MenuDataItem = {
 	title: boolean;
 	text: string;
 	link: string;
 };
 
-const menuValues: MenuValue[] = [
+const menuValues: MenuDataItem[] = [
 	{
 		"title": true,
 		"text": "Inscrições abertas",
@@ -12,18 +12,19 @@ const menuValues: MenuValue[] = [
 	},
 	{
 		"title": false,
-		"text": "Sobre o AWSome Women Community Summit Brasil",
+		"text": "Sobre o evento",
+		// "text": "Sobre o AWSome Women Community Summit Brasil",
 		"link": "#about",
-	},
-	{
-		"title": false,
-		"text": "Comunidades Apoiadoras",
-		"link": "#communities",
 	},
 	{
 		"title": false,
 		"text": "Conteúdo",
 		"link": "#content",
+	},
+	{
+		"title": false,
+		"text": "Comunidades Apoiadoras",
+		"link": "#communities",
 	},
 	{
 		"title": false,
