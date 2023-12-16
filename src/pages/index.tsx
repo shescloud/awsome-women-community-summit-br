@@ -96,6 +96,7 @@ export default function Home() {
 			/>
 			<MobileMenu />
 			<Section
+				id="about"
 				sectionSx={{ backgroundColor: '#EEEEEE', padding: { xs: '1em 0', lg: '5em 2em' } }}
 				sx={{
 					display: 'flex',
@@ -223,7 +224,7 @@ export default function Home() {
 					</ul>
 				</TextPanel>
 			</Section>
-			<Section title="Reserve seu lugar"  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+			<Section id="content" title="Reserve seu lugar"  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 				<Box
 					sx={{
 						display: 'grid',
@@ -247,12 +248,12 @@ export default function Home() {
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+			<Section id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
 					Envie sua talk
 				</Button>
 			</Section>
-			<Section title="Comunidades apoiadoras" shadowed>
+			<Section id="communities" title="Comunidades apoiadoras" shadowed>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
@@ -268,7 +269,7 @@ export default function Home() {
 					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
 				</Box>
 			</Section>
-			<Section title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {

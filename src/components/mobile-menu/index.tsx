@@ -5,13 +5,14 @@ import { SxProps } from '@mui/system/styleFunctionSx';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuItem from '@/components/mobile-menu/MenuItem';
+import items from '@/data/menu';
 
 type Props = {
 	menuHeight?: number;
 	sx?: SxProps;
 };
 
-const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
+const MobileMenu = ({ menuHeight: menuSize = 70, sx }: Props) => {
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -25,7 +26,8 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 		>
 			<Box
 				style={{
-					width: open ? '100%' : 0,
+					marginLeft: open ? 0 : '-100%',
+					width: '100%',
 					height: '100%',
 					backgroundColor: '#BF6C9A',
 					transition: 'all 0.3s',
@@ -44,12 +46,13 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 						flexDirection: 'column',
 					}}
 				>
-					<MenuItem text="Home" />
-					<MenuItem text="Home" />
-					<MenuItem text="Home" />
-					<MenuItem text="Home" />
+					{
+						items.map((item, index) => (
+							<MenuItem title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
+						))
+					}
 				</ul>
-				<Box onClick={() => setOpen(false)}>
+				<Box onClick={() => setOpen(false)} style={{ width: menuSize, textAlign: 'center' }}>
 					<CloseIcon style={{ color: 'white', fontSize: 40, margin: 10 }} />
 				</Box>
 			</Box>
@@ -60,7 +63,7 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 					bottom: 0,
 					left: 0,
 					width: '100vw',
-					height: menuHeight,
+					height: menuSize,
 					backgroundColor: 'white',
 					textTransform: 'uppercase',
 					color: '#BF6C9A',
@@ -76,8 +79,8 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 				<Box
 					onClick={() => setOpen(true)}
 					sx={{
-						height: menuHeight,
-						width: menuHeight,
+						height: menuSize,
+						width: menuSize,
 						backgroundColor: '#BF6C9A',
 						display: 'flex',
 						alignItems: 'center',
@@ -86,9 +89,9 @@ const MobileMenu = ({ menuHeight = 70, sx }: Props) => {
 				>
 					<MenuIcon style={{ color: 'white' }} />
 				</Box>
-				<label style={{ width: '100%' }}>
+				<a href="https://sessionize.com/awsome-women-community-summit-brasil-2024/" target="_blank" rel="noreferrer" style={{ width: '100%' }}>
 					Submeta sua palestra
-				</label>
+				</a>
 			</Box>
 		</Box>
 	);
