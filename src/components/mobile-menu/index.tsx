@@ -6,15 +6,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuItem from '@/components/menu-item';
 
-import { MenuDataItem } from '@/data/menu';
+import defaultItems, { MenuDataItem } from '@/data/menu';
 
 type Props = {
 	menuHeight?: number;
 	sx?: SxProps;
-	items: MenuDataItem[];
+	items?: MenuDataItem[];
 };
 
-const MobileMenu = ({ menuHeight: menuSize = 70, sx, items }: Props) => {
+const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Props) => {
 	const [open, setOpen] = useState(false);
 
 	return (
@@ -50,7 +50,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items }: Props) => {
 				>
 					{
 						items.map((item, index) => (
-							<MenuItem title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
+							<MenuItem external={item.external} title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
 						))
 					}
 				</ul>

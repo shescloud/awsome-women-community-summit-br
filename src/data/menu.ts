@@ -2,39 +2,46 @@ export type MenuDataItem = {
 	title: boolean;
 	text: string;
 	link: string;
+	external: boolean;
 };
 
 const menuValues: MenuDataItem[] = [
 	{
 		"title": true,
 		"text": "Inscrições abertas",
-		"link": "https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com"
+		"link": "https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com",
+		"external": true,
 	},
 	{
 		"title": false,
 		"text": "Sobre o evento",
 		// "text": "Sobre o AWSome Women Community Summit Brasil",
-		"link": "#about",
+		"link": "/#about",
+		"external": false,
 	},
 	{
 		"title": false,
 		"text": "Conteúdo",
-		"link": "#content",
+		"link": "/#content",
+		"external": false,
 	},
 	{
 		"title": false,
 		"text": "Comunidades Apoiadoras",
-		"link": "#communities",
+		"link": "/#communities",
+		"external": false,
 	},
 	{
 		"title": false,
 		"text": "Organizadoras",
-		"link": "#organizers",
+		"link": "/#organizers",
+		"external": false,
 	},
 	{
 		"title": false,
 		"text": "Código de conduta",
-		"link": "https://github.com/shescloud/codigo_de_conduta_AWSome_Women_Community_Summit_Brasil",
+		"link": "/codigo-de-conduta",
+		"external": false,
 	},
 ];
 
