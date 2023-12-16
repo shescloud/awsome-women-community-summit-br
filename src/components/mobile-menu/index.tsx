@@ -30,7 +30,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items }: Props) => {
 				style={{
 					marginLeft: open ? 0 : '-100%',
 					width: '100%',
-					height: '100%',
+					height: '100lvh',
 					backgroundColor: '#BF6C9A',
 					transition: 'all 0.3s',
 					zIndex: 4,
@@ -54,7 +54,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items }: Props) => {
 						))
 					}
 				</ul>
-				<Box onClick={() => setOpen(false)} style={{ width: menuSize, textAlign: 'center' }}>
+				<Box onClick={() => setOpen(false)} style={{ width: menuSize, textAlign: 'center', position: 'fixed', bottom: 0 }}>
 					<CloseIcon style={{ color: 'white', fontSize: 40, margin: 10 }} />
 				</Box>
 			</Box>
