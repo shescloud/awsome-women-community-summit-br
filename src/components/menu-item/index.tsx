@@ -20,10 +20,6 @@ const Index = ({ text, title, link, onClick }: Props) => {
 						xs: '1px solid #f9e4f533',
 						lg: 'none'
 					},
-					borderLeft: {
-						xs: 'none',
-						lg: '1px solid #f9e4f533'
-					},
 					textAlign: {
 						lg: 'center'
 					},
@@ -34,7 +30,6 @@ const Index = ({ text, title, link, onClick }: Props) => {
 				}}
 				style={{
 					listStyle: 'none',
-					fontWeight: '700',
 					fontSize: '18px',
 					textTransform: title ? 'uppercase' : 'none',
 					lineHeight: 1,
