@@ -9,9 +9,7 @@ type sizes = 'sm' | 'md' | 'lg' | 'xl';
 type Props = {
 	name?: string;
 	image: string;
-	mobileImage?: string;
 	link: string;
-	grayscaleMobile?: boolean;
 	type?: 'twitter' | 'linkedin' | 'github' | 'link';
 	sm?: sizes;
 	md?: sizes;
@@ -59,7 +57,7 @@ const getIcon = (icon: Props['type']) => {
 	return map[icon!];
 };
 
-const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type, mobileImage, grayscaleMobile = true }: Props) => {
+const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) => {
 	const [firstName, lastName] = name?.split(' ') || [];
 
 	return (
@@ -79,9 +77,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type, mobileImage
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: {
-						// gambiarra de leve, se tiver uma imagem não quadrada pra grayscale no mobile tem q arrumar isso aqui
-						xs: `${grayscaleMobile ? 'linear-gradient(black, black),' : ''} url(${mobileImage || image})`,
-						lg: `linear-gradient(black, black), url(${image})`,
+						xs: `linear-gradient(black, black), url(${image})`,
 					},
 					backgroundBlendMode: 'saturation',
 					borderRadius: {

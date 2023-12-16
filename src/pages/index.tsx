@@ -257,10 +257,7 @@ export default function Home() {
 			<Section title="Comunidades apoiadoras" shadowed>
 				<Box sx={{
 					display: 'flex',
-					justifyContent: {
-						xs: 'center',
-						lg: 'space-around',
-					},
+					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
 				}}>
 					{
@@ -272,8 +269,6 @@ export default function Home() {
 								lg="lg"
 								link={community.link}
 								image={community.image}
-								mobileImage={community.mobileImage}
-								grayscaleMobile={false}
 							/>
 						))
 					}
