@@ -268,7 +268,7 @@ export default function Home() {
 					<Reference sm="lg" md="xl" link="https://www.meetup.com/pt-BR/aws-user-group-brasilia/" image={'/images/comunidades/awsugbsb.png'}/>
 				</Box>
 			</Section>
-			<Section title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA' }}>
+			<Section title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
