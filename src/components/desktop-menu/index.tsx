@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { Box, styled } from '@mui/system';
-import { MenuDataItem } from '@/data/menu';
+import defaultItems, { MenuDataItem } from '@/data/menu';
 import MenuItem from '@/components/menu-item';
 
 
 type Props = {
 	height: number;
 	fixed: boolean;
-	items: MenuDataItem[];
+	items?: MenuDataItem[];
 };
 
-const DesktopMenu = ({ height, fixed, items }: Props) => {
+const DesktopMenu = ({ height, fixed, items = defaultItems }: Props) => {
 	return (
 		<Box
 			sx={{
@@ -62,6 +62,7 @@ const DesktopMenu = ({ height, fixed, items }: Props) => {
 						link={item.link}
 						text={item.text}
 						title={item.title}
+						external={item.external}
 						key={index}
 					/>
 				))

@@ -3,15 +3,14 @@ import { Box, styled } from '@mui/system';
 type Props = {
 	text: string;
 	title?: boolean;
+	external: boolean;
 	link: string;
 	onClick?: () => void;
 };
 
 const StyledLi = styled('li')``;
 
-const Index = ({ text, title, link, onClick }: Props) => {
-	const external = !link.startsWith('#');
-
+const Index = ({ text, title, link, onClick, external }: Props) => {
 	return (
 		<a href={link} rel="noreferrer" onClick={() => onClick?.() } target={external ? "_blank" : ''}>
 			<StyledLi
