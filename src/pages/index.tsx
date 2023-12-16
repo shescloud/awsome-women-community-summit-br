@@ -113,6 +113,10 @@ export default function Home() {
 					primary={true}
 					title={'Quem somos?'}
 					sx={{
+						boxShadow: {
+							xs: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 0px 10px -5px rgba(0, 0, 0, 0.4)',
+							lg: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)'
+						},
 						position: 'relative',
 						textIndent: '2em',
 						textAlign: 'justify',
@@ -172,7 +176,7 @@ export default function Home() {
 					primary={false}
 					title={'O que esperar?'}
 					sx={{
-						boxShadow: '10px 10px 20px 0px rgba(0, 0, 0, 0.5)',
+						boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
 						padding: '2rem',
 						margin: {
 							xs: '1rem 0',
