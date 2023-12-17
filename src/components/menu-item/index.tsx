@@ -9,10 +9,22 @@ type Props = {
 };
 
 const StyledLi = styled('li')``;
+const StyledA = styled('a')``;
 
 const Index = ({ text, title, link, onClick, external }: Props) => {
 	return (
-		<a href={link} rel="noreferrer" onClick={() => onClick?.() } target={external ? "_blank" : ''}>
+		<StyledA
+			sx={{
+				flex: { lg: 1 },
+				display: { lg: 'flex' },
+				justifyContent: 'center',
+				alignItems: 'center',
+			}}
+			href={link}
+			rel="noreferrer"
+			onClick={() => onClick?.() }
+			target={external ? "_blank" : ''}
+		>
 			<StyledLi
 				sx={{
 					borderBottom: {
@@ -25,22 +37,23 @@ const Index = ({ text, title, link, onClick, external }: Props) => {
 					padding: {
 						xs: '1em',
 						lg: '0 1em',
-					}
+					},
+					flex: {
+						lg: 1,
+					},
 				}}
 				style={{
 					listStyle: 'none',
 					fontSize: '18px',
 					textTransform: title ? 'uppercase' : 'none',
 					lineHeight: 1,
-					display: 'flex',
-					alignItems: 'center',
-					height: '100%',
+					height: 'fit-content',
 					color: 'white',
 				}}
 			>
 				{text}
 			</StyledLi>
-		</a>
+		</StyledA>
 	);
 };
 

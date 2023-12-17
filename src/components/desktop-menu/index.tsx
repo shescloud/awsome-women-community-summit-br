@@ -43,6 +43,7 @@ const DesktopMenu = ({ height, fixed, items = defaultItems }: Props) => {
 				style={{
 					color: '#BF6C9A',
 					width: '30%',
+					maxWidth: '300px',
 					textAlign: 'center',
 					height: '100%',
 					backgroundColor: 'white',
