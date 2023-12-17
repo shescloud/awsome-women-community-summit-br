@@ -107,7 +107,7 @@ export default function Home() {
 						zIndex: 2,
 						width: {
 							xs: '100%',
-							lg: '40%'
+							lg: '50%'
 						},
 						'p:not(:first-of-type)': {
 							margin: '1rem 0',
@@ -119,7 +119,7 @@ export default function Home() {
 							position: 'absolute',
 							backgroundColor: 'white',
 							height: '100%',
-							width: '150%',
+							width: '125%',
 							zIndex: -1,
 							top: 0,
 							left: 0,
@@ -158,7 +158,6 @@ export default function Home() {
 					title={'O que esperar?'}
 					sx={{
 						boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
-						padding: '2rem',
 						margin: {
 							xs: '1rem 0',
 							lg: '10rem 0 3rem'
@@ -166,7 +165,7 @@ export default function Home() {
 						zIndex: 2,
 						width: {
 							xs: '100%',
-							lg: '60%'
+							lg: '50%'
 						},
 						li: {
 							textAlign: 'justify',

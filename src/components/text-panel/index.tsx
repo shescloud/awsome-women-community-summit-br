@@ -16,16 +16,19 @@ const TextPanel = ({ title, primary, children, sx }: Props) => {
 		<Box
 			sx={{
 				backgroundColor: primary ? 'white' : '#C290A9',
-				color: primary ? '#C290A9': 'white',
+				color: primary ? 'gray': 'white',
+				padding: '50px',
 				...sx,
 			}}
 		>
 			<H1 sx={{
 				fontWeight: 'bold',
 				textAlign: 'left',
-				fontSize: 25,
+				fontSize: 35,
 				textTransform: 'uppercase',
 				padding: '1rem 0',
+				color: primary ? '#BF6C9A' : 'white',
+				textIndent: 0,
 			}}>
 				{title}
 			</H1>
