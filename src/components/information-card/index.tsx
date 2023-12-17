@@ -25,11 +25,12 @@ const InformationCard = ({ title, description, image, size = 'sm' }: Props) => {
 		}}>
 			<StyledP
 				sx={{
-					fontSize: '1.5em',
+					fontSize: '1em',
 					fontWeight: 'bold',
 					lineHeight: 1,
-					margin: '100 0',
+					margin: '20px 0',
 					color: '#BF6C9A',
+					textTransform: 'uppercase',
 					minHeight: {
 						xs: '3em',
 						sm: '2em',

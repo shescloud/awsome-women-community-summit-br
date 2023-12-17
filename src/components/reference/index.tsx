@@ -20,22 +20,19 @@ type Props = {
 const sizes = {
 	sm: 75,
 	md: 100,
-	lg: 150,
+	lg: 120,
 	xl: 200,
 };
 
 const getIcon = (icon: Props['type']) => {
-	const isLink = icon === 'link';
-
 	const props = {
 		sx: {
 			display: {
-				xs: isLink ? 'none' : 'flex',
+				xs: 'none',
 				lg: 'flex',
 			},
 			borderRadius: '30%',
 			color: {
-				xs: '#8c4c65',
 				lg: '#ff80b0'
 			},
 		},

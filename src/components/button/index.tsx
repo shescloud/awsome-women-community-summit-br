@@ -26,7 +26,7 @@ const CustomButton = ({ link, children }: Props) => {
 				fontWeight: 600,
 				display: 'inline-block',
 				boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
-				background: '-webkit-linear-gradient(135deg, #BF6C9A, #903d74)',
+				backgroundColor: '#BF6C9A',
 				backgroundSize: 'auto 110%',
 			}}
 		>

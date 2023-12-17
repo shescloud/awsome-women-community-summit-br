@@ -105,9 +105,6 @@ export default function Home() {
 						textIndent: '2em',
 						textAlign: 'justify',
 						zIndex: 2,
-						padding: {
-							xs: '1rem',
-						},
 						width: {
 							xs: '100%',
 							lg: '40%'
@@ -245,6 +242,7 @@ export default function Home() {
 					display: 'flex',
 					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
+					
 				}}>
 					{
 						communities.map((community, index) => (
