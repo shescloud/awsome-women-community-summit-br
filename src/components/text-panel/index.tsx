@@ -26,7 +26,6 @@ const TextPanel = ({ title, primary, children, sx }: Props) => {
 				textAlign: 'left',
 				fontSize: 35,
 				textTransform: 'uppercase',
-				padding: '1rem 0',
 				color: primary ? '#BF6C9A' : 'white',
 				textIndent: 0,
 			}}>

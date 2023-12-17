@@ -105,6 +105,9 @@ export default function Home() {
 						textIndent: '2em',
 						textAlign: 'justify',
 						zIndex: 2,
+						lineHeight: {
+							lg: 2,
+						},
 						width: {
 							xs: '100%',
 							lg: '50%'
