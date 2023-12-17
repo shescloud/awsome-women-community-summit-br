@@ -239,12 +239,11 @@ export default function Home() {
 					Envie sua talk
 				</Button>
 			</Section>
-			<Section id="communities" title="Comunidades apoiadoras" shadowed>
+			<Section id="communities" title="Comunidades apoiadoras">
 				<Box sx={{
 					display: 'flex',
 					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
-					
 				}}>
 					{
 						communities.map((community, index) => (
@@ -252,7 +251,7 @@ export default function Home() {
 								key={index}
 								type="link"
 								sm="lg"
-								lg="lg"
+								lg="xl"
 								link={community.link}
 								image={community.image}
 							/>
@@ -260,7 +259,7 @@ export default function Home() {
 					}
 				</Box>
 			</Section>
-			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 }, boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {

@@ -20,7 +20,6 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) =
 		<StyledSection
 			id={id}
 			sx={{
-				boxShadow: shadowed ? '0px 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none',
 				padding: {
 					xs: '1em',
 					lg: '5em 0',
