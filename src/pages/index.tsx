@@ -182,7 +182,7 @@ export default function Home() {
 						},
 					}}
 				>
-					<ul >
+					<ul style={{ marginLeft: '15px' }}>
 						<li>
 							Renove e revitalize seus conhecimentos em cloud computing, tópicos em altas de tecnologia e muito sobre AWS
 						</li>
