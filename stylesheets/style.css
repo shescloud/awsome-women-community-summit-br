@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Exo");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
+.custom-link {
+  color: #e5d8df; /* Define a cor do link */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.custom-link:hover {
+  color: #f6e4ec; /* Cor do link quando o mouse passa por cima */
+}
+
+
 body {
   background: #eeeeee;
   font-family: "Roboto", sans-serif;
@@ -76,7 +86,7 @@ input[type="reset"] {
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
-  background: -webkit-linear-gradient(135deg, #BF6C9A, #903d74);
+  background-color: #BF6C9A;
   background-size: auto 110%;
 }
 
@@ -191,7 +201,7 @@ input[type="reset"].disabled {
   pointer-events: none;
   background: #eee !important;
   box-shadow: none;
-  color: #999999 !important;
+  color: #fdfbfb !important;
   cursor: default;
 }
 
@@ -1277,7 +1287,7 @@ ul.circle li {
 
 #page .section-1 .content .container>div .right .gal:after {
   content: "";
-  background: rgba(35, 47, 63, 0.9);
+  background: rgba(250, 252, 255, 0.9);
   position: absolute;
   left: 0;
   top: 0;
@@ -2370,7 +2380,7 @@ ul.circle li {
   bottom: 0;
   transition: all 0.25s;
   margin: auto;
-  background: rgba(35, 47, 63, 0.85);
+  background: rgba(248, 246, 250, 0.85);
   color: #00acee;
   display: flex;
   align-items: center;
@@ -2428,7 +2438,7 @@ ul.circle li {
   }
 }
 
-//////////
+/**/
 #page .section-66.inv {
   background: transparent;
   box-shadow: none;
