@@ -501,14 +501,19 @@ ion-icon {
   line-height: 1.5;
 }
 
+
+
 #page .section-4.inv .container .sponsors h4.main-heading-ttl {
   color: #fff;
 }
 
-#page .section-6.inv .container .volunteers h4.main-heading-ttl {
+#page .section-66.button.icon-grp .container .volunteers h4.main-heading-ttl {
   color: #B53C7F;
 }
 
+#page .section-66.inv .container .volunteers h4.main-heading-ttl {
+  color: #B53C7F;
+}
 .heading-ttl.deco,
 .med-heading-ttl.deco,
 .main-heading-ttl.deco {
@@ -522,7 +527,7 @@ ion-icon {
   position: relative;
   z-index: 2;
   background: #fff;
-  padding: 5px 15px 5px 0;
+  padding: 52px 152px 5px 0;
 }
 
 .heading-ttl.deco::before,
@@ -1880,8 +1885,8 @@ ul.circle li {
 }
 
 #page .section-talk {
-  padding: 50px;
-  background-color: #eee;
+  padding: 30px;
+  background-color: white;
 }
 
 #page .section-5 {
@@ -2322,6 +2327,8 @@ ul.circle li {
   color: #B53C7F;
 }
 
+
+
 @media only screen and (min-width: 992px) {
   #page .section-6 .volunteers .vl-i .person.push {
     margin-left: 2.5%;
@@ -2420,6 +2427,133 @@ ul.circle li {
     font-size: 12px;
   }
 }
+
+//////////
+#page .section-66.inv {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  background: #fff;
+}
+
+#page .section-66 .volunteers .vl-i {
+  flex-wrap: wrap;
+  justify-content: unset;
+}
+
+#page .section-66 .volunteers .vl-i .person {
+  align-items: center;
+  width: 16.666%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 0;
+  color: grey;
+}
+
+@media only screen and (min-width: 992px) {
+  #page .section-66 .volunteers .vl-i .person.push {
+    margin-left: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-66 .volunteers .vl-i .person {
+    width: 33%;
+  }
+}
+
+#page .section-66 .volunteers .vl-i .person .img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-66 .volunteers .vl-i .person .img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-66 .volunteers .vl-i .person .img a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-66 .volunteers .vl-i .person .img a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-66 .volunteers .vl-i .person .img a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-66 .volunteers .vl-i .person .img:hover a {
+  transform: translateY(0);
+}
+
+#page .section-66 .volunteers .vl-i .person:before {
+  order: 1;
+  content: attr(data-fname);
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-66 .volunteers .vl-i .person:before {
+    font-size: 14px;
+  }
+}
+
+#page .section-66 .volunteers .vl-i .person:after {
+  font-size: 12px;
+  order: 2;
+  content: attr(data-lname);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-66 .volunteers .vl-i .person:after {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
 .comunidades {
   text-align: center;
   background-color: #ffffff;
@@ -2510,6 +2644,31 @@ ul.circle li {
 
 #page .section-6 .volunteers .vl-i .person[data-lname="Andrade"] .img {
   background-image: url(../images/vols/nelly.jpeg);
+}
+
+
+#page .section-66 .volunteers .vl-i .person[data-lname="Na Nuvem MG"] .img {
+  background-image: url(../images/comunidades/mulheresnanuvemmg.png);
+}
+
+#page .section-66 .volunteers .vl-i .person[data-lname="Nas Nuvens SP"] .img {
+  background-image: url(../images/comunidades/mulheresnanuvemsp.png);
+}
+
+#page .section-66 .volunteers .vl-i .person[data-lname="Group MG"] .img {
+  background-image: url(../images/comunidades/awsugmg.png);
+}
+
+#page .section-66 .volunteers .vl-i .person[data-lname="Group SP"] .img {
+  background-image: url(../images/comunidades/awsugsp.png);
+}
+
+#page .section-66 .volunteers .vl-i .person[data-lname="Group Brasilia"] .img {
+  background-image: url(../images/comunidades/awsugbsb.png);
+}
+
+#page .section-66 .volunteers .vl-i .person[data-lname="SysAdminas"] .img {
+  background-image: url(../images/comunidades/sysadminas.jpeg);
 }
 
 #page .section-7 {
