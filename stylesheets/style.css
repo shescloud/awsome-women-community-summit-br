@@ -2380,7 +2380,7 @@ ul.circle li {
   bottom: 0;
   transition: all 0.25s;
   margin: auto;
-  background: rgba(248, 246, 250, 0.85);
+  background: rgba(20, 20, 21, 0.85);
   color: #00acee;
   display: flex;
   align-items: center;
