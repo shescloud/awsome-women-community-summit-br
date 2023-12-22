@@ -16,7 +16,7 @@ const sizes = {
 
 const StyledP = styled('p')``;
 
-const InformationCard = ({ title, description, image, size = 'sm' }: Props) => {
+const InformationCard = ({ title, description, image, size = 'md' }: Props) => {
 	return (
 		<div style={{
 			border: '1px solid lightgray',

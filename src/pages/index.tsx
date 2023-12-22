@@ -244,6 +244,10 @@ export default function Home() {
 					display: 'flex',
 					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
+					columnGap: {
+						md: '1em',
+						lg: '0.5em',
+					},
 				}}>
 					{
 						communities.map((community, index) => (
@@ -282,7 +286,18 @@ export default function Home() {
 					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
 					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
-		</Section>
+			</Section>
+			<Section sectionSx={{ color: 'rgb(191, 108, 154)' }}>
+				<p style={{ fontSize: '2em' }}>QUER SER UM APOIADOR NO NOSSO EVENTO?</p>
+				<p>Encontre abaixo o nosso Mídia Kit.</p>
+				<p> Fale com a gente no e-mail:</p>
+				<p><b>contact@awswomencommunitybrasil.com</b></p>
+				<br />
+				<div>
+					<a href="https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view" target="_blank"></a>
+					<Button link={'https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view'}>MÍDIA KIT</Button>
+				</div>
+			</Section>
 		</>
 	);
 }
