@@ -50,7 +50,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Pro
 				>
 					{
 						items.map((item, index) => (
-							<MenuItem external={item.external} title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
+							<MenuItem key={index} {...item} onClick={() => setOpen(false) } />
 						))
 					}
 				</ul>

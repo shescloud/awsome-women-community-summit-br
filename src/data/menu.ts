@@ -3,6 +3,7 @@ export type MenuDataItem = {
 	text: string;
 	link: string;
 	external: boolean;
+	dropdown?: MenuDataItem[];
 };
 
 const menuValues: MenuDataItem[] = [

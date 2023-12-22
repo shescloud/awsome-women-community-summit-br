@@ -1,17 +1,15 @@
 import { Box, styled } from '@mui/system';
 
-type Props = {
-	text: string;
-	title?: boolean;
-	external: boolean;
-	link: string;
+import { MenuDataItem } from '@/data/menu';
+
+type Props = MenuDataItem & {
 	onClick?: () => void;
 };
 
 const StyledLi = styled('li')``;
 const StyledA = styled('a')``;
 
-const Index = ({ text, title, link, onClick, external }: Props) => {
+const Index = ({ dropdown, text, title, link, onClick, external }: Props) => {
 	return (
 		<StyledA
 			sx={{
@@ -52,6 +50,15 @@ const Index = ({ text, title, link, onClick, external }: Props) => {
 				}}
 			>
 				{text}
+				{
+					dropdown && (
+						<>
+							{dropdown.map((item, index) => (
+								<p key={index}>{item.text}</p>
+							))}
+						</>
+					)
+				}
 			</StyledLi>
 		</StyledA>
 	);
