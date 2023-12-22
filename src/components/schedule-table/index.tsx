@@ -1,6 +1,5 @@
 import { Schedule } from '@/data/tracks';
 import { Box } from '@mui/material';
-import { styled } from '@mui/system';
 
 type Props = {
 	schedule: Schedule;
@@ -10,11 +9,21 @@ type Props = {
 const ScheduleTable = ({ schedule }: Props) => {
 	return (
 		<Box
-			style={{ color: '#BF6C9A', maxWidth: 1200, margin: '0 auto', display: 'flex', padding: '0.5em', rowGap: 10 }}
+			style={{ color: '#b26590', maxWidth: 1200, margin: '0 auto', display: 'flex', padding: '0.5em', rowGap: 10 }}
 			sx={{ flexDirection: { xs: 'column', lg: 'row' }, backgroundColor: '#EEEEEE' }}
 		>
-			<label style={{ textAlign: 'center', fontSize: '2em', textTransform: 'uppercase' }}>{schedule.name}</label>
-			<Box style={{ border: '1px solid darkpink' }}>
+			<label style={{ textAlign: 'center', fontSize: '2em', textTransform: 'uppercase' }}>Trilha {schedule.name}</label>
+			<Box
+				sx={{
+					'p:not(:first-child)': {
+						borderTop: '1px solid #b26590'
+					},
+					'> p': {
+						padding: '0.5em',
+					},
+				}}
+				style={{ border: '2px solid ', backgroundColor: '#ffd6eb', textAlign: 'center', fontSize: '1.5em' }}
+			>
 				<p>Horário</p>
 				<p>Palestras</p>
 			</Box>
@@ -28,7 +37,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 							alignItems: 'center',
 							textAlign: 'center',
 							padding: '1em',
-							backgroundColor: talk.isTalk ? 'white' : '#FFB8DBFF',
+							backgroundColor: talk.isTalk ? 'white' : '#ffd6eb',
 							boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 0px 2px -5px rgba(0, 0, 0, 0.4)',
 						}}
 					>
@@ -39,7 +48,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 								? (
 									<Box style={{ marginTop: '25px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 										<a style={{ fontWeight: 'bold' }} href={talk.speaker.link} rel="noreferrer" target="_blank">{talk.speaker.name}</a>
-										<img src={talk.speaker.avatar} width="50%" style={{ borderRadius: 5, margin: '5px 0' }} />
+										<img alt={talk.speaker.name} src={talk.speaker.avatar} width="50%" style={{ borderRadius: 5, margin: '5px 0' }} />
 										<a href={talk.speaker.link} rel="noreferrer" target="_blank">{talk.speaker.role}</a>
 									</Box>
 								)
