@@ -25,7 +25,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 			style={{ color: '#b26590', maxWidth: 1200, margin: '0 auto', display: 'flex', padding: '0.5em', rowGap: 10 }}
 			sx={{ flexDirection: { xs: 'column' }, backgroundColor: '#EEEEEE' }}
 		>
-			<label style={{ textAlign: 'center', fontSize: '2em', textTransform: 'uppercase' }}>Trilha {schedule.name}</label>
+			{!isDesktop && <label style={{ textAlign: 'center', fontSize: '2em', textTransform: 'uppercase' }}>Trilha {schedule.name}</label>}
 			<Box
 				sx={{
 					'p:not(:first-child)': {
@@ -52,7 +52,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 				style={{ border: '2px solid ', backgroundColor: '#ffd6eb', textAlign: 'center', fontSize: '1.5em' }}
 			>
 				<StyledP sx={{ maxWidth: { lg: '200px' } }}>Horário</StyledP>
-				<StyledP sx={{ flex: 1, paddingLeft: { lg: '100px' } }}>Palestras</StyledP>
+				<StyledP sx={{ flex: 1, paddingLeft: { lg: '100px' } }}>{isDesktop ? `Trilha ${schedule.name} - ` : ''}Palestras</StyledP>
 			</Box>
 			{
 				schedule.schedule.map((talk, index) => (

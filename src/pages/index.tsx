@@ -255,7 +255,7 @@ export default function Home() {
 								key={index}
 								type="link"
 								sm="lg"
-								lg="xl"
+								lg="lg"
 								link={community.link}
 								image={community.image}
 							/>
