@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '@mui/system';
+import { Box, styled } from '@mui/system';
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error';
 

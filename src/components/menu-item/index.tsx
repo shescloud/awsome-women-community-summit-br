@@ -1,29 +1,48 @@
-import { Box, styled } from '@mui/system';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { styled, Box } from '@mui/system';
 
-type Props = {
-	text: string;
-	title?: boolean;
-	external: boolean;
-	link: string;
-	onClick?: () => void;
+import { MenuDataItem } from '@/data/menu';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+
+type Props = MenuDataItem & {
+	onClick?: (link?: string) => void;
+	submenu?: boolean;
 };
 
 const StyledLi = styled('li')``;
-const StyledA = styled('a')``;
 
-const Index = ({ text, title, link, onClick, external }: Props) => {
+const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: Props) => {
+	const router = useRouter();
+	const [open, setOpen] = useState(false);
+
+	const onLocalClick = (clickedLink?: string) => {
+		if (dropdown && !clickedLink) {
+			return setOpen(!open);
+		}
+
+		onClick?.();
+
+		if (external) {
+			return window.open(link, '_blank');
+		}
+
+		return router.push(clickedLink || link);
+	};
+
 	return (
-		<StyledA
+		<Box
+			style={{
+				backgroundColor: submenu ? '#EEEEEE' : '',
+			}}
 			sx={{
 				flex: { lg: 1 },
 				display: { lg: 'flex' },
 				justifyContent: 'center',
 				alignItems: 'center',
+				cursor: 'pointer',
 			}}
-			href={link}
-			rel="noreferrer"
-			onClick={() => onClick?.() }
-			target={external ? "_blank" : ''}
+			onClick={() => onLocalClick()}
 		>
 			<StyledLi
 				sx={{
@@ -35,7 +54,7 @@ const Index = ({ text, title, link, onClick, external }: Props) => {
 						lg: 'center'
 					},
 					padding: {
-						xs: '1em',
+						xs: `1em ${dropdown ? 0 : '1.5em'} 0`,
 						lg: '0 1em',
 					},
 					flex: {
@@ -48,13 +67,36 @@ const Index = ({ text, title, link, onClick, external }: Props) => {
 					textTransform: title ? 'uppercase' : 'none',
 					lineHeight: 1,
 					height: 'fit-content',
-					color: 'white',
+					color: submenu ? 'rgb(191, 108, 154)' : 'white',
 				}}
 			>
-				{text}
+				<Box sx={{ marginBottom: { xs: '1em', lg: 0 } }}>
+					{dropdown && (
+						<ArrowDropDownIcon style={{ transition: 'transform 0.4s ease', transform: `rotate(${open ? -180 : 0}deg)` }} />
+					)}
+					{text}
+				</Box>
+				{dropdown && (
+					<Box
+						style={{
+							overflow: 'hidden',
+							height: open ? `${dropdown.length + 3.5}em` : 0,
+							transition: 'height 0.4s ease',
+							display: 'flex',
+							flexDirection: 'column',
+							padding: '0 1.5em',
+							rowGap: '1em',
+							textTransform: 'uppercase',
+						}}
+					>
+						{dropdown.map((item, index) => (
+							<Box onClick={() => onLocalClick(item.link)} key={index}>{item.text}</Box>
+						))}
+					</Box>
+				)}
 			</StyledLi>
-		</StyledA>
+		</Box>
 	);
 };
 
-export default Index;
+export default MenuItem;

@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Box, styled } from '@mui/system';
+import { Box } from '@mui/system';
 import { SxProps } from '@mui/system/styleFunctionSx';
+
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -50,7 +51,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Pro
 				>
 					{
 						items.map((item, index) => (
-							<MenuItem external={item.external} title={item.title} key={index} text={item.text} link={item.link} onClick={() => setOpen(false) } />
+							<MenuItem key={index} {...item} onClick={() => setOpen(false)} />
 						))
 					}
 				</ul>
