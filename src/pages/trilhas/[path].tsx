@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Box, styled } from '@mui/system';
 import { useRouter } from 'next/router'
@@ -16,11 +16,17 @@ type Props = {
 
 const TalkSchedule = ({ schedules = defaultSchedule }: Props) => {
 	const router = useRouter();
+	const path = router.query.path;
+
 	// precisa mover isso pro layout, mas por enquanto fica aqui
 	// muito custoso criar o header pra cada pagina
 	const headerHeight = 70;
 
-	const schedule = schedules.find(schedule => schedule.slug === router.query.path);
+	if (!path) {
+		return null;
+	}
+
+	const schedule = schedules.find(schedule => schedule.slug === path);
 	if (!schedule) {
 		return <ErrorPage statusCode={404} />;
 	}

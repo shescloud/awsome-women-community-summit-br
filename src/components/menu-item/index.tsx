@@ -1,27 +1,45 @@
-import { Box, styled } from '@mui/system';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { styled, Box } from '@mui/system';
 
 import { MenuDataItem } from '@/data/menu';
+import { useState } from 'react';
 
 type Props = MenuDataItem & {
-	onClick?: () => void;
+	onClick?: (link?: string) => void;
+	submenu?: boolean;
 };
 
 const StyledLi = styled('li')``;
-const StyledA = styled('a')``;
 
-const Index = ({ dropdown, text, title, link, onClick, external }: Props) => {
+const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: Props) => {
+	const [open, setOpen] = useState(false);
+
+	const onLocalClick = () => {
+		if (dropdown) {
+			return setOpen(!open);
+		}
+
+		if (external) {
+			onClick?.();
+
+			return window.open(link, '_blank');
+		}
+
+		onClick?.(link);
+	};
+
 	return (
-		<StyledA
+		<Box
+			style={{
+				backgroundColor: submenu ? '#EEEEEE' : '',
+			}}
 			sx={{
 				flex: { lg: 1 },
 				display: { lg: 'flex' },
 				justifyContent: 'center',
 				alignItems: 'center',
 			}}
-			href={link}
-			rel="noreferrer"
-			onClick={() => onClick?.() }
-			target={external ? "_blank" : ''}
+			onClick={() => onLocalClick()}
 		>
 			<StyledLi
 				sx={{
@@ -33,7 +51,7 @@ const Index = ({ dropdown, text, title, link, onClick, external }: Props) => {
 						lg: 'center'
 					},
 					padding: {
-						xs: '1em',
+						xs: `1em ${dropdown ? 0 : '1.5em'} 0`,
 						lg: '0 1em',
 					},
 					flex: {
@@ -46,22 +64,36 @@ const Index = ({ dropdown, text, title, link, onClick, external }: Props) => {
 					textTransform: title ? 'uppercase' : 'none',
 					lineHeight: 1,
 					height: 'fit-content',
-					color: 'white',
+					color: submenu ? 'rgb(191, 108, 154)' : 'white',
 				}}
 			>
-				{text}
-				{
-					dropdown && (
-						<>
-							{dropdown.map((item, index) => (
-								<p key={index}>{item.text}</p>
-							))}
-						</>
-					)
-				}
+				<Box style={{ marginBottom: '1em' }}>
+					{dropdown && (
+						<ArrowDropDownIcon style={{ transition: 'transform 0.4s ease', transform: `rotate(${open ? -180 : 0}deg)` }} />
+					)}
+					{text}
+				</Box>
+				{dropdown && (
+					<Box
+						style={{
+							overflow: 'hidden',
+							height: open ? `${dropdown.length + 3.5}em` : 0,
+							transition: 'height 0.4s ease',
+							display: 'flex',
+							flexDirection: 'column',
+							padding: '0 1.5em',
+							rowGap: '1em',
+							textTransform: 'uppercase'
+						}}
+					>
+						{dropdown.map((item, index) => (
+							<StyledLi onClick={() => onClick?.(item.link)} key={index}>{item.text}</StyledLi>
+						))}
+					</Box>
+				)}
 			</StyledLi>
-		</StyledA>
+		</Box>
 	);
 };
 
-export default Index;
+export default MenuItem;

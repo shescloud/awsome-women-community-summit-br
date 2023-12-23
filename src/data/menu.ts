@@ -36,7 +36,7 @@ const menuValues: MenuDataItem[] = [
 		"dropdown": tracks.map((track) => ({
 			"title": false,
 			"text": track.name,
-			"link": `/trilha/${track.slug}`,
+			"link": `/trilhas/${track.slug}`,
 			"external": false,
 		})),
 	},

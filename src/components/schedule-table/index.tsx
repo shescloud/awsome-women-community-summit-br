@@ -28,7 +28,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 			{!isDesktop && <label style={{ textAlign: 'center', fontSize: '2em', textTransform: 'uppercase' }}>Trilha {schedule.name}</label>}
 			<Box
 				sx={{
-					'p:not(:first-child)': {
+					'p:not(:first-of-type)': {
 						borderTop: {
 							xs: '1px solid #b26590',
 							lg: 'none',
