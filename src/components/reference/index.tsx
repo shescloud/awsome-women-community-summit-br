@@ -96,7 +96,6 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					borderRadius: {
 						xs: 5,
 					},
-					marginBottom: 2,
 					width: {
 						xs: sizes[sm!],
 						sm: sizes[sm!],

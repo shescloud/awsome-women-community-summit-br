@@ -1,3 +1,5 @@
+import tracks from '@/data/tracks';
+
 export type MenuDataItem = {
 	title: boolean;
 	text: string;
@@ -25,6 +27,18 @@ const menuValues: MenuDataItem[] = [
 		"text": "Conteúdo",
 		"link": "/#content",
 		"external": false,
+	},
+	{
+		"title": false,
+		"text": "Trilhas",
+		"link": "/#tracks",
+		"external": false,
+		"dropdown": tracks.map((track) => ({
+			"title": false,
+			"text": track.name,
+			"link": `/trilha/${track.slug}`,
+			"external": false,
+		})),
 	},
 	{
 		"title": false,
