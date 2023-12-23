@@ -21,7 +21,7 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) =
 			id={id}
 			sx={{
 				padding: {
-					xs: '1em',
+					xs: '2em',
 					lg: '5em 0',
 				},
 				...sectionSx

@@ -248,6 +248,9 @@ export default function Home() {
 						md: '1em',
 						lg: '0.5em',
 					},
+					rowGap: {
+						xs: '1em',
+					},
 				}}>
 					{
 						communities.map((community, index) => (
