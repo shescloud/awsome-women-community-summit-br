@@ -38,6 +38,7 @@ const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: P
 				display: { lg: 'flex' },
 				justifyContent: 'center',
 				alignItems: 'center',
+				cursor: 'pointer',
 			}}
 			onClick={() => onLocalClick()}
 		>
@@ -67,7 +68,7 @@ const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: P
 					color: submenu ? 'rgb(191, 108, 154)' : 'white',
 				}}
 			>
-				<Box style={{ marginBottom: '1em' }}>
+				<Box sx={{ marginBottom: { xs: '1em', lg: 0 } }}>
 					{dropdown && (
 						<ArrowDropDownIcon style={{ transition: 'transform 0.4s ease', transform: `rotate(${open ? -180 : 0}deg)` }} />
 					)}
@@ -83,7 +84,7 @@ const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: P
 							flexDirection: 'column',
 							padding: '0 1.5em',
 							rowGap: '1em',
-							textTransform: 'uppercase'
+							textTransform: 'uppercase',
 						}}
 					>
 						{dropdown.map((item, index) => (

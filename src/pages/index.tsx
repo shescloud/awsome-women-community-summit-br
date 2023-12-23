@@ -245,7 +245,7 @@ export default function Home() {
 					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
 					columnGap: {
-						md: '1em',
+						xs: '1em',
 						lg: '0.5em',
 					},
 					rowGap: {

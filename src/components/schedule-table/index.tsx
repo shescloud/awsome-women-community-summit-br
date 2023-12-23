@@ -52,7 +52,7 @@ const ScheduleTable = ({ schedule }: Props) => {
 				style={{ border: '2px solid ', backgroundColor: '#ffd6eb', textAlign: 'center', fontSize: '1.5em' }}
 			>
 				<StyledP sx={{ maxWidth: { lg: '200px' } }}>Horário</StyledP>
-				<StyledP sx={{ flex: 1, paddingLeft: { lg: '100px' } }}>{isDesktop ? `Trilha ${schedule.name} - ` : ''}Palestras</StyledP>
+				<StyledP sx={{ flex: 1, paddingLeft: { lg: '100px' } }}>{isDesktop ? `Trilha ${schedule.name} - ` : ''}Palestra</StyledP>
 			</Box>
 			{
 				schedule.schedule.map((talk, index) => (
