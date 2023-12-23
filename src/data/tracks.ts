@@ -1,3 +1,5 @@
+import reject from 'lodash/reject';
+
 export type Talk = {
 	from: string;
 	to: string;
@@ -14,6 +16,7 @@ export type Talk = {
 export type Schedule = {
 	name: string;
 	slug: string;
+	enabled: boolean;
 	schedule: Talk[];
 };
 
@@ -21,6 +24,7 @@ const schedules: Schedule[] = [
 	{
 		name: 'Iniciante',
 		slug: 'iniciante',
+		enabled: true,
 		schedule: [
 			{
 				from: '08:00',
@@ -165,6 +169,7 @@ const schedules: Schedule[] = [
 	{
 		name: 'Intermediário e Avançado',
 		slug: 'intermediario-e-avancado',
+		enabled: true,
 		schedule: [
 			{
 				from: '08:00',
@@ -309,6 +314,7 @@ const schedules: Schedule[] = [
 	{
 		name: 'Carreira',
 		slug: 'carreira',
+		enabled: true,
 		schedule: [
 			{
 				from: '08:00',
@@ -452,4 +458,4 @@ const schedules: Schedule[] = [
 	},
 ];
 
-export default schedules;
+export default reject(schedules, { enabled: false });

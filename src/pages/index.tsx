@@ -10,7 +10,6 @@ import MobileMenu from '@/components/mobile-menu';
 import DesktopMenu from '@/components/desktop-menu';
 
 import menuItems from '@/data/menu';
-
 import communities from '@/data/communities';
 
 const StyledDiv = styled('div')``;
@@ -215,7 +214,8 @@ export default function Home() {
 					sx={{
 						display: 'grid',
 						gridTemplateColumns: {
-							xs: 'repeat(2, 1fr)',
+							xs: 'repeat(1, 1fr)',
+							md: 'repeat(2, 1fr)',
 							lg: 'repeat(4, 1fr)',
 						},
 						gap: 1,
@@ -225,16 +225,16 @@ export default function Home() {
 						},
 					}}
 				>
-					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
-					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
-					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
-					<InformationCard image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
+					<InformationCard track={'iniciante'} image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
+					<InformationCard track={'intermediario-e-avancado'} image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
+					<InformationCard track={'intermediario-e-avancado'} image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
+					<InformationCard track={'carreira'} image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
 				</Box>
 				<Button link='https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com'>
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+			<Section until="2024-01-15" id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
 					Envie sua talk
 				</Button>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, styled } from '@mui/system';
+import { Box } from '@mui/system';
 import { SxProps } from '@mui/system/styleFunctionSx';
 
 
@@ -8,7 +8,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuItem from '@/components/menu-item';
 
 import defaultItems, { MenuDataItem } from '@/data/menu';
-import { useRouter } from 'next/router';
 
 type Props = {
 	menuHeight?: number;
@@ -17,17 +16,7 @@ type Props = {
 };
 
 const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Props) => {
-	const router = useRouter();
-
 	const [open, setOpen] = useState(false);
-	const onMenuItemClick = (link?: string) => {
-		setOpen(false);
-
-		if (link) {
-			return router.push(link);
-		}
-	};
-
 
 	return (
 		<Box
@@ -62,7 +51,7 @@ const MobileMenu = ({ menuHeight: menuSize = 70, sx, items = defaultItems }: Pro
 				>
 					{
 						items.map((item, index) => (
-							<MenuItem key={index} {...item} onClick={onMenuItemClick} />
+							<MenuItem key={index} {...item} onClick={() => setOpen(false)} />
 						))
 					}
 				</ul>

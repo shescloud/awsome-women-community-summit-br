@@ -3,6 +3,7 @@ import { styled, Box } from '@mui/system';
 
 import { MenuDataItem } from '@/data/menu';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 type Props = MenuDataItem & {
 	onClick?: (link?: string) => void;
@@ -12,20 +13,21 @@ type Props = MenuDataItem & {
 const StyledLi = styled('li')``;
 
 const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: Props) => {
+	const router = useRouter();
 	const [open, setOpen] = useState(false);
 
-	const onLocalClick = () => {
-		if (dropdown) {
+	const onLocalClick = (clickedLink?: string) => {
+		if (dropdown && !clickedLink) {
 			return setOpen(!open);
 		}
 
-		if (external) {
-			onClick?.();
+		onClick?.();
 
+		if (external) {
 			return window.open(link, '_blank');
 		}
 
-		onClick?.(link);
+		return router.push(clickedLink || link);
 	};
 
 	return (
@@ -88,7 +90,7 @@ const MenuItem = ({ dropdown, text, title, link, onClick, external, submenu }: P
 						}}
 					>
 						{dropdown.map((item, index) => (
-							<StyledLi onClick={() => onClick?.(item.link)} key={index}>{item.text}</StyledLi>
+							<StyledLi onClick={() => onLocalClick(item.link)} key={index}>{item.text}</StyledLi>
 						))}
 					</Box>
 				)}
