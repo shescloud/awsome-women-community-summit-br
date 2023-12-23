@@ -3,6 +3,7 @@ import { Box, styled } from '@mui/system';
 import defaultItems, { MenuDataItem } from '@/data/menu';
 import MenuItem from '@/components/menu-item';
 
+import filter from 'lodash/filter';
 
 type Props = {
 	height: number;
@@ -59,14 +60,8 @@ const DesktopMenu = ({ height, fixed, items = defaultItems }: Props) => {
 				Submeta sua palestra
 			</a>
 			{
-				items.map((item, index) => (
-					<MenuItem
-						link={item.link}
-						text={item.text}
-						title={item.title}
-						external={item.external}
-						key={index}
-					/>
+				filter(items, (item) => !item.dropdown).map((item, index) => (
+					<MenuItem {...item} key={index} />
 				))
 			}
 		</Box>
