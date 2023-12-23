@@ -263,7 +263,7 @@ export default function Home() {
 					}
 				</Box>
 			</Section>
-			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 }, boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
@@ -287,11 +287,11 @@ export default function Home() {
 					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
 			</Section>
-			<Section sectionSx={{ color: 'rgb(191, 108, 154)' }}>
+			<Section sectionSx={{ color: 'rgb(191, 108, 154)', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
 				<p style={{ fontSize: '2em' }}>QUER SER UM APOIADOR NO NOSSO EVENTO?</p>
 				<p>Encontre abaixo o nosso Mídia Kit.</p>
 				<p> Fale com a gente no e-mail:</p>
-				<p><b>contact@awswomencommunitybrasil.com</b></p>
+				<a href="mailto:contact@awswomencommunitybrasil.com" style={{ lineBreak: 'anywhere', fontWeight: 'bold' }}>contact@awswomencommunitybrasil.com</a>
 				<br />
 				<div>
 					<a href="https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view" target="_blank"></a>
