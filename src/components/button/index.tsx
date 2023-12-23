@@ -1,16 +1,32 @@
+import { Box } from '@mui/material';
 import { ReactNode } from 'react';
+import { useRouter } from 'next/router';
 
 type Props = {
-	link: string;
 	children: ReactNode;
-};
+} & (
+	{ link: string; external?: boolean; onClick?: never } | { link?: never; onClick: () => void; external?: never }
+);
 
-const CustomButton = ({ link, children }: Props) => {
+const CustomButton = ({ link, children, onClick, external = true }: Props) => {
+	const router = useRouter();
+
+	const onLocalClick = () => {
+		onClick?.();
+
+		if (link) {
+			if (external) {
+				window.open(link, '_blank');
+			} else {
+				return router.push(link);
+			}
+		}
+	};
+
 	return (
-		<a
+		<Box
 			className="button large buy-ticket-link"
-			href={link}
-			target="_blank"
+			onClick={onLocalClick}
 			style={{
 				lineHeight: 2.5,
 				height: 45,
@@ -31,7 +47,7 @@ const CustomButton = ({ link, children }: Props) => {
 			}}
 		>
 			{children}
-		</a>
+		</Box>
 	);
 };
 

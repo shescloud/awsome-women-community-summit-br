@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { SxProps } from '@mui/system/styleFunctionSx';
 import { styled } from '@mui/system';
+import moment from 'moment';
 
 type Props = {
 	children?: ReactNode;
@@ -9,19 +10,38 @@ type Props = {
 	sx?: SxProps
 	sectionSx?: SxProps
 	shadowed?: boolean;
+	until?: string;
+	from?: string;
 };
 
 const StyledSection = styled('section')``;
 const StyledDiv = styled('div')``;
 const StyledP = styled('p')``;
 
-const SectionTitle = ({ title, children, id, sx, sectionSx, shadowed }: Props) => {
+const shouldRender = (from: string | undefined, until: string | undefined) => {
+	const current = moment();
+	if (from && current.isBefore(moment(from).startOf('day'))) {
+		return false;
+	}
+
+	if (until && current.isAfter(moment(until).endOf('day'))) {
+		return false;
+	}
+
+	return true;
+}
+
+const SectionTitle = ({ title, children, id, sx, sectionSx, from, until }: Props) => {
+	if (!shouldRender(from, until)) {
+		return null;
+	}
+
 	return (
 		<StyledSection
 			id={id}
 			sx={{
 				padding: {
-					xs: '1em',
+					xs: '2em',
 					lg: '5em 0',
 				},
 				...sectionSx

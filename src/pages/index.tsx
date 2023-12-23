@@ -10,7 +10,6 @@ import MobileMenu from '@/components/mobile-menu';
 import DesktopMenu from '@/components/desktop-menu';
 
 import menuItems from '@/data/menu';
-
 import communities from '@/data/communities';
 
 const StyledDiv = styled('div')``;
@@ -215,7 +214,8 @@ export default function Home() {
 					sx={{
 						display: 'grid',
 						gridTemplateColumns: {
-							xs: 'repeat(2, 1fr)',
+							xs: 'repeat(1, 1fr)',
+							md: 'repeat(2, 1fr)',
 							lg: 'repeat(4, 1fr)',
 						},
 						gap: 1,
@@ -225,16 +225,16 @@ export default function Home() {
 						},
 					}}
 				>
-					<InformationCard image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
-					<InformationCard image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
-					<InformationCard image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
-					<InformationCard image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
+					<InformationCard track={'iniciante'} image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
+					<InformationCard track={'intermediario-e-avancado'} image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
+					<InformationCard track={'intermediario-e-avancado'} image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
+					<InformationCard track={'carreira'} image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
 				</Box>
 				<Button link='https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com'>
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+			<Section until="2024-01-15" id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
 					Envie sua talk
 				</Button>
@@ -244,6 +244,13 @@ export default function Home() {
 					display: 'flex',
 					justifyContent: 'space-evenly',
 					flexWrap: 'wrap',
+					columnGap: {
+						xs: '1em',
+						lg: '0.5em',
+					},
+					rowGap: {
+						xs: '1em',
+					},
 				}}>
 					{
 						communities.map((community, index) => (
@@ -251,7 +258,7 @@ export default function Home() {
 								key={index}
 								type="link"
 								sm="lg"
-								lg="xl"
+								lg="lg"
 								link={community.link}
 								image={community.image}
 							/>
@@ -259,7 +266,7 @@ export default function Home() {
 					}
 				</Box>
 			</Section>
-			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', marginBottom: { xs: `${headerHeight}px`, lg: 0 }, boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
@@ -282,7 +289,18 @@ export default function Home() {
 					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
 					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
-		</Section>
+			</Section>
+			<Section sectionSx={{ color: 'rgb(191, 108, 154)', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
+				<p style={{ fontSize: '2em' }}>QUER SER UM APOIADOR NO NOSSO EVENTO?</p>
+				<p>Encontre abaixo o nosso Mídia Kit.</p>
+				<p> Fale com a gente no e-mail:</p>
+				<a href="mailto:contact@awswomencommunitybrasil.com" style={{ lineBreak: 'anywhere', fontWeight: 'bold' }}>contact@awswomencommunitybrasil.com</a>
+				<br />
+				<div>
+					<a href="https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view" target="_blank"></a>
+					<Button link={'https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view'}>MÍDIA KIT</Button>
+				</div>
+			</Section>
 		</>
 	);
 }

@@ -21,10 +21,26 @@ const sizes = {
 	sm: 75,
 	md: 100,
 	lg: 120,
-	xl: 200,
+	xl: 175,
 };
 
-const getIcon = (icon: Props['type']) => {
+const getLinkType = (link: string) => {
+	if (link?.includes('twitter') ) {
+		return 'twitter';
+	}
+
+	if (link?.includes('linkedin')) {
+		return 'linkedin';
+	}
+
+	if (link?.includes('github')) {
+		return 'github';
+	}
+
+	return 'link';
+};
+
+const getIcon = (link: string) => {
 	const props = {
 		sx: {
 			display: {
@@ -51,7 +67,7 @@ const getIcon = (icon: Props['type']) => {
 		link: <LinkIcon { ...props } />,
 	};
 
-	return map[icon!];
+	return map[getLinkType(link)];
 };
 
 const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) => {
@@ -65,7 +81,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 				display: 'flex',
 				alignItems: 'center',
 				flexDirection: 'column',
-				color: '#BF6C9A'
+				color: '#BF6C9A',
 			}}
 		>
 			<Box
@@ -74,13 +90,13 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					backgroundSize: '100%',
 					backgroundRepeat: 'no-repeat',
 					backgroundImage: {
-						xs: `linear-gradient(black, black), url(${image})`,
+						xs: `url(${image})`,
 					},
-					backgroundBlendMode: 'saturation',
+					boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
 					borderRadius: {
 						xs: 5,
 					},
-					marginBottom: 2,
+					marginBottom: name ? 2 : 0,
 					width: {
 						xs: sizes[sm!],
 						sm: sizes[sm!],
@@ -135,7 +151,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 								}
 							}}
 						>
-							{ getIcon(type) }
+							{ getIcon(link) }
 						</Box>
 					)
 				}
