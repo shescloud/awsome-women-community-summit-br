@@ -2560,6 +2560,130 @@ ul.circle li {
   }
 }
 
+#page .section-67 {
+  background: white;
+}
+
+#page .section-67.inv {
+  background: transparent;
+  box-shadow: none;
+  color: white;
+  background: white;
+}
+
+#page .section-67 .supporters .vl-i {
+  flex-wrap: wrap;
+  justify-content: unset;
+}
+
+#page .section-67 .supporters .vl-i .person {
+  align-items: center;
+  width: 16.666%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 0;
+  color: grey;
+}
+
+@media only screen and (min-width: 992px) {
+  #page .section-67 .supporters .vl-i .person.push {
+    margin-left: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person {
+    width: 33%;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-67 .supporters .vl-i .person .img a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img:hover a {
+  transform: translateY(0);
+}
+
+#page .section-67 .supporters .vl-i .person:before {
+  order: 1;
+  content: attr(data-fname);
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person:before {
+    font-size: 14px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person:after {
+  font-size: 12px;
+  order: 2;
+  content: attr(data-lname);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person:after {
+    font-size: 12px;
+  }
+}
 
 
 
@@ -2679,6 +2803,10 @@ ul.circle li {
 
 #page .section-66 .volunteers .vl-i .person[data-lname="Community"] .img {
   background-image: url(../images/comunidades/sysadminas.jpeg);
+}
+
+#page .section-67 .supporters .vl-i .person[data-lname="Novatec"] .img {
+  background-image: url(../images/empresas-apoiadoras/novatec.png);
 }
 
 #page .section-7 {
