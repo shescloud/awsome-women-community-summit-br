@@ -231,25 +231,33 @@ export default function Home() {
 							md: 'repeat(2, 1fr)',
 							lg: 'repeat(4, 1fr)',
 						},
-						gap: 1,
+						gap: '1.5em',
+						marginBottom: '2em',
 						padding: {
 							xs: '1rem',
 							lg: '2rem',
 						},
 					}}
 				>
+					<InformationCard track={'carreira'} image={'/images/carreira.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
 					<InformationCard track={'iniciante'} image={'/images/iniciante.png'} title="Conteúdo iniciante" description="Se você está começando agora ou está em transição de carreira e quer apresentações detalhadas sobre os conceitos básicos de uso dos serviço" />
 					<InformationCard track={'intermediario-e-avancado'} image={'/images/moderado.png'} title="Conteúdo moderado" description="Você já é usuário(a) AWS e quer se aprofundar em temas que são úteis para o seu dia a dia e para seu negócio" />
 					<InformationCard track={'intermediario-e-avancado'} image={'/images/avancado.png'} title="Conteúdo avançado" description="Você é usuário(a) AWS avançado(a) e está interssado(a) em histórias e casos de uso de empresas que tiram o máximo da nuvem" />
-					<InformationCard track={'carreira'} image={'/images/todos.png'} title="Conteúdo de carreiras" description="O Nosso evento contará com vários conteúdos para ajudar a você as mais diversas áreas no mercado de tecnologia" />
 				</Box>
 				<Button link='https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com'>
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section until="2024-01-15" id="submit" title='Submeta sua palestra até 15 de janeiro de 2024' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+			<Section id="submit" title='NOSSAS INSCRIÇÕES ESTÃO ABERTAS!' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+				<h4 style={{ color: 'black' }}>
+					Todo o valor arrecadado com a venda desses ingressos serão doados ao {' '}
+					<a href="https://www.instagram.com/nave.veleirodaesperanca/" target="_blank">NAVE - Núcleo Veleiro da Esperança </a>,
+					uma instituição/ONG que acolhe mulheres em situação de violência (agressão física, psicológica e social) dentro de Belo Horizonte e regiões próximas.
+				</h4>
+				<br/>
+				<br/>
 				<Button link='https://sessionize.com/awsome-women-community-summit-brasil-2024'>
-					Envie sua talk
+					Inscreva-se aqui
 				</Button>
 			</Section>
 			<Section id="communities" title="Comunidades apoiadoras">

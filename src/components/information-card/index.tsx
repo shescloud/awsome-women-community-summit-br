@@ -26,7 +26,7 @@ const InformationCard = ({ track, title, description, image, size = 'md' }: Prop
 		<div style={{
 			border: '1px solid lightgray',
 			alignContent: 'space-around',
-			padding: 10,
+			padding: '10px 10px 3em',
 			display: 'flex',
 			flexDirection: 'column',
 			alignItems: 'center',
@@ -36,7 +36,6 @@ const InformationCard = ({ track, title, description, image, size = 'md' }: Prop
 			<Box>
 				<StyledP
 					sx={{
-						fontSize: '1em',
 						fontWeight: 'bold',
 						lineHeight: 1,
 						margin: '20px 0',
@@ -61,11 +60,11 @@ const InformationCard = ({ track, title, description, image, size = 'md' }: Prop
 						margin: '0 auto 25px'
 					}}
 				/>
-				<p style={{ color: '#999999', textAlign: 'justify' }}>
+				<p style={{ color: '#999999', textAlign: 'justify', fontSize: '14px' }}>
 					{description}
 				</p>
 			</Box>
-			{track && <Button onClick={() => router.push(`/trilhas/${track}`)}>Ver mais</Button>}
+			{/*{track && <Button onClick={() => router.push(`/trilhas/${track}`)}>Ver mais</Button>}*/}
 		</div>
 	);
 };
