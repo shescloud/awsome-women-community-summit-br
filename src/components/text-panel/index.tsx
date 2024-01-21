@@ -16,8 +16,9 @@ const TextPanel = ({ title, primary, children, sx }: Props) => {
 		<Box
 			sx={{
 				backgroundColor: primary ? 'white' : '#C290A9',
-				color: primary ? 'gray': 'white',
+				color: primary ? '#696065': 'white',
 				padding: '50px',
+				position: 'relative',
 				...sx,
 			}}
 		>
@@ -28,6 +29,7 @@ const TextPanel = ({ title, primary, children, sx }: Props) => {
 				textTransform: 'uppercase',
 				color: primary ? '#BF6C9A' : 'white',
 				textIndent: 0,
+				marginBottom: '30px',
 			}}>
 				{title}
 			</H1>

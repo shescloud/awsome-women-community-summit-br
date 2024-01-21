@@ -114,7 +114,7 @@ export default function Home() {
 							lg: '50%'
 						},
 						'p:not(:first-of-type)': {
-							margin: '1rem 0',
+							margin: '2rem 0',
 						}
 					}}
 				>
@@ -122,11 +122,12 @@ export default function Home() {
 						sx={{
 							position: 'absolute',
 							backgroundColor: 'white',
-							height: '100%',
+							height: '108%',
 							width: '125%',
 							zIndex: -1,
 							top: 0,
 							left: 0,
+							boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
 							display: {
 								xs: 'none',
 								lg: 'inline-flex',
@@ -134,28 +135,32 @@ export default function Home() {
 						}}
 					/>
 					<p>
-						O AWSome Women Community Summit é um evento que acontece ao redor do mundo e é organizado pela Comunidade
-						ativa (AWS User Groups, AWS Community Builders, AWS Heroes) da Amazon Web Services (AWS). Pela primeira,
-						ele acontecerá no Brasil e a cidade que sediara será Belo Horizonte - MG, no dia 09 de março de 2024.
+						O AWSome Women Community Summit é um evento que acontece ao redor do mundo e é organizado pelas mulheres da comunidade
+						ativa (AWS User Groups, AWS Community Builders, AWS Heroes) da Amazon Web Services (AWS). Pela primeira ve acontecerá no Brasil em Belo Horizonte - MG, no dia 09 de março de 2024.
 					</p>
 					<p>
-						O foco é celebrar e capacitar mulheres na tecnologia, particularmente no campo da computação em nuvem,
-						ajudando no desenvolvimento técnico, criando uma rede de apoio e trazendo networking. Esperamos promover a
-						diversidade e inclusão na tecnologia, quebrar barreiras e paradigmas ajudando a combater a disparidade de
-						gênero no campo da tecnologia. Pretendemos também deixar um legado sobre conhecimento tecnológico,
-						experimentação e vivência em desenvolvimento de software, computação em nuvem, práticas de cyber segurança
-						e principalmente criar e manter um ambiente seguro e focado em educação, inovação e inspiração de mais
+						O foco é celebrar e capacitar mulheres na tecnologia, apoiar o desenvolvimento técnico criando uma rede de apoio e trazendo networking. Esperamos promover a
+						diversidade e inclusão em tech, quebrar barreiras e paradigmas ajudando a combater a disparidade de
+						gênero nesse mercado. Vamos também criar e manter um ambiente seguro e focado em educação, inovação e inspiração de mais
 						mulheres.
 					</p>
 					<p>
 						Então, se você é daquelas que codam, gerenciam projetos, analisam dados ou qualquer outra coisa incrível
-						na AWS, ou se você é simplesmente curiosa e quer aprender mais, saiba que você encontrou o seu lugar.
+						em tecnologia, ou se você é simplesmente curiosa e quer aprender mais, saiba que você encontrou o seu lugar.
 						Aqui, a gente valoriza cada história, cada trajetória e acredita no poder da união feminina!
 					</p>
 					<p>
 						Vamos juntas nessa jornada incrível? Porque a gente sabe: juntas, somos mais fortes, mais sábias e
 						infinitamente mais AWSome!
 					</p>
+					<StyledImg
+						alt="dot bg"
+						src="/images/dot_bg.png"
+						width={130}
+						height={130}
+						style={{ zIndex: 1, right: -40, bottom: -148, position: 'absolute' }}
+						sx={{ display: { xs: 'none', lg: 'inline' } }}
+					/>
 				</TextPanel>
 				<TextPanel
 					primary={false}
@@ -164,7 +169,7 @@ export default function Home() {
 						boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
 						margin: {
 							xs: '1rem 0',
-							lg: '10rem 0 3rem'
+							lg: '18rem 0 3rem'
 						},
 						zIndex: 2,
 						width: {
@@ -185,10 +190,10 @@ export default function Home() {
 				>
 					<ul style={{ marginLeft: '15px' }}>
 						<li>
-							Renove e revitalize seus conhecimentos em cloud computing, tópicos em altas de tecnologia e muito sobre AWS
+							Renove e revitalize seus conhecimentos em cloud computing, desenvolvimento de software, cyber segurança, projetos e produtos, QA e testing, infraestrutura, observabilidade, etc, e tópicos em altas de tecnologia.
 						</li>
 						<li>
-							Vamos trazer mulheres que arrasam no mercado de tecnologia pra contar suas trajetórias, os perrengues, as vitórias e comoelas chegaram lá. É pra sair de lá com aquela dose extra de inspiração!
+							Vamos trazer mulheres que arrasam no mercado de tecnologia pra contar suas trajetórias, os perrengues, as vitórias e como elas chegaram lá. É pra sair de lá com aquela dose extra de inspiração!
 						</li>
 						<li>
 							Prontas para workshops e sessões práticas? Você terá a oportunidade de colocar a mão na massa e aprender
@@ -200,13 +205,19 @@ export default function Home() {
 						</li>
 						<li>
 							Então, se você tá procurando por um lugar pra aprender, se inspirar e fazer amizades incríveis na área
-							de Cloud Computing e também aprender muito sobre AWS, acabou de encontrar! Esperamos você no Awesome Women Community Summit. Vamos juntas fazer desse evento algo inesquecível!
+							e também aprender, esperamos você no Awesome
+							Women Community Summit!
 						</li>
 						<li>
-							Se você está em transição de carreira, no início ou ainda não sabe que área escolher dentro de tecnologia, teremos uma trilha de carreiras com mulheres incríveis que vão contar como é o dia a dia delas nas áreas de Cloud/DevOps/SRE, Desenvolvimento de Software Backend, Desenvolvimento de Software Frontend, Diretoria de Tecnologia, Liderança Tecnica, Gestão de Projetos, Securtiy, Inteligência Artificial, UX, Gestão de Pessoas, Testes, QA, Observabilidade, DataCenters, Banco de Dados, Redes de Computadores, Produtos, Agilidade, etc.
+							Se você está em transição de carreira, no início ou ainda não sabe que área escolher dentro de
+							tecnologia, teremos uma trilha de carreiras com mulheres incríveis que vão contar como é o dia a dia
+							delas nas áreas de Cloud/DevOps/SRE, Desenvolvimento de Software Backend, Desenvolvimento de Software
+							Frontend, Diretoria de Tecnologia, Liderança Tecnica, Gestão de Projetos, Securtiy, Inteligência
+							Artificial, UX, Gestão de Pessoas, Testes, QA, Observabilidade, DataCenters, Banco de Dados, Redes de
+							Computadores, Produtos, Agilidade, etc.
 						</li>
 						<li>
-							Amamos brindes! Concorra a brindes como créditos para serem utilizados em sua conta AWS.
+							Amamos brindes! Concorra a brindes como créditos para serem utilizados em sua conta AWS e várias outras surpresas.
 						</li>
 					</ul>
 				</TextPanel>

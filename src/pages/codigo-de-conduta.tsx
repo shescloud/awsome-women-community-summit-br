@@ -32,7 +32,7 @@ const Code = () => {
 					AWSome Women Community Summit Brasil
 				</StyledH1>
 				<img
-					src="/images/logo.png"
+					src="/public/images/logo.png"
 					style={{
 						maxWidth: '300px',
 						margin: '0 auto',
