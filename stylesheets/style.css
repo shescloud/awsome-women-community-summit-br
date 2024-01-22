@@ -2816,6 +2816,11 @@ ul.circle li {
   background-image: url(../images/empresas-apoiadoras/jetbrains.png);
 }
 
+#page .section-67 .supporters .vl-i .person[data-lname="#vaaai"] .img {
+  background-image: url(../images/empresas-apoiadoras/LINUXtips.png);
+}
+
+
 #page .section-7 {
   margin: -50px auto 100px;
 }
