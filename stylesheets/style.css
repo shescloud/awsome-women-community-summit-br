@@ -2812,11 +2812,11 @@ ul.circle li {
 #page .section-67 .supporters .vl-i .person[data-lname="Web Services"] .img {
   background-image: url(../images/empresas-apoiadoras/aws.png);
 }
-#page .section-67 .supporters .vl-i .person[data-lname="___"] .img {
+#page .section-67 .supporters .vl-i .person[data-fname="JetBrains"] .img {
   background-image: url(../images/empresas-apoiadoras/jetbrains.png);
 }
 
-#page .section-67 .supporters .vl-i .person[data-lname="#vaaai"] .img {
+#page .section-67 .supporters .vl-i .person[data-fname="LINUXtips"] .img {
   background-image: url(../images/empresas-apoiadoras/LINUXtips.jpg);
 }
 
