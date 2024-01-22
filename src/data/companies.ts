@@ -11,6 +11,11 @@ const companiesData: CompanyData[] = [
 		name: 'Amazon Web Services',
 	},
 	{
+		link: 'https://www.linuxtips.io/home',
+		image: '/images/empresas/LINUXtips.jpg',
+		name: 'LINUXtips',
+	},
+	{
 		link: 'https://novatec.com.br/',
 		image: '/images/empresas/novatec.png',
 		name: 'Editora Novatec',
