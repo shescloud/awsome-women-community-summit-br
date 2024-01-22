@@ -52,6 +52,12 @@ const menuValues: MenuDataItem[] = [
 	},
 	{
 		"title": false,
+		"text": "Empresas Apoiadoras",
+		"link": "/#companies",
+		"external": false,
+	},
+	{
+		"title": false,
 		"text": "Organizadoras",
 		"link": "/#organizers",
 		"external": false,

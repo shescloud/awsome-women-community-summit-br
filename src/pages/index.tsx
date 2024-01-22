@@ -11,6 +11,7 @@ import DesktopMenu from '@/components/desktop-menu';
 
 import menuItems from '@/data/menu';
 import communities from '@/data/communities';
+import companies from '@/data/companies';
 
 const StyledDiv = styled('div')``;
 const StyledImg = styled('img')``;
@@ -248,7 +249,16 @@ export default function Home() {
 					Inscrições Abertas
 				</Button>
 			</Section>
-			<Section id="submit" title='NOSSAS INSCRIÇÕES ESTÃO ABERTAS!' sectionSx={{ backgroundColor: '#EEEEEE' }}>
+			<Section
+				id="submit"
+				title='NOSSAS INSCRIÇÕES ESTÃO ABERTAS!'
+				sectionSx={{
+					padding: {
+						xs: '2em',
+						lg: '3em 0',
+					}
+				}}
+			>
 				<h4 style={{ color: 'black' }}>
 					Todo o valor arrecadado com a venda desses ingressos serão doados ao {' '}
 					<a href="https://www.instagram.com/nave.veleirodaesperanca/" target="_blank">NAVE - Núcleo Veleiro da Esperança </a>,
@@ -260,7 +270,22 @@ export default function Home() {
 					Inscreva-se aqui
 				</Button>
 			</Section>
-			<Section id="communities" title="Comunidades apoiadoras">
+			<Section
+				id="communities"
+				title="Comunidades apoiadoras"
+				sectionSx={{
+					backgroundColor: '#EEEEEE',
+					padding: {
+						xs: '2em',
+						lg: '3em 0',
+					}
+				}}
+				sx={{
+					display: 'flex',
+					flexDirection: 'column',
+					rowGap: '3em',
+				}}
+			>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: 'space-evenly',
@@ -279,9 +304,52 @@ export default function Home() {
 								key={index}
 								type="link"
 								sm="lg"
-								lg="lg"
+								lg="md"
 								link={community.link}
 								image={community.image}
+								name={community.name}
+							/>
+						))
+					}
+				</Box>
+			</Section>
+			<Section
+				id="companies"
+				title="Empresas apoiadoras"
+				sectionSx={{
+					padding: {
+						xs: '2em',
+						lg: '3em 0',
+					}
+				}}
+				sx={{
+					display: 'flex',
+					flexDirection: 'column',
+					rowGap: '3em',
+				}}
+			>
+				<Box sx={{
+					display: 'flex',
+					justifyContent: 'space-evenly',
+					flexWrap: 'wrap',
+					columnGap: {
+						xs: '1em',
+						lg: '0.5em',
+					},
+					rowGap: {
+						xs: '1em',
+					},
+				}}>
+					{
+						companies.map((community, index) => (
+							<Reference
+								key={index}
+								type="link"
+								sm="lg"
+								lg="md"
+								link={community.link}
+								image={community.image}
+								name={community.name}
 							/>
 						))
 					}
@@ -303,12 +371,12 @@ export default function Home() {
 						md: 1,
 					},
 				}}>
-					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
-					<Reference type="twitter" sm="md" lg="lg" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
-					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
-					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
-					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
-					<Reference type="linkedin" sm="md" lg="lg" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
+					<Reference type="linkedin" sm="md" lg="sm" link="https://www.linkedin.com/in/nellyandrade/" name="Nelly Andrade" image={'/images/vols/nelly.jpeg'}/>
+					<Reference type="twitter" sm="md" lg="sm" link="https://twitter.com/shescloud_" name="Paloma Lataliza" image={'/images/vols/paloma.jpg'}/>
+					<Reference type="linkedin" sm="md" lg="sm" link="https://www.linkedin.com/in/rafaela-vidotti-5741ba111/" name="Rafaela Vidotti" image={'/images/vols/rafa.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="sm" link="https://www.linkedin.com/in/jessicaccoelho/" name="Jéssica Coelho" image={'/images/vols/jess.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="sm" link="https://www.linkedin.com/in/luisabrandt/" name="Luisa Brandt" image={'/images/vols/luisa.jpeg'}/>
+					<Reference type="linkedin" sm="md" lg="sm" link="https://www.linkedin.com/in/priscila-araujo-santos/" name="Priscila Araújo" image={'/images/vols/psant.jpg'}/>
 				</Box>
 			</Section>
 			<Section sectionSx={{ color: 'rgb(191, 108, 154)', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
@@ -317,9 +385,10 @@ export default function Home() {
 				<p> Fale com a gente no e-mail:</p>
 				<a href="mailto:contact@awswomencommunitybrasil.com" style={{ lineBreak: 'anywhere', fontWeight: 'bold' }}>contact@awswomencommunitybrasil.com</a>
 				<br />
+				<br />
 				<div>
-					<a href="https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view" target="_blank"></a>
-					<Button link={'https://drive.google.com/file/d/1JLwFmUHzyBLvDhbxVKT3vSglAXsFcPkT/view'}>MÍDIA KIT</Button>
+					<a href="https://drive.google.com/file/d/1lnoCNXCP2RlHS88ljguKtvzQkisgqIha/view" target="_blank"></a>
+					<Button link={'https://drive.google.com/file/d/1lnoCNXCP2RlHS88ljguKtvzQkisgqIha/view'}>MÍDIA KIT</Button>
 				</div>
 			</Section>
 		</>

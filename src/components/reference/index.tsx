@@ -3,6 +3,7 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 type sizes = 'sm' | 'md' | 'lg' | 'xl';
 
@@ -37,6 +38,10 @@ const getLinkType = (link: string) => {
 		return 'github';
 	}
 
+	if (link?.includes('instagram')) {
+		return 'instagram';
+	}
+
 	return 'link';
 };
 
@@ -65,13 +70,14 @@ const getIcon = (link: string) => {
 		github: <GitHubIcon { ...props } />,
 		linkedin: <LinkedInIcon { ...props } />,
 		link: <LinkIcon { ...props } />,
+		instagram: <InstagramIcon { ...props } />,
 	};
 
 	return map[getLinkType(link)];
 };
 
 const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) => {
-	const [firstName, lastName] = name?.split(' ') || [];
+	const [firstName, ...lastName] = name?.split(' ') || [];
 
 	return (
 		<a
@@ -159,8 +165,8 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 			{
 				name && (
 					<>
-						<span style={{ fontWeight: 'bold', marginBottom: 0, lineHeight: 0.5 }}>{firstName}</span>
-						<span style={{ fontSize: 13 }}>{lastName}</span>
+						<span style={{ fontWeight: 'bold', marginBottom: 0, lineHeight: 1 }}>{firstName}</span>
+						<span style={{ fontSize: 13 }}>{lastName.join(' ')}</span>
 					</>
 				)
 			}
