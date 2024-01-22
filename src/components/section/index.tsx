@@ -59,7 +59,7 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, from, until }: Props
 							sx={{
 								fontSize: {
 									xs: '1.5em',
-									sm: '2em',
+									sm: '2.5em',
 								},
 							}}
 							style={{
