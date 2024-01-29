@@ -38,7 +38,7 @@ const DesktopMenu = ({ height, fixed, items = defaultItems }: Props) => {
 			}}
 		>
 			<a
-				href="https://sessionize.com/awsome-women-community-summit-brasil-2024/"
+				href="https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788"
 				target="_blank"
 				rel="noreferrer"
 				style={{
@@ -57,7 +57,7 @@ const DesktopMenu = ({ height, fixed, items = defaultItems }: Props) => {
 					padding: '0 1em',
 				}}
 			>
-				Submeta sua palestra
+				INSCRIÇÕES ABERTAS
 			</a>
 			{
 				filter(items, (item) => !item.dropdown).map((item, index) => (

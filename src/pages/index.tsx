@@ -72,7 +72,7 @@ export default function Home() {
 				<StyledImg
 					src="/images/logo.png"
 					sx={{
-						maxHeight: 'calc(100vh - 100px)',
+						maxHeight: 'calc(105vh - 105px)',
 						margin: '0 auto',
 						flex: 1,
 					}}
@@ -355,7 +355,7 @@ export default function Home() {
 					}
 				</Box>
 			</Section>
-			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', boxShadow: 'inset 0 4px 20px 0 rgba(0, 0, 0, 0.14), inset 0 7px 10px -5px rgba(0, 0, 0, 0.4)' }}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA'}}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
@@ -380,9 +380,9 @@ export default function Home() {
 				</Box>
 			</Section>
 			<Section sectionSx={{ color: 'rgb(191, 108, 154)', marginBottom: { xs: `${headerHeight}px`, lg: 0 } }}>
-				<p style={{ fontSize: '2em' }}>QUER SER UM APOIADOR NO NOSSO EVENTO?</p>
-				<p>Encontre abaixo o nosso Mídia Kit.</p>
-				<p> Fale com a gente no e-mail:</p>
+				<p style={{ fontSize: '2em', color: '#555' }}><b>QUER SER UM APOIADOR NO NOSSO EVENTO?</b></p>
+				<p style={{ color: '#555' }}>Encontre abaixo o nosso Mídia Kit.</p>
+				<p style={{ color: '#555' }}> Fale com a gente no e-mail:</p>
 				<a href="mailto:contact@awswomencommunitybrasil.com" style={{ lineBreak: 'anywhere', fontWeight: 'bold' }}>contact@awswomencommunitybrasil.com</a>
 				<br />
 				<br />

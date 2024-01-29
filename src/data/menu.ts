@@ -13,12 +13,6 @@ export type MenuDataItem = {
 
 const menuValues: MenuDataItem[] = [
 	{
-		"title": true,
-		"text": "Inscrições abertas",
-		"link": "https://www.sympla.com.br/evento/awsome-women-community-summit-brasil/2267788?referrer=www.awswomencommunitybrasil.com",
-		"external": true,
-	},
-	{
 		"title": false,
 		"text": "Sobre o evento",
 		// "text": "Sobre o AWSome Women Community Summit Brasil",

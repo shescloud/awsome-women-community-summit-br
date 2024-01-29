@@ -87,7 +87,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 				display: 'flex',
 				alignItems: 'center',
 				flexDirection: 'column',
-				color: '#BF6C9A',
+				color: '#555',
 			}}
 		>
 			<Box

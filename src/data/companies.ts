@@ -25,6 +25,11 @@ const companiesData: CompanyData[] = [
 		image: '/images/empresas/jetbrains.png',
 		name: 'JetBrains',
 	},
+	{
+		link: 'https://www.meteor.com/',
+		image: '/images/empresas/meteor.png',
+		name: 'Meteor',
+	},
 ];
 
 
