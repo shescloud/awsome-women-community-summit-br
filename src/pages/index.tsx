@@ -103,6 +103,9 @@ export default function Home() {
 							xs: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 0px 10px -5px rgba(0, 0, 0, 0.4)',
 							lg: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)'
 						},
+						marginTop: {
+							lg: 0
+						},
 						position: 'relative',
 						textIndent: '2em',
 						textAlign: 'justify',
@@ -277,7 +280,7 @@ export default function Home() {
 					backgroundColor: '#EEEEEE',
 					padding: {
 						xs: '2em',
-						lg: '3em 0',
+						lg: '3em 0 8em',
 					}
 				}}
 				sx={{
@@ -319,7 +322,7 @@ export default function Home() {
 				sectionSx={{
 					padding: {
 						xs: '2em',
-						lg: '3em 0',
+						lg: '3em 0 8em',
 					}
 				}}
 				sx={{

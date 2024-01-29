@@ -42,7 +42,7 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, from, until }: Props
 			sx={{
 				padding: {
 					xs: '2em',
-					lg: '5em 0',
+					lg: '5em 0 10em',
 				},
 				...sectionSx
 			}}
