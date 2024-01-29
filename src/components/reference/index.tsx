@@ -11,6 +11,7 @@ type Props = {
 	name?: string;
 	image: string;
 	link: string;
+	color?: string;
 	type?: 'twitter' | 'linkedin' | 'github' | 'link';
 	sm?: sizes;
 	md?: sizes;
@@ -19,7 +20,7 @@ type Props = {
 };
 
 const sizes = {
-	sm: 75,
+	sm: 80,
 	md: 100,
 	lg: 120,
 	xl: 175,
@@ -76,7 +77,7 @@ const getIcon = (link: string) => {
 	return map[getLinkType(link)];
 };
 
-const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) => {
+const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type, color }: Props) => {
 	const [firstName, ...lastName] = name?.split(' ') || [];
 
 	return (
@@ -87,7 +88,7 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 				display: 'flex',
 				alignItems: 'center',
 				flexDirection: 'column',
-				color: '#555',
+				color: color || '#555',
 			}}
 		>
 			<Box
@@ -119,48 +120,44 @@ const Reference = ({ name, image, link, sm = 'sm', lg, xl, md, type }: Props) =>
 					},
 				}}
 			>
-				{
-					!!type && (
-						<Box
-							sx={{
-								backgroundColor: {
-									xs: 'transparent',
-									lg: '#000000',
-								},
-								opacity: {
-									xs: 1,
-									lg: 0,
-								},
-								width: '100%',
-								height: '100%',
-								transition: 'opacity 0.3s ease',
-								display: 'flex',
-								alignItems: {
-									xs: 'flex-end',
-									lg: 'center',
-								},
-								justifyContent: {
-									xs: 'flex-start',
-									lg: 'center',
-								},
-								'&:hover': {
-									lg: {
-										opacity: 0.7,
-									},
-								},
-								borderRadius: {
-									xs: 5,
-								},
-								padding: {
-									xs: 0.75,
-									lg: 0,
-								}
-							}}
-						>
-							{ getIcon(link) }
-						</Box>
-					)
-				}
+			<Box
+				sx={{
+					backgroundColor: {
+						xs: 'transparent',
+						lg: '#000000',
+					},
+					opacity: {
+						xs: 1,
+						lg: 0,
+					},
+					width: '100%',
+					height: '100%',
+					transition: 'opacity 0.3s ease',
+					display: 'flex',
+					alignItems: {
+						xs: 'flex-end',
+						lg: 'center',
+					},
+					justifyContent: {
+						xs: 'flex-start',
+						lg: 'center',
+					},
+					'&:hover': {
+						lg: {
+							opacity: 0.7,
+						},
+					},
+					borderRadius: {
+						xs: 5,
+					},
+					padding: {
+						xs: 0.75,
+						lg: 0,
+					}
+				}}
+			>
+				{ getIcon(link) }
+			</Box>
 			</Box>
 			{
 				name && (
