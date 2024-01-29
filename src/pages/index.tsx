@@ -358,7 +358,7 @@ export default function Home() {
 					}
 				</Box>
 			</Section>
-			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA'}}>
+			<Section id="organizers" title="Organizadoras" sectionSx={{ backgroundColor: '#F6EAFA', paddingBottom: { lg: '15em' } }}>
 				<Box sx={{
 					display: 'flex',
 					justifyContent: {
