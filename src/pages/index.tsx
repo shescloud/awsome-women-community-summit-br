@@ -104,7 +104,7 @@ export default function Home() {
 							lg: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)'
 						},
 						marginTop: {
-							lg: 0
+							lg: '-10em'
 						},
 						position: 'relative',
 						textIndent: '2em',
@@ -173,7 +173,7 @@ export default function Home() {
 						boxShadow: '0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4)',
 						margin: {
 							xs: '1rem 0',
-							lg: '18rem 0 3rem'
+							lg: '6rem 0 3rem'
 						},
 						zIndex: 2,
 						width: {
@@ -280,7 +280,7 @@ export default function Home() {
 					backgroundColor: '#EEEEEE',
 					padding: {
 						xs: '2em',
-						lg: '3em 0 8em',
+						lg: '1em 0 3em',
 					}
 				}}
 				sx={{
@@ -322,7 +322,7 @@ export default function Home() {
 				sectionSx={{
 					padding: {
 						xs: '2em',
-						lg: '3em 0 8em',
+						lg: '1em 0 3em',
 					}
 				}}
 				sx={{
