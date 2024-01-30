@@ -280,7 +280,7 @@ export default function Home() {
 					backgroundColor: '#EEEEEE',
 					padding: {
 						xs: '2em',
-						lg: '1em 0 3em',
+						lg: '1em 0 3.5em',
 					}
 				}}
 				sx={{
@@ -322,7 +322,7 @@ export default function Home() {
 				sectionSx={{
 					padding: {
 						xs: '2em',
-						lg: '1em 0 3em',
+						lg: '1em 0 3.5em',
 					}
 				}}
 				sx={{

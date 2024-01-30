@@ -58,8 +58,7 @@ const SectionTitle = ({ title, children, id, sx, sectionSx, from, until }: Props
 						<StyledP
 							sx={{
 								fontSize: {
-									xs: '1.5em',
-									sm: '2.5em',
+									xs: '35px',
 								},
 							}}
 							style={{
