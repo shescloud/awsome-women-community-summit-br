@@ -16,7 +16,7 @@ const speakersData = {
     },
     'ini1': {
       name: 'Ana Cunha',
-      info: '',
+      info: 'Ana Cunha é Developer Advocate na AWS para América Latina. Anteriormente, ela trabalhou como engenheira de desenvolvimento de software na Amazon.com',
       image: "images/speakers/ana-cunha.jpeg",
       title: 'Senior Developer Advocate na AWS',
       icon: '',
