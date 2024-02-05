@@ -2805,6 +2805,10 @@ ul.circle li {
   background-image: url(../images/comunidades/sysadminas.jpeg);
 }
 
+#page .section-66 .volunteers .vl-i .person[data-fname="NodeBr"] .img {
+  background-image: url(../images/comunidades/nodebr.png);
+}
+
 #page .section-67 .supporters .vl-i .person[data-lname="Novatec"] .img {
   background-image: url(../images/empresas-apoiadoras/novatec.png);
 }
