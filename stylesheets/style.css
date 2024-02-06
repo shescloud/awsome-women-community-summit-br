@@ -511,6 +511,16 @@ ion-icon {
   line-height: 1.5;
 }
 
+.main-heading-ttl-platinum {
+  margin: 0 0 15px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #8f6cbf;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+
 
 
 #page .section-4.inv .container .sponsors h4.main-heading-ttl {
@@ -2826,6 +2836,9 @@ ul.circle li {
 
 #page .section-67 .supporters .vl-i .person[data-fname="Meteor"] .img {
   background-image: url(../images/empresas-apoiadoras/meteor.png);
+}
+#page .section-67 .supporters .vl-i .person[data-fname="Select"] .img {
+  background-image: url(../images/sponsors/select.png);
 }
 
 
