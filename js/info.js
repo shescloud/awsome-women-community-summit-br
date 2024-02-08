@@ -2,7 +2,7 @@
 const speakersData = {
     'keynote': {
       name: 'Claudia Charro',
-      info: '',
+      info: 'Claudia Charro é formada em Pedagogia e Sistemas de Informação pela USP e atualmente é Technology Strategist na Microsoft. Está desde 2001 na área de tecnologia atuou como desenvolvedora, analista de sistemas, arquiteta e em 2015 transicionou para Cloud Computing como instrutora técnica e arquiteta de soluções na Amazon Web Services.Claudia foi uma das fundadoras do projeto TheFemTech e atualmente coordena as mentorias de carreira em grupo e ações de preparação promovidas pela Microsoft. Seu sonho é impactar a vida das pessoas através da tecnologia e promover ambientes saudáveis e de alta performance para qualquer pessoa que deseje ter uma carreira na tecnologia.',
       image: "images/speakers/charro.jpeg",
       title: 'Estrategista Técnica na Microsoft',      
       icon: '',
@@ -114,7 +114,7 @@ const speakersData = {
     },
     'car1': {
       name: 'Diuliana França',
-      info: "",
+      info: "Diuliana França é Diretora de Serviços Cloud na Embratel. Formada em Processamento de Dados pelo Colégio Técnico da Unicamp, Administração de Empresas pela Pontifícia Universidade Católica de Campinas, pós-graduada em Estratégia de Empresas pela Unicamp,  Gestão e Governança de TI pelo Instituto de Pesquisas e Tecnologia – IPT e especialização em Business Digital Transformation pela INSEAD Business School. Tem mais de 25 anos atuando no mercado de TI e nos últimos anos esteve envolvida em toda estratégia de cloud B2B da empresa, estruturando o centro de excelência de serviços multicloud e o portfólio cloud do grupo América Móvil em LATAM.",
       image: "images/speakers/diuliana.jpeg",
       title: 'Diretora de Serviços Cloud B2B at Embratel',
       icon: '',
