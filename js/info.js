@@ -46,7 +46,7 @@ const speakersData = {
       name: 'Roze Anne Cardoso',
       info: 'Soteropolitana de coração, mãe de pet, devops de alma e platform engineer de profissão.Sou cientista da computação e desde criança quero saber como as coisas entram no computador, amo tecnologia e principalmente explicar coisas complexas de forma simplificada',
       image: "images/speakers/roze-anne-cardoso.jpg",
-      title: 'Platform engineer na Swap',
+      title: 'Platform engineer',
       icon: '',
     },
     'ini6': {
