@@ -2842,6 +2842,8 @@ ul.circle li {
 }
 
 
+
+
 #page .section-7 {
   margin: -50px auto 100px;
 }
@@ -3243,14 +3245,6 @@ ul.circle li {
 
 #toggle.on span {
   background-color: #BF6C9A;
-}
-
-#toggle.on span:after {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-
-#toggle.on span::before {
-  transform: rotate(45deg) translate(5px, 5px);
 }
 
 @media only screen and (max-width: 991px) {

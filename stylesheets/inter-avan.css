@@ -83,6 +83,88 @@ body {
     color: #999999;
 }
 
+/* mobile */
+@media (max-width: 768px) {
+    .schedule, .session, .session_speakers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time, .break-session .break {
+        width: 100%;
+        text-align: center;
+    }
+
+    .speaker-photo img {
+        margin: 20px auto 10px; /* Centraliza a imagem */
+    }
+
+    .popup {
+        width: 500px; /* Reduz a largura em dispositivos móveis */
+        max-height: 80vh;
+    }
+
+
+/* Caso existam outros elementos dentro do popup que precisam ser ajustados */
+.popup-content {
+    padding: 20px; /* Adiciona preenchimento dentro do popup */
+}
+
+.popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+    /* Ajustes específicos para os speakers */
+    .session_speakers {
+        flex-direction: row; /* Mantém os elementos em linha */
+        flex-wrap: wrap; /* Permite a quebra de linha conforme necessário */
+        justify-content: center; /* Centraliza os itens na linha */
+        max-width: 100%; /* Ajusta a largura máxima para evitar overflow */
+    }
+
+    .speaker-photo, .talk {
+        flex: 1; /* Permite que a foto e o texto ocupem espaço proporcional */
+        min-width: 150px; /* Define uma largura mínima para cada elemento */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+
+    .speaker-photo img {
+        width: 100px; /* Define um tamanho fixo para as imagens */
+        height: 100px; /* Mantém a proporção das imagens */
+        margin:  10px 30px 30px; /* Ajusta as margens para espaçamento */
+    }
+
+    .talk {
+        display: flex; 
+        flex-direction: column; /* Organiza o texto em coluna */
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+    }
+}
+
+/* Estilos para múltiplas imagens na mesma linha */
+.session_speakers.multiple-images .speaker-photo {
+    flex: 0 1 auto; /* Permite que a foto se ajuste automaticamente */
+}
+
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90%; /* Largura como porcentagem da tela para dispositivos móveis */
+        max-width: 90%; /* Máximo de largura para garantir que não ultrapasse a largura da tela */
+        height: auto; /* Altura automática com base no conteúdo */
+        max-height: 80vh; /* Máximo de altura para garantir que não ultrapasse a altura da tela */
+        overflow-y: auto; /* Permite rolagem se necessário */
+    }
+}
+
+
+
 /* POPUP */
 .popup-background {
     display: none;
@@ -102,7 +184,7 @@ body {
     left: 50%;
     top: 10%;
     transform: translateX(-50%);
-    width: 700px; 
+    width: 750px; 
     min-height: 150px; 
     background-color: #fefefe;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -178,8 +260,6 @@ body {
     border: 1px solid #c58da7; 
     margin: 10px 0; 
 }
-
-//
 /* Estilos gerais para a navbar */
 .navbar {
     background-color: #333;
