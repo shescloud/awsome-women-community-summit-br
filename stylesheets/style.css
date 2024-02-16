@@ -521,6 +521,25 @@ ion-icon {
 }
 
 
+.main-heading-ttl-apoiadores {
+  margin: 0 0 15px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #bf6c9a;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+
+.main-heading-ttl-gold {
+  margin: 0 0 15px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #99880bd1;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 
 
 #page .section-4.inv .container .sponsors h4.main-heading-ttl {
@@ -2607,6 +2626,138 @@ ul.circle li {
     width: 33%;
   }
 }
+/*IMG PLATINUM*/
+#page .section-67 .supporters .vl-i .person .img-platinum {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-platinum {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-platinum a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-platinum a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-67 .supporters .vl-i .person .img-platinum a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-platinum:hover a {
+  transform: translateY(0);
+}
+
+/*END IMG PLATINUM*/
+
+
+
+/*IMG GOLD*/
+#page .section-67 .supporters .vl-i .person .img-gold {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-gold {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-gold a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-gold a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-67 .supporters .vl-i .person .img-gold a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-gold:hover a {
+  transform: translateY(0);
+}
+
+/*END IMG GOLD*/
+
+
+
+
+
 
 #page .section-67 .supporters .vl-i .person .img {
   width: 80px;
@@ -2837,10 +2988,12 @@ ul.circle li {
 #page .section-67 .supporters .vl-i .person[data-fname="Meteor"] .img {
   background-image: url(../images/empresas-apoiadoras/meteor.png);
 }
-#page .section-67 .supporters .vl-i .person[data-fname="Select"] .img {
+#page .section-67 .supporters .vl-i .person[data-fname="Select"] .img-platinum {
   background-image: url(../images/sponsors/select.png);
 }
-
+#page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-gold {
+  background-image: url(../images/sponsors/mongo.png);
+}
 
 
 
