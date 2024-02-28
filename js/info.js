@@ -154,8 +154,34 @@ const speakersData = {
       title: 'Head de Segurança da Informação no netLex, Coordenadora e Professora de Pós-graduação na PUC Minas',
       icon: '',
     },
-
-
+    'pnl1': {
+      name: 'Ana Cecília',
+      info: "",
+      image: "images/speakers/ana-ceci.jpeg",
+      title: 'Senior Tech Recruiter na ClickBus',
+      icon: '',
+    },
+    'pnl2': {
+      name: 'Camila Pires',
+      info: "Atuo há mais de 9 anos na área de Gestão de Pessoas. Já passei por empresas nacionais e multinacionais de segmentos diversos.Atualmente, sou Business Partner na Vale, Influencer, Palestrante e Mentora.",
+      image: "images/speakers/camila-pires.jpeg",
+      title: 'HR Business Partner | HRBP | Top Voice Recrutamento | Mentora de Carreira | Parcerias | Palestras',
+      icon: '',
+    },
+    'pnl3': {
+      name: 'Gabriella Meira',
+      info: "",
+      image: "images/speakers/gabi.jpeg",
+      title: 'Talent Acquisition | Recrutadora | Analista Recrutamento e Seleção',
+      icon: '',
+    },
+    'pnl4': {
+      name: 'Natália Balancin',
+      info: "",
+      image: "images/speakers/natalia-bal.jpeg",
+      title: 'Training and Development Lead | Talent Strategy | HR Generalist | Customer Care | Psychoterapist',
+      icon: '',
+    },
 
     
 
