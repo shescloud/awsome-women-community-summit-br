@@ -105,6 +105,13 @@ const speakersData = {
       title: 'DevOps na Jack Experts',
       icon: '',
     },
+    'av10': {
+      name: 'Dani Monttêiro',
+      info: "Dani Monteiro, com mais de 20 anos de experiência em dados e inteligência artificial, é uma figura destacada e respeitada internacionalmente. Atualmente atuando como consultora no “Seu ChatGPT” e instrutora na Dani Academy, ela possui um histórico profissional diversificado, incluindo papéis como DBA, arquiteta e engenheira de dados. Dani é mestra em Engenharia da Computação e acumulou diversos prêmios de prestígio, como LinkedIn Top Voice, Google Developer Expert (GDE), e MongoDB Female Innovator.Conhecida por sua habilidade de comunicação, é TEDx Speaker, palestrante renomada e escritora, tendo sido a primeira brasileira a palestrar no MongoDB World em Nova York. Com uma paixão por dados e pessoas, Dani inspira através de suas palavras e ensinamentos em eventos globais e nacionais",
+      image: "images/speakers/dani.jpeg",
+      title: 'Consultora no “Seu ChatGPT” e Instrutora na Dani Academy',
+      icon: '',
+    },
     'av7-t': {
       name: 'Tatiana Barros',
       info: "Tatiana Barros, DevRel Manager no Meteor Software, entusiasta tech apaixonada por creative code, computação natural, futurismo, sci-fi e IAs generativas, especialmente GitHub Copilot. Como mulher neurodivergente, abordo desafios na TI e a síndrome do impostor nas redes sociais, crio frameworks de estudos para autodidatas e toma café quente mesmo em dias de sol.",
@@ -152,6 +159,13 @@ const speakersData = {
       info: "Head de Segurança da Informação no netLex, Coordenadora e Professora de Pós-graduação na PUC Minas nos cursos Cibersegurança e Governança de Dados e Gestão de Cibersegurança e Riscos. Formada em Ciência da Computação e pós-graduada em Segurança da Informação e Direito Digital.",
       image: "images/speakers/samantha-morais-nunes.jpeg",
       title: 'Head de Segurança da Informação no netLex, Coordenadora e Professora de Pós-graduação na PUC Minas',
+      icon: '',
+    },
+    'car10': {
+      name: 'Marilia Brito',
+      info: "Marilia Brito é Sr Technical Instructor da AWS, especialista em analytics. Iniciou na AWS em um programa de formação de arquitetos de soluções e hoje ela ensina de forma leve e descomplicada desde o cliente que está iniciando sua jornada na nuvem, até aqueles que já estão em um estágio mais avançado de conhecimento.",
+      image: "images/speakers/mari.jpeg",
+      title: 'Senior Technical Trainer na Amazon Web Services (AWS)',
       icon: '',
     },
     'pnl1': {
