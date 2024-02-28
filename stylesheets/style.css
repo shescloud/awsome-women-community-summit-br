@@ -523,7 +523,7 @@ ion-icon {
 
 .main-heading-ttl-apoiadores {
   margin: 0 0 15px;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #bf6c9a;
   font-weight: 900;
@@ -536,6 +536,25 @@ ion-icon {
   font-size: 35px;
   text-transform: uppercase;
   color: #99880bd1;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+
+.main-heading-ttl-silver {
+  margin: 0 0 15px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #676767d1;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.main-heading-ttl-bronze {
+  margin: 0 0 15px;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #b36e07d1;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -2642,8 +2661,8 @@ ul.circle li {
 
 @media only screen and (max-width: 991px) {
   #page .section-67 .supporters .vl-i .person .img-platinum {
-    width: 75px;
-    height: 75px;
+    width: 105px;
+    height: 105px;
     border-radius: 10px;
   }
 }
@@ -2707,8 +2726,8 @@ ul.circle li {
 
 @media only screen and (max-width: 991px) {
   #page .section-67 .supporters .vl-i .person .img-gold {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 10px;
   }
 }
@@ -2754,6 +2773,134 @@ ul.circle li {
 
 /*END IMG GOLD*/
 
+
+
+/*IMG BRONZE*/
+#page .section-67 .supporters .vl-i .person .img-bronze {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-bronze {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-bronze a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-bronze a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-67 .supporters .vl-i .person .img-bronze a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-bronze:hover a {
+  transform: translateY(0);
+}
+
+/*END IMG bronze*/
+
+
+/*IMG SILVER*/
+#page .section-67 .supporters .vl-i .person .img-silver {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-silver {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-silver a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.25s;
+  margin: auto;
+  background: rgba(35, 47, 63, 0.85);
+  color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0;
+  flex-direction: column;
+  transform: translateY(100%);
+}
+
+@media only screen and (max-width: 991px) {
+  #page .section-67 .supporters .vl-i .person .img-silver a {
+    transform: translateY(0);
+    background: transparent;
+    font-size: 0;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  #page .section-67 .supporters .vl-i .person .img-silver a i {
+    font-size: 18px;
+  }
+}
+
+#page .section-67 .supporters .vl-i .person .img-silver:hover a {
+  transform: translateY(0);
+}
+
+/*END IMG SILVER*/
 
 
 
@@ -2995,7 +3142,13 @@ ul.circle li {
   background-image: url(../images/sponsors/mongo.png);
 }
 
+#page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-silver {
+  background-image: url(../images/sponsors/mongo.png);
+}
 
+#page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-bronze {
+  background-image: url(../images/sponsors/mongo.png);
+}
 
 #page .section-7 {
   margin: -50px auto 100px;
