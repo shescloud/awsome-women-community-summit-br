@@ -523,7 +523,7 @@ ion-icon {
 
 .main-heading-ttl-apoiadores {
   margin: 0 0 15px;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   color: #bf6c9a;
   font-weight: 900;
@@ -3141,13 +3141,11 @@ ul.circle li {
 #page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-gold {
   background-image: url(../images/sponsors/mongo.png);
 }
-
-#page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-silver {
-  background-image: url(../images/sponsors/mongo.png);
+#page .section-67 .supporters .vl-i .person[data-fname="Mytech"] .img-gold {
+  background-image: url(../images/sponsors/mytech.png);
 }
-
-#page .section-67 .supporters .vl-i .person[data-fname="MongoDB"] .img-bronze {
-  background-image: url(../images/sponsors/mongo.png);
+#page .section-67 .supporters .vl-i .person[data-fname="GFT"] .img-silver {
+  background-image: url(../images/sponsors/mytech.png);
 }
 
 #page .section-7 {
