@@ -196,6 +196,14 @@ const speakersData = {
       title: 'Training and Development Lead | Talent Strategy | HR Generalist | Customer Care | Psychoterapist',
       icon: '',
     },
+    'ini12': {
+      name: 'Pollyanna Gonçalves',
+      info: "Mestre em Ciência da Computação pela UFMG e Senior Data Manager na Hotmart. Na busca por problemas para serem resolvidos com dados desde 2011 e early-adopter de gadgets inúteis!",
+      image: "images/speakers/polly.jpeg",
+      title: ' Gerente Sr. Dados na Hotmart',
+      icon: '',
+    },
+
 
     
 
