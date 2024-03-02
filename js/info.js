@@ -9,7 +9,7 @@ const speakersData = {
     },
     'keynote2': {
       name: 'Yara Mascarenhas',
-      info: '',
+      info: 'Formada em Ciências da Computação pelo ICMC / USP - em São Carlos - Yara é co-fundadora da Globalcode e CEO do The Developers Conference (TDC), maior evento de profissionais de tecnologia da América Latina! Atua diariamente com as maiores empresas do setor para a co-criação de estratégias que gerem resultados através de interações - digitais e presenciais - com profissionais de tecnologia.A mais de uma década colabora com a gestão de comunidades e ecossistemas de inovação aberta!   Recentemente criou a ARENA Eventos Digitais, com objetivo de apoiar a transformação dos eventos presenciais aproveitando todo o potencial de geração de valor dos eventos online.',
       image: "images/speakers/yara.jpeg",
       title: "CEO at TDC The Developer's Conference",    
       icon: '',  
@@ -200,7 +200,7 @@ const speakersData = {
       name: 'Pollyanna Gonçalves',
       info: "Mestre em Ciência da Computação pela UFMG e Senior Data Manager na Hotmart. Na busca por problemas para serem resolvidos com dados desde 2011 e early-adopter de gadgets inúteis!",
       image: "images/speakers/polly.jpeg",
-      title: ' Gerente Sr. Dados na Hotmart',
+      title: 'Gerente Sr. Dados na Hotmart',
       icon: '',
     },
 
