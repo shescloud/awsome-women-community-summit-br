@@ -184,7 +184,7 @@ const speakersData = {
     },
     'pnl3': {
       name: 'Gabriella Meira',
-      info: "",
+      info: "Curiosa por natureza e hoje com mais de 1 década se dedicando a trabalhar com o que ama: pessoas e suas histórias dentro de um contexto de RH.Com graduação e pós na área de pessoas, capacitações das mais diversas como a de palhaçaria e análise de dados, experiências em empresas de diversos ramos, tamanhos e nacionalidades, busca através da sua vivência compartilhar o que vem aprendendo na sua jornada.",
       image: "images/speakers/gabi.jpeg",
       title: 'Talent Acquisition | Recrutadora | Analista Recrutamento e Seleção',
       icon: '',
