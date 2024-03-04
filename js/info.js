@@ -128,7 +128,7 @@ const speakersData = {
     },
     'car2': {
       name: 'Fernanda Guglielmo',
-      info: "Me chamo Fernanda, natural do Rio de Janeiro, e minha paixão pela tecnologia, inovação e interação humana molda minha jornada. Movida pela curiosidade, estou sempre em busca de novos aprendizados para me manter atualizada e inspirada. Nos momentos de lazer, encontro meu refúgio na arte de viajar, explorando novos lugares e absorvendo diversas culturas. Além disso, valorizo profundamente os vínculos familiares e amizades, buscando cultivar momentos significativos rodeada daqueles que tornam minha vida mais rica e especial.",
+      info: "Fernanda, natural do rio de janeiro, pós graduada em gestão de pessoas, liderança e coaching. Minha paixão pela tecnologia, inovação e inteiração humana molda minha jornada.Movida pela curiosidade, estou sempre em busca de novos aprendizados para me manter atualizada e inspirada.Nos momentos de lazer, encontro meu refúgio na arte de viajar explorando novos lugares e absorvendo diversas culturas. Valorizo profundamente os vínculos familiares e amizades, buscando cultivar momentos significativos rodeada daqueles que tornam minha vida mais rica e especial!.",
       image: "images/speakers/fernanda-guglielmo.jpg",
       title: 'Agilista na Claro/Embratel',
       icon: '',
