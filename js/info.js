@@ -168,6 +168,13 @@ const speakersData = {
       title: 'Senior Technical Trainer na Amazon Web Services (AWS)',
       icon: '',
     },
+    'car20': {
+      name: 'Amanda Lobo',
+      info: "Psicóloga e psicanalista, especialista em clínica com crianças e adolescentes pela PUC Minas, com atuação permanente na Escola Brasileira de Psicanálise (EBP-MG) desde 2020. Leitora e escritora nata, tem a aposta na palavra como norteadora de sua prática, pois acredita que ao falar e se escutar é possível resignificar nossas experiências.  Apreciadora das artes como invenções singulares e transformadoras, se expressa com maior facilidade através da dança. Atualmente atua na Secretaria Municipal de Saúde do município de Contagem-MG na perspectiva da reabilitação intelectual, articulando estratégias de acolhimento e atendimento aos pacientes com TEA e TDAH.",
+      image: "images/speakers/amanda-lobo.jpeg",
+      title: 'Senior Technical Trainer na Amazon Web Services (AWS)',
+      icon: '',
+    },
     'pnl1': {
       name: 'Ana Cecília',
       info: "",
