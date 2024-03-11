@@ -3132,6 +3132,10 @@ ul.circle li {
   background-image: url(../images/empresas-apoiadoras/LINUXtips.jpg);
 }
 
+#page .section-67 .supporters .vl-i .person[data-fname="Noete"] .img {
+  background-image: url(../images/empresas-apoiadoras/noete.png);
+}
+
 #page .section-67 .supporters .vl-i .person[data-fname="Meteor"] .img {
   background-image: url(../images/empresas-apoiadoras/meteor.png);
 }
