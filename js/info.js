@@ -88,7 +88,7 @@ const speakersData = {
       name: 'Marília Rocha',
       info: "Com mais de 4 anos de experiência em cybersegurança, Marília Rocha é apaixonada por Application Security e Social Engineering. Com MBA em Cyber Security com ênfase em Forensics, Ethical Hacking e DevSecOps pela FIAP e atual aluna de mestrado na linha de pesquisa de Segurança de Aplicações pelo CIn na Universidade Federal de Pernambuco, Marília sempre esteve em constante compromisso e dedicação com à segurança cibernética. Atualmente, contribui ativamente como profissional de Application Security no Mercado Livre, onde aplica seus conhecimento para fortalecer as defesas digitais através de Modelagens de Ameaças, Ciclo de Vida de Desenvolvimento Seguro (Secure Software Development Life Cycle (SSDLC) e educação dos desenvolvedores em Segurança de Aplicações através do programa Security Champions da OWASP, desenvolvendo uma abordagem holística que abrange desde a concepção segura de códigos até a implementação de práticas DevSecOps, garantindo a integridade e confidencialidade dos sistemas.Ao longo da carreira, participou de inúmeras iniciativas bem-sucedidas, protegendo ativos digitais e mitigando riscos sendo motivada pela busca incessante de desafios e pela missão contínua de fortalecer a resiliência cibernética em um cenário em constante evolução.",
       image: "images/speakers/marilia-rocha.jpg",
-      title: 'SRE na Serasa',
+      title: 'Application Security no Mercado Livre',
       icon: '',
     },
       'av5': {
