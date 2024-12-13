@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        
+     
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade de Palestras</title>
+<script type="text/javascript" src="js/info.js"></script>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+<link rel="stylesheet" href="stylesheets/grade.css">
+</head>
+<body>
+ 
+    
+<div class="schedule">
+    <div class="session break-session">
+        <div class="time">HORARIO</div>
+        <div class="break">TRILHA INICIANTE</div>
+      </div>
+
+  <div class="session break-session">
+    <div class="time">10:30 - 10:45</div>
+    <div class="break">BREAK E NETWORKING</div>
+  </div>
+  <div class="session_speakers">
+    <div class="time">10:45 - 11:30</div>
+    <div class="speaker-photo">
+      <img src="images/vols/paloma.jpg" alt="Ismael Ash">
+    </div>
+    <div class="talk">
+      <div class="title">EU SEI O QUE VOCÊS FIZERAM NA INFRESTRUTURA PASSADA! O QUE É IAC E PORQUE É TÃO IMPORTANTE?</div>
+      <br>
+      <div class="speaker">Paloma Lataliza</div>
+      <div class="details">Cloud Engineer na Claro Brasil</div>
+    </div>
+  </div>
+
+  <div class="session_speakers">
+    <div class="time">10:45 - 11:30</div>
+    <div class="speaker-photo">
+      <img src="images/vols/paloma.jpg" alt="Ismael Ash" onclick="openPopup('speaker2')">
+    </div>
+    <div class="talk">
+      <div class="title">AWS, COMO JOGAR?</div>
+      <br>
+      <div class="speaker">Paloma Lataliza</div>
+      <div class="details">Cloud Engineer na Claro Brasil</div>
+    </div>
+  </div>
+
+
+
+  <div class="session_speakers">
+    <div class="time">10:45 - 11:30</div>
+    <div class="speaker-photo">
+      <img src="images/vols/luisa.jpeg" alt="Ismael Ash" onclick="openPopup('speaker1')">
+    </div>
+    <div class="talk">
+      <div class="title">EU SEI O QUE VOCÊS FIZERAM NA INFRESTRUTURA PASSADA! O QUE É IAC E PORQUE É TÃO IMPORTANTE?</div>
+      <br>
+      <div class="speaker">Paloma Lataliza</div>
+      <div class="details">Cloud Engineer na Claro Brasil</div>
+    </div>
+  </div>
+
+
+  <div class="session break-session">
+    <div class="time">10:30 - 10:45</div>
+    <div class="break">BREAK E NETWORKING</div>
+  </div>
+
+
+
+<!-- Popup para informações do palestrante -->
+<div id="speakerPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <div class="popup-header">
+        <img id="speakerImage" src="" alt="" class="popup-speaker-photo"/>
+        <div class="popup-speaker-info">
+          <h2 id="speakerName"></h2>
+          <p id="speakerTitle"></p>
+          <div class="social-media" id="speakerSocial"></div>
+          <i id="speakerIcon" class="fas"></i>
+        </div>
+      </div>
+      <hr class="pink-line">
+      <p id="speakerInfo"></p>
+    </div>
+  </div>
+  
+  
+ 
+
+  
+<!-- Fundo escuro com transparência -->
+<div id="popupBackground" class="popup-background"></div>
+
+<!-- Popup para informações do palestrante -->
+<div id="speakerPopup" class="popup">
+  <!-- ... conteúdo do popup ... -->
+</div>
+
+
+</div>
+</body>
+</html>
