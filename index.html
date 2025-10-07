@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>AWSome Women Community Summit Brasil</title>
+    <title>AWSOME WOMEN COMMUNITY SUMMIT BRASIL</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -19,45 +19,86 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <style>
+      /* Limita largura máxima do conteúdo principal em telas muito largas */
+      .container {
+        max-width: 1200px;
+      }
+      /* Limita largura máxima das áreas hero para não esticar demais */
+      .hero-area-bg,
+      .hero-area-bg-2 {
+        min-width: 320px;
+        max-width: 100vw;
+      }
+      /* Centraliza o conteúdo das áreas hero */
+      .hero-area-bg .container,
+      .hero-area-bg-2 .container {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* Ajusta padding lateral em telas muito largas */
+      @media (min-width: 1400px) {
+        .container {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+      /* Opcional: limita largura máxima do body para evitar esticar tudo */
+      body {
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+    </style>
 
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-expand-lg">
-       <!-- Navbar Start -->
-      
-       <div class="container">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#header-wrap">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre</a>
-            </li>
-          <!-- <li class="nav-item">
-              <a class="nav-link" href="#hero-area-2">INSCRIÇÕES e CALL FOR SPEAKERS</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#sponsors">Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Organizadoras</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.phills.com.br/Clientes/WISE/Mar09-AWSome-Women-Community-Summit-Brasil/n-THbJQf">Fotos da Edição pASSADA</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
- 
-      <!-- Navbar End -->
-    </nav>
-     
+
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
-  
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->    
+          <a href="index.html" class="navbar-brand"><img src="assets/img/awsome-logo.png" alt="AWSome Women"></a>   
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  AWSOME
+                </a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  PROGRAMAÇÃO
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#hero-area-2">
+                  INSCRIÇÕES E Chamada de palestrantes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">
+                  Organizadoras
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
 
+      <!-- Hero Area Start -->
       <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
         <div class="overlay"></div>
@@ -65,8 +106,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-9 col-sm-12">
               <div class="contents text-center">
-               <img class="img-logo-content" src="assets/img/logo.png" alt="">
-               
+               <!-- ...hero-area sem logo... -->
               </div>
             </div>
           </div>
@@ -92,6 +132,26 @@
       </div>
     </section>
     <!-- Count Bar End -->
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Count Bar Start -->
+    <section id="count">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="">
+              <div class="time-countdown wow fadeInUp" >
+                <div id="clock" class="time-count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Bar End -->
 
     <!-- About Section Start -->
     <section id="about" class="section-padding">
@@ -99,71 +159,68 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="img-thumb">
-              <img class="img-fluid" src="assets/img/about/img.png" alt="">
+              <video class="img-fluid" controls muted loop playsinline>
+                <source src="assets/img/about/awsome.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="about-content">
               <div>
                 <div class="about-text">  
-                  <h2>AWSOME WOMEN COMMUNITY SUMMIT BRASIL</h2>
-                  <p class="about-text" align="justify">O AWSome Women Community Summit é um evento global organizado pelas mulheres incríveis da comunidade AWS (User Groups, Community Builders e Heroes). Depois do sucesso da primeira edição em Belo Horizonte, estamos empolgadas em anunciar que a segunda edição acontecerá no dia 22 de março de 2025, em São Paulo.
-
-                    Nosso objetivo continua o mesmo: capacitar, inspirar e conectar mulheres na tecnologia e no mundo da nuvem. Vamos fortalecer nossa rede de apoio, promovendo inovação, diversidade e aprendizado, enquanto derrubamos barreiras e construímos um espaço seguro e acolhedor para todas.
-                    
-                    Se você programa, lidera projetos, analisa dados, ou está apenas curiosa para explorar o universo da Cloud Computing, este é o seu lugar. Valorizamos cada história e acreditamos no poder da união feminina.
-                    
-                    Juntas, somos mais fortes!
-                    
-                    Ajude a construir um evento melhor para todas. AWSome Women Community Summit Brasil são guiadas pelo <a href="https://github.com/shescloud/codigo_de_conduta_AWSome_Women_Community_Summit_Brasil"  target="_blank">Código de conduta</a>.</p>
+                  <h2 class="about-title" style="color: #000000;">AWSOME WOMEN COMMUNITY SUMMIT BRASIL</h2>
+                  <p class="about-text">O AWSome Women Community Summit é um evento global organizado pelas mulheres da comunidade AWS (User Groups, Community Builders e Heroes). Nosso objetivo é  capacitar, inspirar e conectar mulheres na tecnologia e no mundo da nuvem. Vamos fortalecer nossa rede de apoio, promovendo inovação, diversidade e aprendizado, enquanto derrubamos barreiras e construímos um espaço seguro e acolhedor para todas.
+                    <br>   <br>
+                    Se você programa, lidera projetos, analisa dados, ou está apenas curiosa para explorar o universo da Cloud Computing, este é o seu lugar. Valorizamos cada história e acreditamos no poder da união feminina. Juntas, somos mais fortes! Ajude a construir um evento melhor para todas.  <br>   <br>O AWSome Women Community Summit Brasil é guiado pelo <a href="https://github.com/shescloud/codigo_de_conduta_AWSome_Women_Community_Summit_Brasil" target="_blank" style="color: #cd70a9; text-decoration: none;">Código de conduta</a>.</p>
                 </div>
+        
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
     <!-- About Section End -->
     <!-- Information Bar Start -->
     <section id="information-bar">
       <div class="container">
-        <div class="row inforation-wrapper text-center">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="row inforation-wrapper justify-content-center">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <ul>
               <li>
                 <i class="lni-map-marker"></i>
               </li>
+              <br>  <br> 
               <li>
-                <span><b>LOCALIZAÇÃO</b><br>  <a href="https://www.convencoesreboucas.com.br/ccr/portal/" target="_blank">Centro de Convenções Rebouças</a><br> Av. Rebouças, 600, São Paulo - SP</span>
+                <span><b>LOCALIZAÇÃO</b>  <a href="https://fps.edu.br/centro-de-eventos/" target="_blank">Centro de Eventos Recife</a><br>  Av. Mal. Mascarenhas de Morais, 4861 - Imbiribeira, Recife</span>
               </li>
+
             </ul>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <ul>
               <li>
                 <i class="lni-calendar"></i>
               </li>
-              <li>
-                <span><b>Data e Hora</b><br> Início às 8:30h e encerramento às 18:00 <br> 22 de Março 2025</span>
-              </li>
+              <br>  <br> 
+              <li><span><b>DATA E HORA</b> Início às 8:30h e encerramento às 18:30 <br> 14 de Março de 2026  <br><br></span></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
+
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <ul>
               <li>
                 <i class="lni-ticket"></i>
               </li>
-              <li>
-                <span><b>Inscrições</b><br>  <a href="https://www.sympla.com.br/evento/awsome-women-community-summit-brasil-2025/2803628" target="_blank">Inscreva-se aqui</a> <br> Todo o valor dos ingressos será doado!</span>
-              </li>
+              <br>  <br> 
+              <li><span><b>INSCRIÇÕES</b> <a href="#" style="color: #cd70a9; text-decoration: none;">Inscreva-se aqui<br><br><br></a></span></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    
     <!-- Information Bar End -->
 
 
@@ -173,9 +230,8 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" >O QUE ESPERAR DO NOSSO EVENTO?</h2>
-              <p class="paragph" >Renove seus conhecimentos no <b>AWSome Women Community Summit Brasil</b>! Descubra as últimas tendências em tecnologia, conecte-se com profissionais de AWS, DevOps, desenvolvimento e arquitetura de soluções, e amplie sua rede de contatos. Com histórias inspiradoras, conteúdo para todos os níveis e a chance de ganhar brindes incríveis, incluindo créditos para sua conta AWS!
-              </p>
+              <h2 class="section-title wow fadeInUp" style="color: #000000;">O QUE ESPERAR DO NOSSO EVENTO?</h2>
+              <p class="paragph" >Renove seus conhecimentos no <b>AWSome Women Community Summit Brasil</b>! Descubra as últimas tendências em tecnologia, conecte-se com profissionais de AWS, DevOps, desenvolvimento, testes, projetos e produtos, segurança, arquitetura de soluções e muito mais. Amplie sua rede de contatos, faça networking, ouça histórias inspiradoras e participete de palestras com conteúdo para todos os níveis. Você ainda terá chance de ganhar brindes incríveis, incluindo créditos para sua conta AWS!</p>
             </div>
 
             <br><br>
@@ -186,9 +242,9 @@
             <div class="single-intro-text mb-70">
                <i class="lni-heart"></i>
                <h3>Inspiração</h3>
-               <br><br>
+               
                <p>
-                Encontre inspiração nas histórias dos membros que enfrentaram desafios e alcançaram sucesso. Sua história inspira 
+                Encontre inspiração nas histórias das mulheres que enfrentaram desafios e alcançaram sucesso. 
                </p>
               
             </div>
@@ -197,7 +253,7 @@
             <div class="single-intro-text mb-70">
                <i class="lni-cup"></i>
                <h3>Networking</h3>
-               <br><br>
+              
                <p>
                 É uma oportunidade para conectar-se, trocar ideias e criar relacionamentos profissionais e até oportunidades de carreira.
                </p>
@@ -208,9 +264,9 @@
             <div class="single-intro-text mb-70">
                <i class="lni-library"></i>
                <h3>Conteúdo para Todos</h3>
-               <br>
+           
                <p>
-                Teremos atividades para pessoas que estão iniciando, que tem conhecimento intermediário e também quem já é especialista.
+                Ttividades para quem estão iniciando, quem tem conhecimento intermediário e também quem já é especialista.
                </p>
                
             </div>
@@ -220,7 +276,7 @@
             <div class="single-intro-text mb-70">
                <i class="lni-gallery"></i>
                <h3>Responsabilidade Social</h3>
-               <br>
+          
                <p>
                 Todo o dinheiro arrecadado com a venda dos ingressos será doado a uma instituição de caridade. 
                </p>
@@ -233,890 +289,711 @@
     <!-- intro Section End -->
   
 
-<!-- Schedule Section Start -->
-<section id="schedules" class="schedule section-padding">
-    <div class="container">
-        <!-- Título e Descrição -->
+
+    <!-- Schedule Section Start -->
+        <!-- 
+    <section id="schedules" class="schedule section-padding">
+      <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="section-title-header text-center">
-                    <h2 class="section-title wow fadeInUp">NOSSA PROGRAMAÇÃO DE PALESTRAS</h2>
-                    <p class="wow fadeInDown">Confira aqui a grade de palestras das três trilhas. (Sujeita a alterações)</p>
-                </div>
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" >NOSSA PROGRAMAÇÃO DE PALESTRAS</h2>
+              <p class="wow fadeInDown" >Confira aqui a grade de palestras das duas edições. (Sujeita a alterações)</p>
             </div>
+          </div>
         </div>
-
-        <!-- Abas de Navegação -->
+        
         <div class="row">
-            <div class="col-12 mb-5 text-center">
-                <ul class="nav nav-tabs" id="trilhasTab" role="tablist">
-                    <!-- Trilha Iniciante -->
-                    <li class="nav-item">
-                        <a class="nav-link active" id="iniciante-tab" data-toggle="tab" href="#trilha-iniciante" role="tab" aria-controls="trilha-iniciante" aria-selected="true">
-                            <div class="item-text">
-                                <h4>TRILHA INICIANTE</h4>
-                            </div>
-                        </a>
-                    </li>
+          <div class="col-12 mb-5 text-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="goiania-tab" data-toggle="tab" href="#goiania" role="tab" aria-controls="goiania" aria-expanded="true">
+                  <div class="item-text">
+                    <h4>EDIÇÃO GOIÂNIA</h4>
+                    <h5>09 de Novembro de 2025</h5>
+                  </div>
+                </a>
+              </li>
 
-                    <!-- Trilha Intermediária -->
-                    <li class="nav-item">
-                        <a class="nav-link" id="intermediaria-tab" data-toggle="tab" href="#trilha-intermediaria" role="tab" aria-controls="trilha-intermediaria" aria-selected="false">
-                            <div class="item-text">
-                                <h4>TRILHA INTERMEDIÁRIA E AVANÇANDA</h4>
-                            </div>
-                        </a>
-                    </li>
-
-                    <!-- Trilha Carreiras -->
-                    <li class="nav-item">
-                        <a class="nav-link" id="carreira-tab" data-toggle="tab" href="#trilha-carreiras" role="tab" aria-controls="trilha-carreiras" aria-selected="false">
-                            <div class="item-text">
-                                <h4>TRILHA CARREIRAS</h4>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-12">
+              <li class="nav-item">
+                <a class="nav-link" id="floripa-tab" data-toggle="tab" href="#floripa" role="tab" aria-controls="floripa">
+                  <div class="item-text">
+                    <h4>EDIÇÃO FLORIPA</h4>
+                    <h5>09 de Novembro de 2025</h5>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
             <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
-                <div class="schedule-tab-content col-12 clearfix">
-                    <div class="tab-content" id="myTabContent">
+              <div class="schedule-tab-content col-12 clearfix">
+                <div class="tab-content" id="myTabContent">
 
-                        <!-- GRADE Iniciante -->
-                        <div class="tab-pane fade show active" id="trilha-iniciante" role="tabpanel" aria-labelledby="iniciante-tab">
-                            <div id="accordion-iniciante">
-                                <!-- Check-in -->
-                                <div class="card">
-                                    <div id="heading1-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>08:30 - 09:00</span> Check-in
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse1-iniciante" aria-expanded="false" aria-controls="collapse1-iniciante">
-                                            <h4>Credenciamento & Welcome Coffee</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse1-iniciante" class="collapse show" aria-labelledby="heading1-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p></p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Abertura -->
-                                <div class="card">
-                                    <div id="heading2-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>09:00 - 09:30</span> Abertura
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse2-iniciante" aria-expanded="false" aria-controls="collapse2-iniciante">
-                                            <h4>Abertura do Evento</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse2-iniciante" class="collapse" aria-labelledby="heading2-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p></p>
-                                            <div class="location"><span>Local:</span> Auditório</div>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Keynote - Nelly Andrade -->
-                                <div class="card">
-                                    <div id="heading3-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>09:30 - 10:10</span> Keynote
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse3-iniciante" aria-expanded="false" aria-controls="collapse3-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/nelly-andrade.jpeg" alt="Nelly Andrade" loading="lazy">
-                                            </div>
-                                            <h4>Keynote</h4>
-                                            <h5 class="name">Nelly Andrade</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse3-iniciante" class="collapse" aria-labelledby="heading3-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Nelly Andrade is the Head of Developer Relations for LATAM, empowering developers across the region.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Café da Manhã -->
-                                <div class="card">
-                                    <div id="heading4-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>10:10 - 10:30</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse4-iniciante" aria-expanded="false" aria-controls="collapse4-iniciante">
-                                            <h4>Pausa para Café da Manhã</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Certificação Cloud Practitioner -->
-                                <div class="card">
-                                    <div id="heading5-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>10:30 - 11:05</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse5-iniciante" aria-expanded="false" aria-controls="collapse5-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/romenia-ishiyama.jpg" alt="Romenia Ishiyama" loading="lazy">
-                                            </div>
-                                            <h4>Estudos para Certificação Cloud Practitioner</h4>
-                                            <h5 class="name">Romenia Ishiyama</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse5-iniciante" class="collapse" aria-labelledby="heading5-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Exploração de materiais físicos para auxiliar na certificação AWS Cloud Practitioner.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Elasticidade na AWS -->
-                                <div class="card">
-                                    <div id="heading6-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>11:10 - 11:45</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse6-iniciante" aria-expanded="false" aria-controls="collapse6-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/marina-vital.png" alt="Marina Vital" loading="lazy">
-                                            </div>
-                                            <h4>Elasticidade na AWS: Estratégias de Auto Scaling</h4>
-                                            <h5 class="name">Marina Vital</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse6-iniciante" class="collapse" aria-labelledby="heading6-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Como configurar e otimizar Auto Scaling para garantir elasticidade e eficiência na AWS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- FinOps -->
-                                <div class="card">
-                                    <div id="heading7-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>11:50 - 12:25</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse7-iniciante" aria-expanded="false" aria-controls="collapse7-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/anannda-rios.jpg" alt="Anannda Rios" loading="lazy">
-                                            </div>
-                                            <h4>Primeiros passos no FinOps</h4>
-                                            <h5 class="name">Anannda Rios</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse7-iniciante" class="collapse" aria-labelledby="heading7-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Como aplicar princípios de FinOps para otimizar custos e extrair mais valor da nuvem.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Almoço -->
-                                <div class="card">
-                                    <div id="heading8-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>12:30 - 13:30</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse8-iniciante" aria-expanded="false" aria-controls="collapse8-iniciante">
-                                            <h4>Pausa para Almoço</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Sorteios e Interações -->
-                                <div class="card">
-                                    <div id="heading9-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>13:30 - 14:00</span> Sorteios
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse9-iniciante" aria-expanded="false" aria-controls="collapse9-iniciante">
-                                            <h4>Sorteios e Interações</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Keynote - Farrah Campbell -->
-                                <div class="card">
-                                    <div id="heading10-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>14:00 - 14:40</span> Keynote
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse10-iniciante" aria-expanded="false" aria-controls="collapse10-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/Farrah-campbell.jpeg" alt="Farrah Campbell" loading="lazy">
-                                            </div>
-                                            <h4>Keynote</h4>
-                                            <h5 class="name">Farrah Campbell</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse10-iniciante" class="collapse" aria-labelledby="heading10-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Head of Modern Compute Community</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Desafios da Auditoria em Bancos de Dados -->
-                                <div class="card">
-                                    <div id="heading11-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>14:40 - 15:15</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse11-iniciante" aria-expanded="true" aria-controls="collapse11-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/barbara-lara.png" alt="Barbara Lara" loading="lazy">
-                                            </div>
-                                            <h4>Desafios da Auditoria em Bancos de Dados: Segurança, Conformidade e Gestão de Acessos</h4>
-                                            <h5 class="name">Barbara Lara</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse11-iniciante" class="collapse" aria-labelledby="heading11-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Banco de dados</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- DR -->
-                                <div class="card">
-                                    <div id="heading12-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>15:20 - 15:55</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse12-iniciante" aria-expanded="false" aria-controls="collapse12-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/rossana-suarez.jpg" alt="Rossana Suarez" loading="lazy">
-                                            </div>
-                                            <h4>¡Ups, Desplegué y Todo Explotó! - Arte de Sobrevivir a un Desastre en Producción</h4>
-                                            <h5 class="name">Rossana Suarez</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse12-iniciante" class="collapse" aria-labelledby="heading12-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>DR</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Data Mesh -->
-                                <div class="card">
-                                    <div id="heading13-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>16:00 - 16:35</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse13-iniciante" aria-expanded="false" aria-controls="collapse13-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/nayara-de-souza.jpg" alt="Nayara de Souza" loading="lazy">
-                                            </div>
-                                            <h4>Introdução ao Data Mesh</h4>
-                                            <h5 class="name">Nayara de Souza</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse13-iniciante" class="collapse" aria-labelledby="heading13-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>Data mesh</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Café da Tarde -->
-                                <div class="card">
-                                    <div id="heading14-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>16:35 - 16:55</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse14-iniciante" aria-expanded="false" aria-controls="collapse14-iniciante">
-                                            <h4>Pausa para Café da Tarde</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Primeiros passos no aprendizado de máquina -->
-                                <div class="card">
-                                    <div id="heading15-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>16:55 - 17:30</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse15-iniciante" aria-expanded="false" aria-controls="collapse15-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/suerlene-medeiros.jpg" alt="Suerlene Medeiros" loading="lazy">
-                                            </div>
-                                            <h4>Primeiros passos no aprendizado de máquina</h4>
-                                            <h5 class="name">Suerlene Medeiros</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse15-iniciante" class="collapse" aria-labelledby="heading15-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>ML</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- AWS Party Rock -->
-                                <div class="card">
-                                    <div id="heading16-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>17:35 - 18:10</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse16-iniciante" aria-expanded="false" aria-controls="collapse16-iniciante">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/luisa-brandt.jpg" alt="Luisa Brandt" loading="lazy">
-                                            </div>
-                                            <h4>AWS Party Rock: Construindo uma Aplicação Inteligente para Simplificar Conceitos de Cloud</h4>
-                                            <h5 class="name">Luisa Brandt</h5>
-                                        </div>
-                                    </div>
-                                    <div id="collapse16-iniciante" class="collapse" aria-labelledby="heading16-iniciante" data-parent="#accordion-iniciante">
-                                        <div class="card-body">
-                                            <p>IA</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Encerramento -->
-                                <div class="card">
-                                    <div id="heading17-iniciante">
-                                        <div class="schedule-slot-time">
-                                            <span>18:10 - 18:30</span> Encerramento
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse17-iniciante" aria-expanded="false" aria-controls="collapse17-iniciante">
-                                            <h4>Encerramento & Networking</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                 
 
-                        <!-- GRADE intermediaria-->
-                        <div class="tab-pane fade" id="trilha-intermediaria" role="tabpanel" aria-labelledby="intermediaria-tab">
-                            <div id="accordion">
-                                <!-- Check-in -->
-                                <div class="card">
-                                    <div id="heading1">
-                                        <div class="schedule-slot-time">
-                                            <span>08:30 - 09:00</span> Check-in
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                            <h4>Credenciamento & Welcome Coffee</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Abertura -->
-                                <div class="card">
-                                    <div id="heading2">
-                                        <div class="schedule-slot-time">
-                                            <span>09:00 - 09:30</span> Abertura
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                            <h4>Abertura do Evento</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Keynote - Nelly Andrade -->
-                                <div class="card">
-                                    <div id="heading3">
-                                        <div class="schedule-slot-time">
-                                            <span>09:30 - 10:10</span> Keynote
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/nelly-andrade.jpeg" alt="Nelly Andrade" loading="lazy">
-                                            </div>
-                                            <h4>Keynote</h4>
-                                            <h5 class="name">Nelly Andrade</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Café da Manhã -->
-                                <div class="card">
-                                    <div id="heading4">
-                                        <div class="schedule-slot-time">
-                                            <span>10:10 - 10:30</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                            <h4>Pausa para Café da Manhã</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Beatriz Oliveira - Redes -->
-                                <div class="card">
-                                    <div id="heading5">
-                                        <div class="schedule-slot-time">
-                                            <span>10:30 - 11:05</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/beatriz-oliveira.png" alt="Beatriz Oliveira" loading="lazy">
-                                            </div>
-                                            <h4>A importância de uma estruturação eficiente de landing zones na nuvem</h4>
-                                            <h5 class="name">Beatriz Oliveira</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Localiza - Migração SAP -->
-                                <div class="card">
-                                    <div id="heading6">
-                                        <div class="schedule-slot-time">
-                                            <span>11:10 - 11:45</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/juliana-teodosio.jpeg" alt="Juliana Teodosio" loading="lazy">
-                                            </div>
-                                            <h4>Migração SAP S/4HANA: Uma transformação Tecnológica por Mulheres</h4>
-                                            <h5 class="name">Juliana Teodosio</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Mariana Oliveira - Banco de Dados -->
-                                <div class="card">
-                                    <div id="heading7">
-                                        <div class="schedule-slot-time">
-                                            <span>11:50 - 12:25</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/mariana-oliveira.jpg" alt="Mariana Oliveira" loading="lazy">
-                                            </div>
-                                            <h4>Sharding no MongoDB: Como Particionar e Escalar Seus Dados</h4>
-                                            <h5 class="name">Mariana Oliveira</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Almoço -->
-                                <div class="card">
-                                    <div id="heading8">
-                                        <div class="schedule-slot-time">
-                                            <span>12:30 - 13:30</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                            <h4>Pausa para Almoço</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Sorteios e Interações -->
-                                <div class="card">
-                                    <div id="heading9">
-                                        <div class="schedule-slot-time">
-                                            <span>13:30 - 14:00</span> Sorteios
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                            <h4>Sorteios e Interações</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Keynote - Farrah Campbell -->
-                                <div class="card">
-                                    <div id="heading10">
-                                        <div class="schedule-slot-time">
-                                            <span>14:00 - 14:40</span> Keynote
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/Farrah-campbell.jpeg" alt="Farrah Campbell" loading="lazy">
-                                            </div>
-                                            <h4>Keynote</h4>
-                                            <h5 class="name">Farrah Campbell</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Ana Cunha - Dev -->
-                                <div class="card">
-                                    <div id="heading11">
-                                        <div class="schedule-slot-time">
-                                            <span>14:40 - 15:15</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/ana-cunha.png" alt="Ana Cunha" loading="lazy">
-                                            </div>
-                                            <h4>Building Blocks: Montando sua Aplicação Full-Stack na Nuvem</h4>
-                                            <h5 class="name">Ana Cunha</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Sarah Akemi - Dados e Diversidade -->
-                                <div class="card">
-                                    <div id="heading12">
-                                        <div class="schedule-slot-time">
-                                            <span>15:20 - 15:55</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/sarah-akemi.jpeg" alt="Sarah Akemi" loading="lazy">
-                                            </div>
-                                            <h4>Segredos compartilhados: Criptografia na Blockchain</h4>
-                                            <h5 class="name">Sarah Akemi</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Leticia Massae Uchida - Containers e Kubernetes -->
-                                <div class="card">
-                                    <div id="heading13">
-                                        <div class="schedule-slot-time">
-                                            <span>16:00 - 16:35</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/leticia-massae-uchida.jpg" alt="Leticia Massae Uchida" loading="lazy">
-                                            </div>
-                                            <h4>Evitando impactos ao negócio com EKS Cluster Traffic Shifting para upgrade de versão</h4>
-                                            <h5 class="name">Leticia Massae Uchida</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Pausa para Café da Tarde -->
-                                <div class="card">
-                                    <div id="heading14">
-                                        <div class="schedule-slot-time">
-                                            <span>16:35 - 16:55</span> Pausa
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                                            <h4>Pausa para Café da Tarde</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Hazel Saenz - IA -->
-                                <div class="card">
-                                    <div id="heading15">
-                                        <div class="schedule-slot-time">
-                                            <span>16:55 - 17:30</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/hazel-saenz.jpg" alt="Hazel Saenz" loading="lazy">
-                                            </div>
-                                            <h4>Midiendo el Rendimiento de Aplicaciones Serverless con Modelos Generativos en Amazon Bedrock</h4>
-                                            <h5 class="name">Hazel Saenz</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Jaqueline - Arquitetura -->
-                                <div class="card">
-                                    <div id="heading16">
-                                        <div class="schedule-slot-time">
-                                            <span>17:35 - 18:10</span> Talk
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
-                                            <div class="images-box">
-                                                <img class="img-fluid" src="assets/img/speaker/jaqueline.jpeg" alt="Jaqueline" loading="lazy">
-                                            </div>
-                                            <h4>Da programação a Arquitetura</h4>
-                                            <h5 class="name">Jaqueline</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Encerramento -->
-                                <div class="card">
-                                    <div id="heading17">
-                                        <div class="schedule-slot-time">
-                                            <span>18:10 - 18:30</span> Encerramento
-                                        </div>
-                                        <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
-                                            <h4>Encerramento & Networking</h4>
-                                            <h5 class="name">Organização</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- GRADE carreiras-->
-                        <div class="tab-pane fade" id="trilha-carreiras" role="tabpanel" aria-labelledby="carreiras-tab">
+                  <div class="tab-pane fade show active" id="goiania" role="tabpanel" aria-labelledby="goiania-tab">
                     <div id="accordion">
-                        <!-- Check-in -->
-                        <div class="card">
-                            <div id="heading1-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>08:30 - 09:00</span> Check-in
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse1-carreiras" aria-expanded="false" aria-controls="collapse1-carreiras">
-                                    <h4>Credenciamento & Welcome Coffee</h4>
-                                    <h5 class="name">Organização</h5>
-                                </div>
-                            </div>
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <span> 08:30h - 09:00h </span>
+                            Credenciamento
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h4>Credenciamento & Welcome Coffee</h4>
+                            <h5 class="name">Organização</h5>
+                          </div>
                         </div>
-                
-                        <!-- Abertura -->
-                        <div class="card">
-                            <div id="heading2-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>09:00 - 09:30</span> Abertura
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse2-carreiras" aria-expanded="false" aria-controls="collapse2-carreiras">
-                                    <h4>Abertura do Evento</h4>
-                                    <h5 class="name">Organização</h5>
-                                </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <p></p>
+                            <div class="location">
+                              <span>Local:</span> Hall do Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Keynote - Nelly Andrade -->
-                        <div class="card">
-                            <div id="heading3-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>09:30 - 10:10</span> Keynote
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse3-carreiras" aria-expanded="false" aria-controls="collapse3-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/nelly-andrade.jpeg" alt="Nelly Andrade" loading="lazy">
-                                    </div>
-                                    <h4>Keynote</h4>
-                                    <h5 class="name">Nelly Andrade</h5>
-                                </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingTwo">
+                          <div class="schedule-slot-time">
+                            <span> 09:00h - 09:15h </span>
+                            Abertura
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                            
+                            <h4>Abertura do Community Day</h4>
+                            <h5 class="name">Comunidades AWS User Groups</h5>
+                          </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                            <p></p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Pausa para Café da Manhã -->
-                        <div class="card">
-                            <div id="heading4-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>10:10 - 10:30</span> Pausa
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse4-carreiras" aria-expanded="false" aria-controls="collapse4-carreiras">
-                                    <h4>Pausa para Café da Manhã</h4>
-                                </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingThree">
+                          <div class="schedule-slot-time">
+                            <span> 09:15h - 10:00h </span>
+                            Keynote
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/pallaepaiva.png" alt="">
                             </div>
+                            <h4>Construindo o futuro juntos: A Colaboração global na nuvem</h4>
+                            <h5 class="name">Marcelo Palladino - AWS Developer Advocate  &  Marcelo Paiva - AWS Community Builder</h5>
+                          </div>
                         </div>
-                
-                        <!-- Julia Furst Morgado - Desafios da Carreira, Cloud e Containers -->
-                        <div class="card">
-                            <div id="heading5-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>10:30 - 11:05</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse5-carreiras" aria-expanded="false" aria-controls="collapse5-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/julia-furst-morgado.jpg" alt="Julia Furst Morgado" loading="lazy">
-                                    </div>
-                                    <h4>Trocando Ideias com Julia Furst Morgado: Dúvidas e Dicas de Carreira, Cloud e Kubernetes</h4>
-                                    <h5 class="name">Julia Furst Morgado</h5>
-                                </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Na era da tecnologia em nuvem, o verdadeiro poder não está apenas nos recursos que ela oferece, mas nas pessoas que a utilizam para transformar o mundo. Esta sessão explora como a nuvem se tornou a plataforma definitiva para colaboração global, permitindo que comunidades ao redor do planeta, muitas delas formadas por voluntários, trabalhem juntas para enfrentar os maiores desafios da nossa geração. Através de histórias inspiradoras de inovação, exploraremos como a colaboração na nuvem está democratizando o acesso à tecnologia, unindo culturas e ideias, e construindo soluções que estão mudando o curso da humanidade. Juntos, estamos criando um futuro mais inclusivo, criativo e conectado. Este é o poder da nuvem - e o poder das pessoas.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Ngheter Napam Sami - Desafios da Carreira -->
-                        <div class="card">
-                            <div id="heading6-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>11:10 - 11:45</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse6-carreiras" aria-expanded="false" aria-controls="collapse6-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/ngheter-napam-sami.png" alt="Ngheter Napam Sami" loading="lazy">
-                                    </div>
-                                    <h4>Desafio de carreira em TI: O saber evolui rapidamente e o conhecimento de ontem pode ser obsoleto hoje</h4>
-                                    <h5 class="name">Ngheter Napam Sami</h5>
-                                </div>
+                      </div>
+                      <div class="card">
+                        <div id="heading4">
+                          <div class="schedule-slot-time">
+                            <span> 10:00h - 10:40h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/erika-nagamine.jpeg" alt="">
                             </div>
+                            <h4>Padrões de arquitetura de dados + IA Generativa</h4>
+                            <h5 class="name">Erika Nagamine - Analytics Specialist SA na AWS</h5>
+                          </div>
                         </div>
-                        <!-- Leticia Murakawa e Fran Silva - Liderança -->
-                        <div class="card">
-                            <div id="heading7-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>11:50 - 12:25</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse7-carreiras" aria-expanded="false" aria-controls="collapse7-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/leticia-murakawa.png" alt="Leticia Murakawa" loading="lazy">
-                                        <img class="img-fluid" src="assets/img/speaker/fran-silva.jpg" alt="Fran Silva" loading="lazy">
-                                    </div>
-                                    <h4>O Hard é soft e o Soft é hard: Qual o equilíbrio perfeito para ser uma líder na tecnologia?</h4>
-                                    <h5 class="name">Leticia Murakawa e Fran Silva</h5>
-                                </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nessa sessão vamos discutir e apresentar casos práticos para que você possa utilizar dados na sua empresa e consolidar seus projetos com IA Generativa</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Pausa para Almoço -->
-                        <div class="card">
-                            <div id="heading8-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>12:30 - 13:30</span> Pausa
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse8-carreiras" aria-expanded="false" aria-controls="collapse8-carreiras">
-                                    <h4>Pausa para Almoço</h4>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading5">
+                          <div class="schedule-slot-time">
+                            <span> 10:45h - 11:15h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/jose-vicente.jpeg" alt="">
                             </div>
+                            <h4>Case Auramind.ai</h4>
+                            <h5 class="name">José Vicente França - Senior Cloud Solutions Architect</h5>
+                          </div>
                         </div>
-                
-                        <!-- Sorteios e Interações -->
-                        <div class="card">
-                            <div id="heading9-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>13:30 - 14:00</span> Sorteios
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse9-carreiras" aria-expanded="false" aria-controls="collapse9-carreiras">
-                                    <h4>Sorteios e Interações</h4>
-                                </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Descubra a arquitetura cloud-native da Auramind, uma plataforma que integra de forma segura e escalável múltiplos modelos de IA, incluindo Claude, Llama, Mistral e Titan, utilizando a infraestrutura da AWS. Junte-se a nós para uma exploração técnica dessa solução inovadora e veja como ela demonstra o uso da inteligência artificial em nuvem.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Keynote - Farrah Campbell -->
-                        <div class="card">
-                            <div id="heading10-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>14:00 - 14:40</span> Keynote
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse10-carreiras" aria-expanded="false" aria-controls="collapse10-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/Farrah-campbell.jpeg" alt="Farrah Campbell" loading="lazy">
-                                    </div>
-                                    <h4>Keynote</h4>
-                                    <h5 class="name">Farrah Campbell</h5>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading6">
+                          <div class="schedule-slot-time">
+                            <span> 11:15h - 11:55h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/carlos-alberto-marangon.png" alt="">
                             </div>
+                            <h4>Professor Digital - GenAI</h4>
+                            <h5 class="name">Carlos Alberto Marangon - AWS Senior Tech Lead</h5>
+                          </div>
                         </div>
-                
-                        <!-- Maria Tereza - Motivacional -->
-                        <div class="card">
-                            <div id="heading11-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>14:40 - 15:15</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse11-carreiras" aria-expanded="false" aria-controls="collapse11-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/maria-teresa.jpg" alt="Maria Teresa" loading="lazy">
-                                    </div>
-                                    <h4>Um Papo sobre Carreiras em TIC</h4>
-                                    <h5 class="name">Maria Teresa</h5>
-                                </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta palestra, exploraremos uma arquitetura inovadora que oferece respostas personalizadas e de conteúdo específico, garantindo interações rápidas e de baixa latência. Você verá como essa solução foi aplicada no setor de educação, transformando a experiência de professores e alunos ao fornecer suporte ágil e inteligente. Venha conhecer esse case de sucesso e inspirar-se para revolucionar suas próprias soluções com a tecnologia GenAI!</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Ana Carolyne Pereira De Souza - SRE -->
-                        <div class="card">
-                            <div id="heading12-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>15:20 - 15:55</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse12-carreiras" aria-expanded="false" aria-controls="collapse12-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/ana-carolyne.jpg" alt="Ana Carolyne Pereira De Souza" loading="lazy">
-                                    </div>
-                                    <h4>Construindo Confiança: O Papel de uma SRE em Sistemas Financeiros Críticos</h4>
-                                    <h5 class="name">Ana Carolyne Pereira De Souza</h5>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading7">
+                          <div class="schedule-slot-time">
+                            <span> 12:00h - 12:40h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/rodrigofernandes.png" alt="">
                             </div>
+                            <h4>Provisionamento de infraestrutura AWS utilizando Crossplane</h4>
+                            <h5 class="name">Rodrigo Fernandes - Cloud Solutions Architect/DevOps na GFT</h5>
+                          </div>
                         </div>
-                
-                        <!-- Lilian Nassif - Forense -->
-                        <div class="card">
-                            <div id="heading13-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>16:00 - 16:35</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse13-carreiras" aria-expanded="false" aria-controls="collapse13-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/lilian-nassif.jpg" alt="Lilian Nassif" loading="lazy">
-                                    </div>
-                                    <h4>Perita digital - todo contato deixa uma marca</h4>
-                                    <h5 class="name">Lilian Nassif</h5>
-                                </div>
+                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta apresentação, vamos explorar o Crossplane, uma poderosa ferramenta que permite gerenciar e provisionar recursos AWS diretamente por meio de um controle centralizado. Descubra como simplificar a gestão de infraestrutura em nuvem, automatizar processos e obter maior flexibilidade ao utilizar o Crossplane para integrar e orquestrar serviços na AWS.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Pausa para Café da Tarde -->
-                        <div class="card">
-                            <div id="heading14-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>16:35 - 16:55</span> Pausa
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse14-carreiras" aria-expanded="false" aria-controls="collapse14-carreiras">
-                                    <h4>Pausa para Café da Tarde</h4>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading17">
+                          <div class="schedule-slot-time">
+                            <span> 12:45h - 13:30h </span>
+                            Lunch
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                            <h4>Lunch - Networking</h4>
+                            <h5 class="name">Será servido no local</h5>
+                          </div>
+                        </div>
+                        <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Será servido um lanche reforçado para você não precisar sair do local e aproveitar para um network muito legal.</p>
+                            <div class="location">
+                              <span>Local:</span> HALL de Entrada - Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Ana Hashimoto - Engenharia de Dados -->
-                        <div class="card">
-                            <div id="heading15-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>16:55 - 17:30</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse15-carreiras" aria-expanded="false" aria-controls="collapse15-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/ana-hashimoto.png" alt="Ana Hashimoto" loading="lazy">
-                                    </div>
-                                    <h4>De Analista de BI a Coordenadora de Engenharia de Dados no maior banco da América Latina</h4>
-                                    <h5 class="name">Ana Hashimoto</h5>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading8">
+                          <div class="schedule-slot-time">
+                            <span> 13:30h - 14:10h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/luiz-machado.jpg" alt="">
                             </div>
+                            <h4>Da Identificação à Ação: Automatizando a Correção de Vulnerabilidades</h4>
+                            <h5 class="name">Luiz Machado - Head Cloud, Cilia Tecnologia</h5>
+                          </div>
                         </div>
-                
-                        <!-- Erika Rossetto - Setor Espacial -->
-                        <div class="card">
-                            <div id="heading16-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>17:35 - 18:10</span> Talk
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse16-carreiras" aria-expanded="false" aria-controls="collapse16-carreiras">
-                                    <div class="images-box">
-                                        <img class="img-fluid" src="assets/img/speaker/erika-rossetto.jpg" alt="Erika Rossetto" loading="lazy">
-                                    </div>
-                                    <h4>Mulheres no setor espacial</h4>
-                                    <h5 class="name">Erika Rossetto</h5>
-                                </div>
+                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta palestra, exploraremos as melhores práticas, ferramentas e estratégias para implementar soluções automatizadas que não apenas identificam, mas também corrigem vulnerabilidades de forma rápida e eficaz, usando AWS CodeGuru e Amazon Bedrock.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
                             </div>
+                          </div>
                         </div>
-                
-                        <!-- Encerramento -->
-                        <div class="card">
-                            <div id="heading17-carreiras">
-                                <div class="schedule-slot-time">
-                                    <span>18:10 - 18:30</span> Encerramento
-                                </div>
-                                <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse17-carreiras" aria-expanded="false" aria-controls="collapse17-carreiras">
-                                    <h4>Encerramento & Networking</h4>
-                                    <h5 class="name">Organização</h5>
-                                </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading9">
+                          <div class="schedule-slot-time">
+                            <span> 14:15h - 14:45h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/raphael-moura.jpg" alt="">
                             </div>
+                            <h4>AWS AppSync: Simplificando o Desenvolvimento de APIs com GraphQL</h4>
+                            <h5 class="name">Raphael Moura - Sr. Serverless Developer @ Serverless Guru</h5>
+                          </div>
                         </div>
+                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta palestra imersiva, mergulharemos nas capacidades e vantagens do AWS AppSync, um serviço gerenciado que facilita a criação de APIs escaláveis utilizando GraphQL. Exploraremos como o AppSync permite que desenvolvedores criem APIs poderosas e integradas com diversos serviços da AWS, promovendo uma comunicação eficiente entre múltiplas fontes de dados, suportando sincronização em tempo real e a gestão de dados offline.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading11">
+                          <div class="schedule-slot-time">
+                            <span> 14:45h - 15:15h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/paloma.jpg" alt="">
+                            </div>
+                            <h4>ECS Fargate com Terraform: Estruturando Aplicações Containerizadas na AWS</h4>
+                            <h5 class="name">Paloma Lataliza - Cloud Engineer na Claro Brasil</h5>
+                          </div>
+                        </div>
+                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta palestra, você verá como estruturar estruturar suas aplicações usando containers na AWS de forma simples e eficiente, combinando ECS Fargate e Terraform. Abordaremos o provisionamento de infraestrutura usando código, garantindo consistência e facilidade no gerenciamento de ambientes. Ideal para quem quer aprender a organizar suas aplicações na AWS com uma abordagem direta e acessível!</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+
+                      <div class="card">
+                        <div id="heading10">
+                          <div class="schedule-slot-time">
+                            <span>  15:15h - 15:30h </span>
+                            Networking
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            <h4>Networking Coffee</h4>
+                            <h5 class="name"></h5>
+                          </div>
+                        </div>
+                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Hora de um folêgo e aquele café pra segurar até o final, confia que vai dar certo.</p>
+                            <div class="location">
+                              <span>Local:</span> HALL de Entrada - Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading12">
+                          <div class="schedule-slot-time">
+                            <span> 15:30h - 16:10h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/leo-ciccone.jpg" alt="">
+                            </div>
+                            <h4>Construindo aplicações de IA Generativa utilizando bancos de dados não relacionais na AWS</h4>
+                            <h5 class="name">Leo Ciccone - Especialista em Bancos de dados na AWS</h5>
+                          </div>
+                        </div>
+                        <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Nesta sessão nos aprofundamos na interseção dos serviços de banco de dados gerenciados da AWS e das tecnologias de IA generativa (GenAI), explorando como essas ferramentas poderosas podem ser combinadas para impulsionar soluções inovadoras e aprimorar a tomada de decisões baseada em dados. À medida que a IA generativa continua a evoluir, as suas aplicações requerem soluções de base de dados robustas, escaláveis ​​e flexíveis para gerir eficientemente grandes quantidades de dados.                              Junte-se a nós para descobrir como os bancos de dados gerenciados da AWS, como o Amazon DocumentDB, podem ser aproveitados para oferecer suporte à cargas de trabalho de IA generativa.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading13">
+                          <div class="schedule-slot-time">
+                            <span> 16:15h - 16:55h </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/gyn/dan-rezende.png" alt="">
+                            </div>
+                            <h4>IA Generativa na AWS - Zero to Hero</h4>
+                            <h5 class="name">Dan Rezende - Arquiteto de Soluções - CloudFaster</h5>
+                          </div>
+                        </div>
+                        <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Existem diversas formas e serviços que nos permitem implementar IA Generativa nos dias de hoje, mas por onde começar, como definir um caso de uma na empresa que realmente vai agregar valor ao negócio. Vamos cobrir em 40min o básico dos serviços de IA Generativa, até exemplos de caso de uso reais para apoiar os interessados em começar com IA na AWS.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="heading14">
+                          <div class="schedule-slot-time">
+                            <span> 17:00h - 17:15h </span>
+                            End Game
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                            <h4>Encerramento</h4>
+                            <h5 class="name"></h5>
+                          </div>
+                        </div>
+                        <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Hora dos sorteios e encerramento.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório CASA DA INDÚSTRIA (Fieg)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
+                  </div>
+
+                
+                  
+                  <div class="tab-pane fade" id="floripa" role="tabpanel" aria-labelledby="floripa-tab">
+                    <div id="accordion4">
+                      <div class="card">
+                        <div id="headingFlnOne">
+                          <div class="schedule-slot-time">
+                            <span> 09:30 - 10:00 </span>
+                            Check-in
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnOne" aria-expanded="false" aria-controls="collapseFlnOne">
+                            <h4>Credenciamento & Welcome Coffee</h4>
+                            <h5 class="name">Organização</h5>
+                          </div>
                         </div>
+                        <div id="collapseFlnOne" class="collapse show" aria-labelledby="headingFlnOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Essa é a hora de aquecer os motores e já começar fazer networking.</p>
+                            <div class="location">
+                              <span>Local:</span> SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnTwo">
+                          <div class="schedule-slot-time">
+                            <span> 10:00 - 10:15</span>
+                            Abertura
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnTwo" aria-expanded="false" aria-controls="collapseFlnTwo">
+                            <h4>Abertura do Community Day</h4>
+                            <h5 class="name">Comunidade AWS User Groups</h5><br/><br/>
+                          </div>
+                          <div id="collapseFlnTwo" class="collapse show" aria-labelledby="headingFlnOne" data-parent="#accordion4">
+                            <div class="card-body">
+                              <p>Essa é a hora de aquecer os motores e já começar fazer networking.</p>
+                              <div class="location">
+                                <span>Local: SEBRAE</span> 
+                              </div>
+                            </div>
+                          </div> -
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFlnThree">
+                          <div class="schedule-slot-time">
+                            <span> 10:15 - 11:00 </span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnThree" aria-expanded="false" aria-controls="collapseFlnThree">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/gustavo-cunha.jpg" alt="">
+                            </div>
+                            <h4>Descomplicando IA: Fundamentos práticos para propor soluções realistas em IA</h4>
+                            <h5 class="name">Gustavo Cunha | Cientista de dados na Hotmart</h5><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnThree" class="collapse" aria-labelledby="headingFlnThree" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Vamos desvendar o universo da Inteligência Artificial de forma acessível e descomplicada através de exemplos do cotidiano para ilustrar conceitos complexos. Os seguintes tópicos serão discutidos: o que é IA, o que NÃO é IA, o que a IA faz, o que a IA NÃO faz, como as IAs são treinadas, como criar soluções de IA (incluindo AWS Sagemaker e Bedrock), quais os riscos da IA, quais os cuidados na utilização da IA. O objetivo é capacitar a audiência a ter pensamento crítico e analítico ao decidir onde e como aplicar soluções de IA.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnFour">
+                          <div class="schedule-slot-time">
+                            <span> 11:00 - 11:45 AM</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnFour" aria-expanded="false" aria-controls="collapseFlnFour">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/thiago-finardi.jpg" alt="">
+                            </div>
+                            <h4>Resiliência sob pressão: Chaos Engineering e AWS em ação</h4>
+                            <h5 class="name">Thiago Finardi | Staff Engineer - IT Architecture Specialist no Itaú</h5><br/><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnFour" class="collapse" aria-labelledby="headingFlnFour" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Em um mundo onde a resiliência é fundamental para garantir a continuidade dos negócios, entender como as aplicações se comportam diante de falhas é mais importante do que nunca. Nesta apresentação, exploraremos como a combinação de práticas de Chaos Engineering e as ferramentas da AWS, como o AWS Fault Injection Service (FIS) e o AWS Resilience Hub, podem transformar a maneira como você testa e melhora a robustez dos seus sistemas na nuvem.<br/>
+Com uma demo prática, veremos como essas soluções trabalham em harmonia para preparar suas aplicações para o inesperado, garantindo resiliência e continuidade nos negócios.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="card">
+                        <div id="headingFlnFive">
+                          <div class="schedule-slot-time">
+                            <span> 11.45 - 12.30</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnFive" aria-expanded="false" aria-controls="collapseFlnFive">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/pedro-e-laura.png" alt="">
+                            </div>
+                            <h4>PisqueAI: Comunicação Acessível para Pacientes com ELA Usando Inteligência Artificial</h4>
+                            <h5 class="name">Laura Esther e Pedro Costa | Estudantes & Devs </h5><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnFive" class="collapse" aria-labelledby="headingFlnFive" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Imagine não poder se comunicar, estar preso em seu próprio corpo. Essa é a realidade de milhares de pacientes com Esclerose Lateral Amiotrófica (ELA). Se tivermos a oportunidade, faremos uma palestra que apresentará o “PisqueAI”, uma solução simples, porém inovadora, que utiliza de visão computacional e inteligência artificial para auxiliar a comunicação de pacientes com ELA (ou demais doenças que impossibilitem a comunicação) por meio de um teclado virtual de baixo custo controlado por um simples piscar de olhos. Nosso projeto, inicialmente desenvolvido como parte de uma iniciativa educacional durante nosso ensino médio, está se tornando um produto que permite que pacientes se comuniquem usando apenas os movimentos oculares capturados por uma webcam comum em seus próprios computadores pessoais, permitindo ser algo mais acessível do que as demais ferramentas disponíveis no mercado. Discutiremos como a IA pode transformar a vida de pessoas com limitações motoras graves, oferecendo uma solução acessível e gratuita que supera as barreiras financeiras impostas por tecnologias existentes. Na apresentação, compartilharemos os desafios enfrentados, os resultados do nosso protótipo, e como a tecnologia pode ser utilizada para criar soluções inclusivas e de baixo custo que impactam diretamente a qualidade de vida. Esse será um momento para refletir sobre o papel essencial da pesquisa científica e tecnológica para uma melhor qualidade de visão aos pacientes e na promoção de inovações na área da saúde, além da importância do ensino médio técnico no Brasil.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnSix">
+                          <div class="schedule-slot-time">
+                            <span> 12:30 - 14:00 </span>
+                            Almoço
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnSix" aria-expanded="false" aria-controls="collapseFlnSix">
+                            
+                            <h4>Alimentação externa</h4>
+                            <h5 class="name">Individual</h5>
+                          </div>
+                        </div>
+                        <div id="collapseFlnSix" class="collapse show" aria-labelledby="headingFlnSix" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Não será servido almoço no local.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnSeven">
+                          <div class="schedule-slot-time">
+                            <span> 14:00 - 14.45</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnSeven" aria-expanded="false" aria-controls="collapseFlnSeven">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/ana-cunha.jpg" alt="">
+                            </div>
+                            <h4>Elevando o suporte da comunidade com automação de IA</h4>
+                            <h5 class="name">Ana Cunha | Senior Developer Advocate na AWS</h5><br/><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnSeven" class="collapse" aria-labelledby="headingFlnSeven" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Nesta sessão aprenderemos como estamos melhorando o suporte às comunidades utilizando agentes inteligentes que aprendem com nossos documentos e bancos de dados. Durante o processo de desenvolvimento, você aprenderá como múltiplas tarefas podem ser automatizadas com ferramentas amigáveis a quem desenvolve, mesmo que você não tenha experiência em IA/ML.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="card">
+                        <div id="headingFlnEight">
+                          <div class="schedule-slot-time">
+                            <span> 14:45 - 15:30</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnEight" aria-expanded="false" aria-controls="collapseFlnEight">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/alan-casagrande.jpg" alt="">
+                            </div>
+                            <h4>SoundCloud: Migrando de REST On-Premise para GraphQL Federado na Cloud</h4>
+                            <h5 class="name">Alan Casagrande | Software Engineer na SoundCloud</h5><br/><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnEight" class="collapse" aria-labelledby="headingFlnEight" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Desde sua fundação em 2007, o SoundCloud se baseava em um monolito Ruby on Rails que suportou o serviço em seus primeiros anos de operação. Com o crescimento da plataforma, uma transição gradual para uma arquitetura Backend for Frontend (BFF) com Scala permitiu maior agilidade para as equipes de iOS, Android e Web, que podiam evoluir independentemente. No entanto, esse modelo apresentou novos desafios, como a dificuldade de manter a paridade de funcionalidades entre plataformas e a duplicação de código.<br/>Para superar essas limitações, introduzimos uma API GraphQL federada, capaz de oferecer novas funcionalidades a todos os clientes, promovendo maior consistência e flexibilidade. Com o sucesso dessa fase inicial, migramos essa API de uma infraestrutura Kubernetes on-premise para a AWS ECS/Fargate, permitindo maior escalabilidade e eficiência. Nesta palestra, exploraremos os desafios enfrentados nessa jornada, especialmente em relação à descoberta, comunicação e monitoramento entre os serviços que ainda operam on-premise, e as soluções que adotamos para garantir uma transição bem-sucedida.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFlnNine">
+                          <div class="schedule-slot-time">
+                            <span> 15:30 - 16.15</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnNine" aria-expanded="false" aria-controls="collapseFlnNine">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/bruno-marangoni.jpg" alt="">
+                            </div>
+                            <h4>Além do Firewall: Estratégias avançadas de segurança para blindar seu ambiente AWS</h4>
+                            <h5 class="name">Bruno Marangoni | Solutions Architect na DXC</h5><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnNine" class="collapse" aria-labelledby="headingFlnNine" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Nessa apresentação vou falar um pouco mais sobre a importancia de proteção dos ambientes web com o WAF, Shield, GuardDuty, CloudFront e Global Accelerator.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnTen">
+                          <div class="schedule-slot-time">
+                            <span> 16:15 - 17:15 </span>
+                            Networking
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnTen" aria-expanded="false" aria-controls="collapseFlnTen">
+                            
+                            <h4>Networking Coffee</h4>
+                            <h5 class="name">Organização</h5><br/><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnTen" class="collapse show" aria-labelledby="headingFlnTen" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Hora de um folêgo e aquele café pra segurar até o final, confia que vai dar certo.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnEleven">
+                          <div class="schedule-slot-time">
+                            <span> 17:15 - 18:00</span>
+                            Talk
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnEleven" aria-expanded="false" aria-controls="collapseFlnEleven">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/guilherme-dalla-rosa.png" alt="">
+                            </div>
+                            <h4>Garantindo a Segurança e Isolamento de Dados em Plataformas SaaS com AWS Serverless</h4>
+                            <h5 class="name">Guilherme Dalla Rosa | CTO na MerCloud </h5><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnEleven" class="collapse" aria-labelledby="headingFlnEleven" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Como podemos construir plataformas SaaS seguras e eficientes na AWS utilizando Serverless? Nesta palestra, vamos explorar como arquiteturas multi-tenant podem ser implementadas, garantindo segurança robusta e isolamento de dados entre os tenants. Abordaremos como o Cognito pode ser usado para autenticação e gerenciamento de usuários, e como integrá-lo com o API Gateway e Lambda para configurar o isolamento de dados e recursos baseado em políticas do IAM, evitando vazamento de dados e assegurando que cada execução esteja vinculada ao tenant correto. Ao final desta sessão, você terá adquirido conhecimentos práticos e insights valiosos do AWS Well-Architected SaaS Lens, permitindo que construa aplicações SaaS Serverless na AWS com confiança e excelência.</p>
+                            <div class="location">
+                              <span>Local:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFlnTwelve">
+                          <div class="schedule-slot-time">
+                            <span> 18:00 - 18:50</span>
+                            Keynote
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnTwelve" aria-expanded="false" aria-controls="collapseFlnTwelve">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/fln/daniel-abib.jpeg" alt="">
+                            </div>
+                            <h4>O que seria um expert prompt engineering?</h4>
+                            <h5 class="name">Daniel Abib | Arquiteto especialista de soluções para GenAI & Serverless na AWS </h5><br/><br/>
+                          </div>
+                        </div>
+                        <div id="collapseFlnTwelve" class="collapse" aria-labelledby="headingFlnTwelve" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>Engenharia de prompt é o processo de orientar modelos de linguagem grandes (LLMs) para produzir saídas desejadas. Nesta sessão, será apresentado uma visão geral das melhores práticas de engenharia de prompt e aprenda como escolher os formatos, frases, palavras e símbolos mais apropriados para obter o máximo das soluções de IA generativas, ao mesmo tempo em que melhora a precisão e o desempenho. Esta sessão usa o Claude 2 LLM como um exemplo de como a engenharia de prompt ajuda a resolver casos de uso complexos do cliente.</p>
+                            <div class="location">
+                              <span>Location:</span> Auditório SEBRAE
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingFlnThirteen">
+                          <div class="schedule-slot-time">
+                            <span> 18:50 - 19:20 ...</span>
+                            End Game
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFlnThirteen" aria-expanded="false" aria-controls="collapseFlnThirteen">
+                            <h4>Encerramento</h4>
+                            <h5 class="name">Hora dos sorteios e encerramento.</h5>
+                          </div>
+                        </div>
+                        <div id="collapseFlnThirteen" class="collapse" aria-labelledby="headingFlnThirteen" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Hora dos sorteios e encerramento.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  
                 </div>
+
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>     
-  <!--<div id="hero-area-2" class="hero-area-bg-2 section-padding-2">
+      </div>
+    </section>  -->
+    <!-- Schedule Section End -->
+
+    <div id="hero-area-2" class="">
       <div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12 col-sm-12">
             <div class="contents text-center">
               <div class="section-title-header text-center">
-                <h2 class="section-title-w">CALL FOR PAPERS ABERTO!</h2>
-                <p class="paragph"> Estamos em busca de mulheres incríveis para compartilhar suas jornadas profissionais em nossa segunda edição do AWSome Women Community Brasil. Se você é apaixonada por sua área de atuação e tem insights valiosos para oferecer em trilhas de carreiras intermediárias e avançadas, queremos ouvir sua voz!  </p> </div>
+                <h2 class="section-title-w" style="font-size: 26px;  text-align: center;">CALL FOR PAPERS ABERTO</h2>
+                <p class="paragph">Estamos em busca de mulheres incríveis para compartilhar suas jornadas profissionais em nossa segunda edição do AWSome Women Community Brasil. Se você é apaixonada por sua área de atuação e tem insights valiosos para oferecer em trilhas de carreiras intermediárias e avançadas, queremos ouvir sua voz!  </p> </div>
                 <div class="container">
-                  <a href="https://sessionize.com/awsome-women-community-summit-brasil-202/" target="_blank">
+                  <a href="https://sessionize.com/awsome-women-community-summit-brasil-2026/" target="_blank">
                   <img src="https://sessionize.com/landing/images/brand/banners/sessionize-banner-medium.png"
                     alt="Sessionize.com — The smart way to manage Call for Papers, Speakers and Agenda for your conference."
                     width="220" height="80">
@@ -1125,18 +1002,17 @@
               <br><br><br><br>
 
               <div class="section-title-header text-center">
-                <h2 class="section-title-w">INSCRIÇÕES</h2>
-                <br>
+                <h2 class="section-title-w" style="font-size: 26px; font-weight: 700; text-align: center;">INSCRIÇÕES</h2>
                 <p class="paragph">Este ano as inscrições terão um valor simbólico. Todo o valor arrecadado com os ingressos serão doados para uma instituição de caridade</p>
-                <a href="https://www.sympla.com.br/evento/awsome-women-community-summit-brasil-2025/2803628" target="_blank" class="btn btn-common">INSCREVA-SE AQUI</a>
+                <a href="https://www.sympla.com.br/evento/awsome-women-community-summit-brasil-2026/3158951" target="_blank" class="btn btn-common">INSCREVA-SE AQUI</a>
 
               </div>
-            
+              <br>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
 
     <!-- Ticket Pricing Area Start -->
@@ -1145,7 +1021,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" >INSCRIÇÕES</h2>
+              <h2 class="section-title wow fadeInUp" style="font-size: 40px; font-weight: 700; text-align: center;">INSCRIÇÕES</h2>
               <p class="paragph" >Em breve as inscrições serão abertas com um valor simbólico <br> Todo o valor arrecadado com os ingressoes serão doados para uma instituição de caridade</p>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSebpRmrGWqFoUD76qLN2Ljc6LMosKQhT8-jyKdTdBVu33kEiA/viewform" target="_blank" class="btn btn-common">ME AVISEM QUANDO AS INSCRIÇÕES FOREM ABERTAS</a>
             
@@ -1197,14 +1073,14 @@
           <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="blog-item">
               <div class="blog-image">
-                <a href="https://sessionize.com/aws-community-day-brasil-2024/">
+                <a href="https://sessionize.com/aws-community-day-brasil-2025/">
                   <img class="img-fluid" src="assets/img/blog/call.png" alt="">
                 </a>
               </div>
               <div class="descr">
 
                 <h3 class="title">
-                  <a href="https://sessionize.com/aws-community-day-brasil-2024/">
+                  <a href="https://sessionize.com/aws-community-day-brasil-2025/">
                     Call for Speakers
                   </a>
                 </h3>
@@ -1243,212 +1119,127 @@
     <!-- Blog Section End -->
 
     <!-- Sponsors Section Start -->
-
-    
+     
+    <!--
     <section id="sponsors" class="section-padding">
         <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h2>PATROCINADORES</h2>
-             <!-- <p class="paragph">Torne-se um Patrocinador!Faça parte do time que torna o AWSome Women Community Summit possível. Apoie a diversidade e a inovação na tecnologia enquanto conecta sua marca a um público engajado.                  
-              Junte-se a nós para criar um evento inesquecível e fazer a diferença na comunidade tech!</p>
-
-              <a href="https://drive.google.com/file/d/1Ia_EKvbQiYZ5nsBCxVal0ibdnlRAdl2L/view" target="_blank" class="btn btn-common">BAIXE AQUI O NOSSO MÍDIA KIT</a>
+              <h2>PATROCINADORES E APOIADORES</h2>
+              <p class="paragph">Conheça os patrocinadores e apoiadores deste ano. Estamos animados em apresentar as empresas/comunidades cujo apoio tornam nosso evento possível. Cada um deles é fundamental para nos ajudar a criar uma experiência inesquecível para todos os participantes.</p>
             </div>
           </div>
-        </div> -->
-
+        </div>
         <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
           <div class="col-lg-12">
             <div class="sponsors-logo text-center">
-              <br><br>
-            <!--<p class="p-platinum">PATROCINADORES</p>-->  
-               <a href="https://aws.amazon.com/"><img src="assets/img/sponsors/aws.png" alt=""></a>    
-               <a href="https://selectsolucoes.com.br/"><img src="assets/img/sponsors/select.png" alt=""></a>  
-               <a href="https://www.itau.com.br/"><img src="assets/img/sponsors/itau.png" alt=""></a>
-               <a href="https://movementefuturo.com.br/"><img src="assets/img/sponsors/movemente.png" alt=""></a>
-               <a href="https://www.veeam.com/"><img src="assets/img/sponsors/veeam.png" alt=""></a>
-               <a href="https://www.claro.com.br/"><img src="assets/img/sponsors/claro.png" alt=""></a>
-              
+               <a href="https://senaigoias.com.br/faculdade-fatesg"><img src="assets/img/sponsors/senaiiel.png" alt=""></a>
+               <a href="https://cloudfaster.com.br"><img src="assets/img/sponsors/cloudfaster.png" alt=""></a>
+               <a href="https://auramind.ai/plans"><img src="assets/img/sponsors/auramind.png" alt=""></a>
+               <a href="https://www.cilia.com.br"><img src="assets/img/sponsors/cilia.png" alt=""></a>
+               <a href="https://www.dati.com.br"><img src="assets/img/sponsors/dati.png" alt=""></a>
+               <a href="https://www.tenchisecurity.com/br"><img src="assets/img/sponsors/tenchi.jpg" alt=""></a>
+               <a href="https://www.selectsolucoes.com.br"><img src="assets/img/sponsors/select.png" alt=""></a>
+               <a href="https://semservidor.com.br"><img src="assets/img/sponsors/sem-servidor.svg" alt=""></a>
             </div>
-
-
-            <div class="sponsors-logo text-center">
-              <br><br>
-              <p class="p-apoio">EMPRESAS E COMUNIDADES APOIADORAS</p>
-               <a href="https://linuxtips.io/"><img src="assets/img/sponsors/linuxtips.png" alt=""></a>
-               <a href="https://novatec.com.br/"><img src="assets/img/sponsors/novatec.png" alt=""></a>
-               <a href="https://wisecenter.com.br/"><img src="assets/img/sponsors/wise.png" alt=""></a>
-               <a href="https://www.drinkflowers.com.br/"><img src="assets/img/sponsors/flowers.png" alt=""></a>
-               <a href="https://www.kabum.com.br/"><img src="assets/img/sponsors/kabum.png" alt=""></a>
-               <a href="https://linktr.ee/Girlstesting"><img src="assets/img/sponsors/girlstesting.jpg" alt=""></a>
-               <a href="https://www.codaqui.dev/"><img src="assets/img/sponsors/codaqui.png" alt=""></a>
-               <a href="https://www.faculdadevincit.edu.br/cursos"><img src="assets/img/sponsors/vincit.jpg" alt=""></a>
-               
-              </div>
          </div>
         </div>
       </div>
-    </section>  
+    </section>   -->
     <!-- Sponsors Section End -->
 
 
     <!-- Team Section Start -->
-     <section id="team" class="hero-area-bg section-padding-2">
+    <section id="team" class="section-padding text-center">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="section-title-header-2 text-center">
-              <h2 class="section-title-w" >ORGANIZADORAS</h2>
+              <h2 class="section-title wow fadeInUp" >ORGANIZADORAS</h2>
 
             </div>
           </div>
         </div>        
         
 
-        <div class="row justify-content-bt">
-
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" >
-              <div class="team-img">
-                <a href="https://www.linkedin.com/in/fernandaguglielmo/" target="_blank"> <img class="img-fluid" src="assets/img/team/fernanda.png" alt=""> </a>
-              </div>
-              <div class="info-text">
-              <h3 align="center"><a href="https://www.linkedin.com/in/fernandaguglielmo/" target="_blank">Fernanda Gugliellmo</a></h3>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" >
-              <div class="team-img">
-                <a href="https://www.linkedin.com/in/jessicaccoelho/" target="_blank"> <img class="img-fluid" src="assets/img/team/jess.jpeg" alt=""> </a>
-              </div>
-              <div class="info-text">
-              <h3 align="center"><a href="https://www.linkedin.com/in/jessicaccoelho/" target="_blank">Jéssica Coeho</a></h3>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
+        <div class="row justify-content-center">
 
           
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-2 col-md-4 col-xs-6">
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" >
               <div class="team-img">
-                <a href="https://www.linkedin.com/in/lanaymarques/" target="_blank"> <img class="img-fluid" src="assets/img/team/lanay.jpeg" alt=""> </a>
+                <a href=https://www.linkedin.com/in/fernandaguglielmo/" target="_blank"> <img class="img-fluid" src="assets/img/team/fernanda.png" alt="" style="height: 220px; width: 220px; object-fit: cover; "> </a>
+
               </div>
               <div class="info-text">
-              <h3 align="center"><a href="https://www.linkedin.com/in/lanaymarques/" target="_blank">Lanay Marques</a></h3>
+                <h3><a href="https://www.linkedin.com/in/fernandaguglielmo/" target="_blank">FERNANDA GUGIELMO</a></h3>
               </div>
             </div>
             <!-- Team Item Ends -->
           </div>
 
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-2 col-md-4 col-xs-6">
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" >
               <div class="team-img">
-                <a href="https://x.com/shescloud_" target="_blank"> <img class="img-fluid" src="assets/img/team/team-01.jpg" alt=""> </a>
+                <a href="https://www.linkedin.com/in/jessicaccoelho/_" target="_blank"> <img class="img-fluid" src="assets/img/team/jess.jpeg" alt="" style="height: 220px; width: 220px; object-fit: cover; "> </a>
 
               </div>
               <div class="info-text">
-                <h3  align="center"><a href="https://x.com/shescloud_" target="_blank">PALOMA LATALIZA</a></h3>
+                <h3><a href="https://www.linkedin.com/in/jessicaccoelho/" target="_blank">JÉSSICA COELHO</a></h3>
               </div>
             </div>
             <!-- Team Item Ends -->
           </div>
 
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="col-lg-2 col-md-4 col-xs-6">
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" >
               <div class="team-img">
-                <a href="https://www.linkedin.com/in/priscila-araujo-santos/" target="_blank"> <img class="img-fluid" src="assets/img/team/team-06.jpg" alt=""> </a>
+                <a href="https://www.linkedin.com/in/lanaymarques/" target="_blank"> <img class="img-fluid" src="assets/img/team/lanay.jpeg" alt="" style="height: 220px; width: 220px; object-fit: cover; "> </a>
+
               </div>
               <div class="info-text">
-                <h3 align="center"><a href="https://www.linkedin.com/in/priscila-araujo-santos/" target="_blank">PRISCILA ARAUJO</a></h3>
+                <h3><a href="https://www.linkedin.com/in/lanaymarques/" target="_blank">LANAY MARQUES</a></h3>
               </div>
             </div>
             <!-- Team Item Ends -->
           </div>
 
-       
+            <div class="col-lg-2 col-md-4 col-xs-6">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" >
+                <div class="team-img">
+                  <a href="https://www.linkedin.com/in/palomalataliza/" target="_blank"> <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="" style="height: 220px; width: 220px; object-fit: cover; "> </a>
 
-          <div class="col-lg-4 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" >
-              <div class="team-img">
-                <a href="https://www.linkedin.com/in/rafaelavidotti/" target="_blank"> <img class="img-fluid" src="assets/img/team/rafaela.jpeg" alt=""> </a>
-              
+                </div>
+                <div class="info-text">
+                  <h3><a href="https://www.linkedin.com/in/palomalataliza/" target="_blank">PALOMA LATALIZA</a></h3>
+                </div>
               </div>
-              <div class="info-text">
-                <h3  align="center"><a href="https://www.linkedin.com/in/rafaelavidotti/" target="_blank">Rafaela Vidotti </a></h3>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-
             
 
+            <div class="col-lg-2 col-md-4 col-xs-6">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" >
+                <div class="team-img">
+                  <a href="https://www.linkedin.com/in/priscila-araujo-santos/" target="_blank"> <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="" style="height: 220px; width: 220px; object-fit: cover; "> </a>
+                </div>
+                <div class="info-text">
+                  <h3><a href="https://www.linkedin.com/in/priscila-araujo-santos/" target="_blank">PRISCILA ARAUJO</a></h3>
+                </div>
+              </div>
+              <!-- Team Item Ends -->
+            </div>
 
+ 
 
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-
-    <footer>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-12 col-xs-12">
-           
-        </div>
-      </div>
-    </footer>
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-    	<i class="lni-chevron-up"></i>
-    </a>
-
-    <div id="preloader">
-      <div class="sk-circle">
-        <div class="sk-circle1 sk-child"></div>
-        <div class="sk-circle2 sk-child"></div>
-        <div class="sk-circle3 sk-child"></div>
-        <div class="sk-circle4 sk-child"></div>
-        <div class="sk-circle5 sk-child"></div>
-        <div class="sk-circle6 sk-child"></div>
-        <div class="sk-circle7 sk-child"></div>
-        <div class="sk-circle8 sk-child"></div>
-        <div class="sk-circle9 sk-child"></div>
-        <div class="sk-circle10 sk-child"></div>
-        <div class="sk-circle11 sk-child"></div>
-        <div class="sk-circle12 sk-child"></div>
-      </div>
+          
     </div>
-<script>
-  // Exibir o menu ao rolar para baixo
-  let lastScrollTop = 0;
-  window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop && scrollTop > 100) {
-      navbar.classList.add("show");
-    } else if (scrollTop <= 100) {
-      navbar.classList.remove("show");
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  });
-</script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-min.js"></script>
