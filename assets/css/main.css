@@ -1125,33 +1125,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .ready-to-play:before {
-  content: '';
-  background-image: linear-gradient(0deg, #cd70a9 0, #cd70a9 100%);
-  position: absolute;
-  display: block;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.7;
+  display: none;
 }
 
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
-}
+/* Video base styles - removed problematic positioning */
 
 .stop {
   opacity: 1;
@@ -2962,11 +2939,6 @@ footer {
   box-shadow: 0 8px 24px #E2E8ED;
   display: block;
   object-fit: cover;
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 1 !important;
-  transform: none !important;
 }
 
 /* Responsive video adjustments */
