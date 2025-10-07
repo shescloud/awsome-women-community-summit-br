@@ -2343,21 +2343,56 @@ footer {
 }
 
 #count .count-wrapper {
-  background-image: linear-gradient(65deg, #cd70a9 0, #cd70a9 100%);
+  background: linear-gradient(135deg, #fff3cd 0%, #ff9800 30%, #cd70a9 70%, #b85a8a 100%);
   border-radius: 4px;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08);
   margin-bottom: -35px;
   margin-top: -35px;
-  padding: 15px 0;
+  padding: 20px 100px 18px 100px;
   position: relative;
   top: -40px;
   z-index: 999;
   display: inline-block;
   width: 100%;
+  border: none !important;
+  outline: none !important;
 }
 
 .time-count div {
   text-align: center;
+  border: none !important;
+  outline: none !important;
+}
+
+.time-count {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  gap: 15px !important;
+}
+
+.time-count .time-entry {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  min-width: 60px !important;
+}
+
+
+#count {
+  border: none !important;
+  outline: none !important;
+}
+
+#count * {
+  border: none !important;
+  outline: none !important;
 }
 
 .time-entry {
@@ -2939,27 +2974,185 @@ footer {
   box-shadow: 0 8px 24px #E2E8ED;
   display: block;
   object-fit: cover;
+  /* Força reprodução inline em dispositivos móveis */
+  -webkit-playsinline: true;
+  -moz-playsinline: true;
+  -ms-playsinline: true;
+  playsinline: true;
 }
 
 /* Responsive video adjustments */
 @media (max-width: 768px) {
   .img-thumb video {
     height: 300px;
+    border: 2px solid #134876;
+    /* Garante que o vídeo não abra em tela cheia no mobile */
+    -webkit-playsinline: true;
+    -moz-playsinline: true;
+    -ms-playsinline: true;
+    playsinline: true;
   }
   .ready-to-play {
     height: 300px;
+  }
+  
+  /* Contador mobile - números em linha horizontal */
+  .time-count .time-entry span {
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+  }
+  
+  .time-count .time-entry {
+    margin: 0 !important;
+    padding: 3px 4px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    min-width: 50px !important;
+    white-space: nowrap !important;
+  }
+  
+  .time-count {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    gap: 20px !important;
+    padding: 5px 0 !important;
+  }
+  
+  /* Diminui altura do contador no mobile */
+  #count .count-wrapper {
+    padding: 8px 80px 6px 80px !important;
+    top: -20px !important;
+  }
+  
+  /* Força palavras menores no mobile */
+  .time-count .time-entry b {
+    font-size: 0.3rem !important;
+    font-weight: 300 !important;
+    line-height: 1 !important;
+  }
+  
+  .time-count .time-entry b {
+    display: inline !important;
+    font-size: 0.3rem !important;
+    margin: 0 5px !important;
+    font-weight: 300 !important;
+    vertical-align: middle !important;
+    color: #fff !important;
+    line-height: 1 !important;
   }
 }
 
 @media (max-width: 480px) {
   .img-thumb video {
     height: 250px;
+    border: 2px solid #cfadd2;
+    /* Garante que o vídeo não abra em tela cheia no mobile */
+    -webkit-playsinline: true;
+    -moz-playsinline: true;
+    -ms-playsinline: true;
+    playsinline: true;
   }
   .ready-to-play {
     height: 250px;
+  }
+  
+  /* Contador mobile pequeno - números em linha horizontal */
+  .time-count .time-entry span {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+  }
+  
+  .time-count .time-entry {
+    margin: 0 !important;
+    padding: 2px 3px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    min-width: 40px !important;
+    white-space: nowrap !important;
+  }
+  
+  .time-count {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    gap: 20px !important;
+    padding: 5px 0 !important;
+  }
+  
+  /* Diminui altura do contador no mobile */
+  #count .count-wrapper {
+    padding: 8px 80px 6px 80px !important;
+    top: -20px !important;
+  }
+  
+  /* Força palavras menores no mobile */
+  .time-count .time-entry b {
+    font-size: 0.3rem !important;
+    font-weight: 300 !important;
+    line-height: 1 !important;
+  }
+  
+  .time-count .time-entry b {
+    display: inline !important;
+    font-size: 0.25rem !important;
+    margin: 0 4px !important;
+    font-weight: 300 !important;
+    vertical-align: middle !important;
+    color: #fff !important;
+    line-height: 1 !important;
   }
 }
   min-width: auto !important;
   min-height: auto !important;
   object-fit: cover;
+}
+
+/* Animação de hover para os quadradinhos */
+.single-intro-text {
+  border: 2px solid transparent !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transform: translateY(0);
+}
+
+.single-intro-text:hover {
+  border: 2px solid #cd70a9 !important;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(205, 112, 169, 0.4);
+}
+
+/* Estilos para quadradinhos clicáveis */
+.inforation-wrapper a {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.inforation-wrapper a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.inforation-wrapper a:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }

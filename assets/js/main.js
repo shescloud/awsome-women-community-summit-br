@@ -41,10 +41,10 @@
        ========================================================================== */
      jQuery('#clock').countdown('2026/03/14',function(event){
       var $this=jQuery(this).html(event.strftime(''
-      +'<div class="time-entry days"><span>%-D</span> <b>:</b> Days</div> '
-      +'<div class="time-entry hours"><span>%H</span> <b>:</b> Hours</div> '
-      +'<div class="time-entry minutes"><span>%M</span> <b>:</b> Minutes</div> '
-      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+      +'<div class="time-entry days"><span>%-D</span> Dias</div> '
+      +'<div class="time-entry hours"><span>%H</span> Horas</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minutos</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Sec</div> '));
     });
 
     /* Auto Close Responsive Navbar on Click
