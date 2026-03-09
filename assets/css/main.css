@@ -3332,3 +3332,21 @@ footer {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.trilhas-btns {
+  display: flex;
+  justify-content: center; /* centraliza */
+  gap: 2px; /* espaço entre os botões */
+}
+
+.trilhas-btns a {
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+@media (max-width: 768px) {
+  .trilhas-btns {
+    flex-direction: column; /* quebra linha no mobile */
+    align-items: center; /* mantém centralizado */
+  }
+}

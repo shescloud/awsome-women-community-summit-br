@@ -1441,6 +1441,39 @@ h1 {
   border-bottom: 1px dashed #e5e5e5;
 }
 
+.schedule .card .schedule-slot-time-pp {
+  background-image: linear-gradient(65deg, #cd70a9  0, #cd70a9  100%);
+  color: #fff;
+  padding: 38px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .images-box {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-slot-time-pp {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-slot-time-p {
+    font-size: 13px !important;
+  }
+}
+
 .schedule .card-header {
   position: relative;
   padding: 35px 40px;
