@@ -1467,6 +1467,15 @@ h1 {
     font-size: 13px !important;
   }
 }
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 18px !important;
+    white-space: normal;
+    line-height: 1.3;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .schedule-slot-time-p {
